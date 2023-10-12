@@ -25,9 +25,11 @@ If you'd like to replicate or contribute to this project, please follow the inst
 
 ## Contributions
 
- [*Ammar Abel Naser](https://github.com/ammarnaser)
- [*Remone Lamey](https://github.com/REMONLAMEY)
- [*Nathan Romany](https://github.com/Nathan85001)
+ *[Ammar Abel Naser](https://github.com/ammarnaser)
+ 
+ *[Remone Lamey](https://github.com/REMONLAMEY)
+ 
+ *[Nathan Romany](https://github.com/Nathan85001)
  
 
 ## License

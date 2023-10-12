@@ -25,7 +25,7 @@ If you'd like to replicate or contribute to this project, please follow the inst
 
 ## Contributions
 
- **[Ammar Abel Naser](https://github.com/ammarnaser)**
+ **[Ammar Abdel Naser](https://github.com/ammarnaser)**
  
  **[Remone Lamey](https://github.com/REMONLAMEY)**
  

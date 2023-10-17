@@ -30,7 +30,8 @@ If you'd like to replicate or contribute to this project, please follow the inst
  **[Remone Lamey](https://github.com/REMONLAMEY)**
  
  **[Nathan Romany](https://github.com/Nathan85001)**
- 
+
+ **[Abdullah Sayed](https://github.com/1Asayed)** 
 
 ## License
 

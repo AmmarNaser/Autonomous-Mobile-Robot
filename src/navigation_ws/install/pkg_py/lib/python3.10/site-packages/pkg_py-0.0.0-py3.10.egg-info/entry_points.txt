@@ -1,0 +1,3 @@
+[console_scripts]
+pnode = pkg_py.py_node:main
+

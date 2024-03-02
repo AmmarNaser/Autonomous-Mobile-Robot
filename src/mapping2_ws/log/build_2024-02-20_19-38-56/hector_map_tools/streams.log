@@ -1,0 +1,33 @@
+[0.408s] Invoking command in '/home/remon/ros2_ws/build/hector_map_tools': /usr/bin/cmake /home/remon/ros2_ws/src/hector_slam/hector_map_tools -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCMAKE_INSTALL_PREFIX=/home/remon/ros2_ws/install/hector_map_tools
+[5.300s] -- The C compiler identification is GNU 11.4.0
+[7.786s] -- The CXX compiler identification is GNU 11.4.0
+[7.814s] -- Detecting C compiler ABI info
+[8.083s] -- Detecting C compiler ABI info - done
+[8.093s] -- Check for working C compiler: /usr/bin/cc - skipped
+[8.095s] -- Detecting C compile features
+[8.095s] -- Detecting C compile features - done
+[8.113s] -- Detecting CXX compiler ABI info
+[8.367s] -- Detecting CXX compiler ABI info - done
+[8.381s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[8.381s] -- Detecting CXX compile features
+[8.382s] -- Detecting CXX compile features - done
+[8.473s] -- Configuring incomplete, errors occurred!
+[8.473s] See also "/home/remon/ros2_ws/build/hector_map_tools/CMakeFiles/CMakeOutput.log".
+[8.475s] [31mCMake Error at CMakeLists.txt:4 (find_package):
+[8.475s]   By not providing "Findcatkin.cmake" in CMAKE_MODULE_PATH this project has
+[8.475s]   asked CMake to find a package configuration file provided by "catkin", but
+[8.475s]   CMake did not find one.
+[8.475s] 
+[8.475s]   Could not find a package configuration file provided by "catkin" with any
+[8.475s]   of the following names:
+[8.475s] 
+[8.475s]     catkinConfig.cmake
+[8.475s]     catkin-config.cmake
+[8.475s] 
+[8.475s]   Add the installation prefix of "catkin" to CMAKE_PREFIX_PATH or set
+[8.475s]   "catkin_DIR" to a directory containing one of the above files.  If "catkin"
+[8.475s]   provides a separate development package or SDK, be sure it has been
+[8.475s]   installed.
+[8.475s] 
+[8.475s] [0m
+[8.477s] Invoked command in '/home/remon/ros2_ws/build/hector_map_tools' returned '1': /usr/bin/cmake /home/remon/ros2_ws/src/hector_slam/hector_map_tools -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCMAKE_INSTALL_PREFIX=/home/remon/ros2_ws/install/hector_map_tools

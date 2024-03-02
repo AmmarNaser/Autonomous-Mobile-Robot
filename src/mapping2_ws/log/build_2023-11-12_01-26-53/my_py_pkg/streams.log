@@ -1,0 +1,35 @@
+[0.797s] Invoking command in '/home/remon/ros2_ws/src/my_py_pkg': PYTHONPATH=/home/remon/ros2_ws/build/my_py_pkg/prefix_override:/home/remon/ros2_ws/install/my_py_pkg/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/my_py_pkg build --build-base /home/remon/ros2_ws/build/my_py_pkg/build install --record /home/remon/ros2_ws/build/my_py_pkg/install.log --single-version-externally-managed
+[0.955s] running egg_info
+[0.955s] creating ../../build/my_py_pkg/my_py_pkg.egg-info
+[0.955s] writing ../../build/my_py_pkg/my_py_pkg.egg-info/PKG-INFO
+[0.956s] writing dependency_links to ../../build/my_py_pkg/my_py_pkg.egg-info/dependency_links.txt
+[0.956s] writing entry points to ../../build/my_py_pkg/my_py_pkg.egg-info/entry_points.txt
+[0.956s] writing requirements to ../../build/my_py_pkg/my_py_pkg.egg-info/requires.txt
+[0.956s] writing top-level names to ../../build/my_py_pkg/my_py_pkg.egg-info/top_level.txt
+[0.956s] writing manifest file '../../build/my_py_pkg/my_py_pkg.egg-info/SOURCES.txt'
+[0.958s] reading manifest file '../../build/my_py_pkg/my_py_pkg.egg-info/SOURCES.txt'
+[0.958s] writing manifest file '../../build/my_py_pkg/my_py_pkg.egg-info/SOURCES.txt'
+[0.959s] running build
+[0.959s] running build_py
+[0.959s] creating /home/remon/ros2_ws/build/my_py_pkg/build
+[0.959s] creating /home/remon/ros2_ws/build/my_py_pkg/build/lib
+[0.959s] creating /home/remon/ros2_ws/build/my_py_pkg/build/lib/my_py_pkg
+[0.959s] copying my_py_pkg/__init__.py -> /home/remon/ros2_ws/build/my_py_pkg/build/lib/my_py_pkg
+[0.959s] running install
+[0.974s] /usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+[0.974s]   warnings.warn(
+[0.974s] running install_lib
+[0.975s] creating /home/remon/ros2_ws/install/my_py_pkg/lib/python3.10/site-packages/my_py_pkg
+[0.975s] copying /home/remon/ros2_ws/build/my_py_pkg/build/lib/my_py_pkg/__init__.py -> /home/remon/ros2_ws/install/my_py_pkg/lib/python3.10/site-packages/my_py_pkg
+[0.975s] byte-compiling /home/remon/ros2_ws/install/my_py_pkg/lib/python3.10/site-packages/my_py_pkg/__init__.py to __init__.cpython-310.pyc
+[0.975s] running install_data
+[0.976s] creating /home/remon/ros2_ws/install/my_py_pkg/share/ament_index
+[0.976s] creating /home/remon/ros2_ws/install/my_py_pkg/share/ament_index/resource_index
+[0.976s] creating /home/remon/ros2_ws/install/my_py_pkg/share/ament_index/resource_index/packages
+[0.976s] copying resource/my_py_pkg -> /home/remon/ros2_ws/install/my_py_pkg/share/ament_index/resource_index/packages
+[0.976s] copying package.xml -> /home/remon/ros2_ws/install/my_py_pkg/share/my_py_pkg
+[0.976s] running install_egg_info
+[0.977s] Copying ../../build/my_py_pkg/my_py_pkg.egg-info to /home/remon/ros2_ws/install/my_py_pkg/lib/python3.10/site-packages/my_py_pkg-0.0.0-py3.10.egg-info
+[0.978s] running install_scripts
+[0.993s] writing list of installed files to '/home/remon/ros2_ws/build/my_py_pkg/install.log'
+[1.012s] Invoked command in '/home/remon/ros2_ws/src/my_py_pkg' returned '0': PYTHONPATH=/home/remon/ros2_ws/build/my_py_pkg/prefix_override:/home/remon/ros2_ws/install/my_py_pkg/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/my_py_pkg build --build-base /home/remon/ros2_ws/build/my_py_pkg/build install --record /home/remon/ros2_ws/build/my_py_pkg/install.log --single-version-externally-managed

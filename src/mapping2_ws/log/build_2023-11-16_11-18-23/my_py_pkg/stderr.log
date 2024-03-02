@@ -1,0 +1,5 @@
+  File "/home/remon/ros2_ws/install/my_py_pkg/lib/python3.10/site-packages/my_py_pkg/1py_node.py", line 14
+    self.get_logger().info('hello' str(self.counter))
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^
+SyntaxError: invalid syntax. Perhaps you forgot a comma?
+

@@ -1,0 +1,152 @@
+[0.146s] Invoking command in '/home/remon/ros2_ws/build/my_bot': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/remon/ros2_ws/install/my_py_pkg:/home/remon/ros2_ws/install/autonomous_exploration:/opt/ros/humble /usr/bin/cmake /home/remon/ros2_ws/src/my_bot -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/remon/ros2_ws/install/my_bot
+[0.182s] -- Found ament_cmake: 1.3.7 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.382s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.430s] -- Found ament_lint_auto: 0.12.10 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[0.542s] -- Added test 'copyright' to check source files copyright and LICENSE
+[0.564s] -- Added test 'flake8' to check Python code syntax and style conventions
+[0.566s] -- Added test 'lint_cmake' to check CMake code style
+[0.567s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[0.574s] -- Added test 'xmllint' to check XML markup files
+[0.576s] -- Configuring done
+[0.678s] -- Generating done
+[0.680s] -- Build files have been written to: /home/remon/ros2_ws/build/my_bot
+[0.685s] Invoked command in '/home/remon/ros2_ws/build/my_bot' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/remon/ros2_ws/install/my_py_pkg:/home/remon/ros2_ws/install/autonomous_exploration:/opt/ros/humble /usr/bin/cmake /home/remon/ros2_ws/src/my_bot -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/remon/ros2_ws/install/my_bot
+[0.689s] Invoking command in '/home/remon/ros2_ws/build/my_bot': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/remon/ros2_ws/install/my_py_pkg:/home/remon/ros2_ws/install/autonomous_exploration:/opt/ros/humble /usr/bin/cmake --build /home/remon/ros2_ws/build/my_bot -- -j8 -l8
+[0.746s] Invoked command in '/home/remon/ros2_ws/build/my_bot' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/remon/ros2_ws/install/my_py_pkg:/home/remon/ros2_ws/install/autonomous_exploration:/opt/ros/humble /usr/bin/cmake --build /home/remon/ros2_ws/build/my_bot -- -j8 -l8
+[0.778s] Invoking command in '/home/remon/ros2_ws/build/my_bot': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/remon/ros2_ws/install/my_py_pkg:/home/remon/ros2_ws/install/autonomous_exploration:/opt/ros/humble /usr/bin/cmake --install /home/remon/ros2_ws/build/my_bot
+[0.787s] -- Install configuration: ""
+[0.788s] -- Execute custom install script
+[0.788s] -- Up-to-date symlink: /home/remon/ros2_ws/install/my_bot/share/my_bot/config/drive_bot.rviz
+[0.788s] -- Up-to-date symlink: /home/remon/ros2_ws/install/my_bot/share/my_bot/config/empty.yaml
+[0.788s] -- Up-to-date symlink: /home/remon/ros2_ws/install/my_bot/share/my_bot/config/mapper_params_online_async.yaml
+[0.789s] -- Up-to-date symlink: /home/remon/ros2_ws/install/my_bot/share/my_bot/config/view_bot.rviz
+[0.789s] -- Symlinking: /home/remon/ros2_ws/install/my_bot/share/my_bot/description/4W_Robot_core.xacro
+[0.797s] -- Symlinking: /home/remon/ros2_ws/install/my_bot/share/my_bot/description/4W_robot.urdf.xacro
+[0.805s] -- Up-to-date symlink: /home/remon/ros2_ws/install/my_bot/share/my_bot/description/gazebo_control.xacro
+[0.805s] -- Symlinking: /home/remon/ros2_ws/install/my_bot/share/my_bot/description/inertial_4w_macros.xacro
+[0.811s] -- Up-to-date symlink: /home/remon/ros2_ws/install/my_bot/share/my_bot/description/inertial_macros.xacro
+[0.811s] -- Up-to-date symlink: /home/remon/ros2_ws/install/my_bot/share/my_bot/description/lidar.xacro
+[0.811s] -- Up-to-date symlink: /home/remon/ros2_ws/install/my_bot/share/my_bot/description/robot.urdf.xacro
+[0.811s] -- Up-to-date symlink: /home/remon/ros2_ws/install/my_bot/share/my_bot/description/robot_core.xacro
+[0.811s] -- Up-to-date symlink: /home/remon/ros2_ws/install/my_bot/share/my_bot/launch/launch_sim.launch.py
+[0.812s] -- Up-to-date symlink: /home/remon/ros2_ws/install/my_bot/share/my_bot/launch/rsp.launch.py
+[0.812s] -- Up-to-date symlink: /home/remon/ros2_ws/install/my_bot/share/my_bot/worlds/cone.world
+[0.812s] -- Up-to-date symlink: /home/remon/ros2_ws/install/my_bot/share/my_bot/worlds/empty.world
+[0.812s] -- Up-to-date symlink: /home/remon/ros2_ws/install/my_bot/share/my_bot/worlds/model.sdf
+[0.812s] -- Up-to-date symlink: /home/remon/ros2_ws/install/my_bot/share/my_bot/worlds/my_world.world
+[0.812s] -- Symlinking: /home/remon/ros2_ws/install/my_bot/share/my_bot/worlds/no_roof_small_warehouse.world
+[0.820s] -- Symlinking: /home/remon/ros2_ws/install/my_bot/share/my_bot/models/.DS_Store
+[0.827s] -- Symlinking: /home/remon/ros2_ws/install/my_bot/share/my_bot/models/aws_robomaker_warehouse_Bucket_01/.DS_Store
+[0.835s] -- Symlinking: /home/remon/ros2_ws/install/my_bot/share/my_bot/models/aws_robomaker_warehouse_Bucket_01/materials/.DS_Store
+[0.842s] -- Symlinking: /home/remon/ros2_ws/install/my_bot/share/my_bot/models/aws_robomaker_warehouse_Bucket_01/materials/textures/aws_robomaker_warehouse_Bucket_01.png
+[0.849s] -- Symlinking: /home/remon/ros2_ws/install/my_bot/share/my_bot/models/aws_robomaker_warehouse_Bucket_01/meshes/aws_robomaker_warehouse_Bucket_01_collision.DAE
+[0.855s] -- Symlinking: /home/remon/ros2_ws/install/my_bot/share/my_bot/models/aws_robomaker_warehouse_Bucket_01/meshes/aws_robomaker_warehouse_Bucket_01_visual.DAE
+[0.862s] -- Symlinking: /home/remon/ros2_ws/install/my_bot/share/my_bot/models/aws_robomaker_warehouse_Bucket_01/model.config
+[0.869s] -- Symlinking: /home/remon/ros2_ws/install/my_bot/share/my_bot/models/aws_robomaker_warehouse_Bucket_01/model.sdf
+[0.875s] -- Symlinking: /home/remon/ros2_ws/install/my_bot/share/my_bot/models/aws_robomaker_warehouse_ClutteringA_01/.DS_Store
+[0.882s] -- Symlinking: /home/remon/ros2_ws/install/my_bot/share/my_bot/models/aws_robomaker_warehouse_ClutteringA_01/materials/.DS_Store
+[0.889s] -- Symlinking: /home/remon/ros2_ws/install/my_bot/share/my_bot/models/aws_robomaker_warehouse_ClutteringA_01/materials/textures/.DS_Store
+[0.895s] -- Symlinking: /home/remon/ros2_ws/install/my_bot/share/my_bot/models/aws_robomaker_warehouse_ClutteringA_01/materials/textures/aws_robomaker_warehouse_ClutteringA_01.png
+[0.905s] -- Symlinking: /home/remon/ros2_ws/install/my_bot/share/my_bot/models/aws_robomaker_warehouse_ClutteringA_01/materials/textures/aws_robomaker_warehouse_ClutteringA_02.png
+[0.916s] -- Symlinking: /home/remon/ros2_ws/install/my_bot/share/my_bot/models/aws_robomaker_warehouse_ClutteringA_01/materials/textures/aws_robomaker_warehouse_ClutteringA_03.png
+[0.925s] -- Symlinking: /home/remon/ros2_ws/install/my_bot/share/my_bot/models/aws_robomaker_warehouse_ClutteringA_01/meshes/aws_robomaker_warehouse_ClutteringA_01_collision.DAE
+[0.934s] -- Symlinking: /home/remon/ros2_ws/install/my_bot/share/my_bot/models/aws_robomaker_warehouse_ClutteringA_01/meshes/aws_robomaker_warehouse_ClutteringA_01_visual.DAE
+[0.942s] -- Symlinking: /home/remon/ros2_ws/install/my_bot/share/my_bot/models/aws_robomaker_warehouse_ClutteringA_01/model.config
+[0.948s] -- Symlinking: /home/remon/ros2_ws/install/my_bot/share/my_bot/models/aws_robomaker_warehouse_ClutteringA_01/model.sdf
+[0.955s] -- Symlinking: /home/remon/ros2_ws/install/my_bot/share/my_bot/models/aws_robomaker_warehouse_ClutteringC_01/materials/textures/aws_robomaker_warehouse_ClutteringC_01.png
+[0.961s] -- Symlinking: /home/remon/ros2_ws/install/my_bot/share/my_bot/models/aws_robomaker_warehouse_ClutteringC_01/materials/textures/aws_robomaker_warehouse_ClutteringC_02.png
+[0.968s] -- Symlinking: /home/remon/ros2_ws/install/my_bot/share/my_bot/models/aws_robomaker_warehouse_ClutteringC_01/meshes/aws_robomaker_warehouse_ClutteringC_01_collision.DAE
+[0.975s] -- Symlinking: /home/remon/ros2_ws/install/my_bot/share/my_bot/models/aws_robomaker_warehouse_ClutteringC_01/meshes/aws_robomaker_warehouse_ClutteringC_01_visual.DAE
+[0.982s] -- Symlinking: /home/remon/ros2_ws/install/my_bot/share/my_bot/models/aws_robomaker_warehouse_ClutteringC_01/model.config
+[0.988s] -- Symlinking: /home/remon/ros2_ws/install/my_bot/share/my_bot/models/aws_robomaker_warehouse_ClutteringC_01/model.sdf
+[0.995s] -- Symlinking: /home/remon/ros2_ws/install/my_bot/share/my_bot/models/aws_robomaker_warehouse_ClutteringD_01/materials/textures/aws_robomaker_warehouse_ClutteringD_01.png
+[1.001s] -- Symlinking: /home/remon/ros2_ws/install/my_bot/share/my_bot/models/aws_robomaker_warehouse_ClutteringD_01/materials/textures/aws_robomaker_warehouse_ClutteringD_02.png
+[1.008s] -- Symlinking: /home/remon/ros2_ws/install/my_bot/share/my_bot/models/aws_robomaker_warehouse_ClutteringD_01/meshes/aws_robomaker_warehouse_ClutteringD_01_collision.DAE
+[1.015s] -- Symlinking: /home/remon/ros2_ws/install/my_bot/share/my_bot/models/aws_robomaker_warehouse_ClutteringD_01/meshes/aws_robomaker_warehouse_ClutteringD_01_visual.DAE
+[1.023s] -- Symlinking: /home/remon/ros2_ws/install/my_bot/share/my_bot/models/aws_robomaker_warehouse_ClutteringD_01/model.config
+[1.032s] -- Symlinking: /home/remon/ros2_ws/install/my_bot/share/my_bot/models/aws_robomaker_warehouse_ClutteringD_01/model.sdf
+[1.040s] -- Symlinking: /home/remon/ros2_ws/install/my_bot/share/my_bot/models/aws_robomaker_warehouse_DeskC_01/materials/.DS_Store
+[1.047s] -- Symlinking: /home/remon/ros2_ws/install/my_bot/share/my_bot/models/aws_robomaker_warehouse_DeskC_01/materials/textures/aws_robomaker_warehouse_DeskC_01.png
+[1.054s] -- Symlinking: /home/remon/ros2_ws/install/my_bot/share/my_bot/models/aws_robomaker_warehouse_DeskC_01/materials/textures/aws_robomaker_warehouse_DeskC_02.png
+[1.061s] -- Symlinking: /home/remon/ros2_ws/install/my_bot/share/my_bot/models/aws_robomaker_warehouse_DeskC_01/materials/textures/aws_robomaker_warehouse_DeskC_03.png
+[1.069s] -- Symlinking: /home/remon/ros2_ws/install/my_bot/share/my_bot/models/aws_robomaker_warehouse_DeskC_01/materials/textures/aws_robomaker_warehouse_DeskC_03.psd
+[1.075s] -- Symlinking: /home/remon/ros2_ws/install/my_bot/share/my_bot/models/aws_robomaker_warehouse_DeskC_01/materials/textures/aws_robomaker_warehouse_DeskC_04.png
+[1.082s] -- Symlinking: /home/remon/ros2_ws/install/my_bot/share/my_bot/models/aws_robomaker_warehouse_DeskC_01/meshes/aws_robomaker_warehouse_DeskC_01_collision.DAE
+[1.089s] -- Symlinking: /home/remon/ros2_ws/install/my_bot/share/my_bot/models/aws_robomaker_warehouse_DeskC_01/meshes/aws_robomaker_warehouse_DeskC_01_visual.DAE
+[1.096s] -- Symlinking: /home/remon/ros2_ws/install/my_bot/share/my_bot/models/aws_robomaker_warehouse_DeskC_01/model.config
+[1.102s] -- Symlinking: /home/remon/ros2_ws/install/my_bot/share/my_bot/models/aws_robomaker_warehouse_DeskC_01/model.sdf
+[1.111s] -- Symlinking: /home/remon/ros2_ws/install/my_bot/share/my_bot/models/aws_robomaker_warehouse_GroundB_01/materials/textures/aws_robomaker_warehouse_GroundB_01.png
+[1.117s] -- Symlinking: /home/remon/ros2_ws/install/my_bot/share/my_bot/models/aws_robomaker_warehouse_GroundB_01/materials/textures/aws_robomaker_warehouse_GroundB_02.png
+[1.124s] -- Symlinking: /home/remon/ros2_ws/install/my_bot/share/my_bot/models/aws_robomaker_warehouse_GroundB_01/meshes/aws_robomaker_warehouse_GroundB_01_collision.DAE
+[1.132s] -- Symlinking: /home/remon/ros2_ws/install/my_bot/share/my_bot/models/aws_robomaker_warehouse_GroundB_01/meshes/aws_robomaker_warehouse_GroundB_01_visual.DAE
+[1.139s] -- Symlinking: /home/remon/ros2_ws/install/my_bot/share/my_bot/models/aws_robomaker_warehouse_GroundB_01/model.config
+[1.146s] -- Symlinking: /home/remon/ros2_ws/install/my_bot/share/my_bot/models/aws_robomaker_warehouse_GroundB_01/model.sdf
+[1.152s] -- Symlinking: /home/remon/ros2_ws/install/my_bot/share/my_bot/models/aws_robomaker_warehouse_Lamp_01/materials/textures/aws_robomaker_warehouse_Lamp_01.png
+[1.159s] -- Symlinking: /home/remon/ros2_ws/install/my_bot/share/my_bot/models/aws_robomaker_warehouse_Lamp_01/meshes/aws_robomaker_warehouse_Lamp_01_collision.DAE
+[1.167s] -- Symlinking: /home/remon/ros2_ws/install/my_bot/share/my_bot/models/aws_robomaker_warehouse_Lamp_01/meshes/aws_robomaker_warehouse_Lamp_01_visual.DAE
+[1.174s] -- Symlinking: /home/remon/ros2_ws/install/my_bot/share/my_bot/models/aws_robomaker_warehouse_Lamp_01/model.config
+[1.181s] -- Symlinking: /home/remon/ros2_ws/install/my_bot/share/my_bot/models/aws_robomaker_warehouse_Lamp_01/model.sdf
+[1.188s] -- Symlinking: /home/remon/ros2_ws/install/my_bot/share/my_bot/models/aws_robomaker_warehouse_PalletJackB_01/.DS_Store
+[1.194s] -- Symlinking: /home/remon/ros2_ws/install/my_bot/share/my_bot/models/aws_robomaker_warehouse_PalletJackB_01/materials/.DS_Store
+[1.201s] -- Symlinking: /home/remon/ros2_ws/install/my_bot/share/my_bot/models/aws_robomaker_warehouse_PalletJackB_01/materials/textures/aws_robomaker_warehouse_PalletJackB_01.png
+[1.208s] -- Symlinking: /home/remon/ros2_ws/install/my_bot/share/my_bot/models/aws_robomaker_warehouse_PalletJackB_01/materials/textures/aws_robomaker_warehouse_PalletJackB_02.png
+[1.215s] -- Symlinking: /home/remon/ros2_ws/install/my_bot/share/my_bot/models/aws_robomaker_warehouse_PalletJackB_01/meshes/aws_robomaker_warehouse_PalletJackB_01_collision.DAE
+[1.221s] -- Symlinking: /home/remon/ros2_ws/install/my_bot/share/my_bot/models/aws_robomaker_warehouse_PalletJackB_01/meshes/aws_robomaker_warehouse_PalletJackB_01_visual.DAE
+[1.228s] -- Symlinking: /home/remon/ros2_ws/install/my_bot/share/my_bot/models/aws_robomaker_warehouse_PalletJackB_01/model.config
+[1.236s] -- Symlinking: /home/remon/ros2_ws/install/my_bot/share/my_bot/models/aws_robomaker_warehouse_PalletJackB_01/model.sdf
+[1.243s] -- Symlinking: /home/remon/ros2_ws/install/my_bot/share/my_bot/models/aws_robomaker_warehouse_RoofB_01/materials/textures/aws_robomaker_warehouse_RoofB_01.png
+[1.249s] -- Symlinking: /home/remon/ros2_ws/install/my_bot/share/my_bot/models/aws_robomaker_warehouse_RoofB_01/meshes/aws_robomaker_warehouse_RoofB_01_collision.DAE
+[1.256s] -- Symlinking: /home/remon/ros2_ws/install/my_bot/share/my_bot/models/aws_robomaker_warehouse_RoofB_01/meshes/aws_robomaker_warehouse_RoofB_01_visual.DAE
+[1.263s] -- Symlinking: /home/remon/ros2_ws/install/my_bot/share/my_bot/models/aws_robomaker_warehouse_RoofB_01/model.config
+[1.269s] -- Symlinking: /home/remon/ros2_ws/install/my_bot/share/my_bot/models/aws_robomaker_warehouse_RoofB_01/model.sdf
+[1.276s] -- Symlinking: /home/remon/ros2_ws/install/my_bot/share/my_bot/models/aws_robomaker_warehouse_ShelfD_01/materials/textures/aws_robomaker_warehouse_ShelfD_01.png
+[1.282s] -- Symlinking: /home/remon/ros2_ws/install/my_bot/share/my_bot/models/aws_robomaker_warehouse_ShelfD_01/materials/textures/aws_robomaker_warehouse_ShelfD_02.png
+[1.289s] -- Symlinking: /home/remon/ros2_ws/install/my_bot/share/my_bot/models/aws_robomaker_warehouse_ShelfD_01/materials/textures/aws_robomaker_warehouse_ShelfD_03.png
+[1.295s] -- Symlinking: /home/remon/ros2_ws/install/my_bot/share/my_bot/models/aws_robomaker_warehouse_ShelfD_01/materials/textures/aws_robomaker_warehouse_ShelfD_04.png
+[1.303s] -- Symlinking: /home/remon/ros2_ws/install/my_bot/share/my_bot/models/aws_robomaker_warehouse_ShelfD_01/meshes/aws_robomaker_warehouse_ShelfD_01_collision.DAE
+[1.309s] -- Symlinking: /home/remon/ros2_ws/install/my_bot/share/my_bot/models/aws_robomaker_warehouse_ShelfD_01/meshes/aws_robomaker_warehouse_ShelfD_01_visual.DAE
+[1.316s] -- Symlinking: /home/remon/ros2_ws/install/my_bot/share/my_bot/models/aws_robomaker_warehouse_ShelfD_01/model.config
+[1.323s] -- Symlinking: /home/remon/ros2_ws/install/my_bot/share/my_bot/models/aws_robomaker_warehouse_ShelfD_01/model.sdf
+[1.331s] -- Symlinking: /home/remon/ros2_ws/install/my_bot/share/my_bot/models/aws_robomaker_warehouse_ShelfE_01/.DS_Store
+[1.339s] -- Symlinking: /home/remon/ros2_ws/install/my_bot/share/my_bot/models/aws_robomaker_warehouse_ShelfE_01/materials/.DS_Store
+[1.348s] -- Symlinking: /home/remon/ros2_ws/install/my_bot/share/my_bot/models/aws_robomaker_warehouse_ShelfE_01/materials/textures/aws_robomaker_warehouse_ShelfE_01.png
+[1.355s] -- Symlinking: /home/remon/ros2_ws/install/my_bot/share/my_bot/models/aws_robomaker_warehouse_ShelfE_01/materials/textures/aws_robomaker_warehouse_ShelfE_02.png
+[1.362s] -- Symlinking: /home/remon/ros2_ws/install/my_bot/share/my_bot/models/aws_robomaker_warehouse_ShelfE_01/materials/textures/aws_robomaker_warehouse_ShelfE_03.png
+[1.369s] -- Symlinking: /home/remon/ros2_ws/install/my_bot/share/my_bot/models/aws_robomaker_warehouse_ShelfE_01/materials/textures/aws_robomaker_warehouse_ShelfE_04.png
+[1.376s] -- Symlinking: /home/remon/ros2_ws/install/my_bot/share/my_bot/models/aws_robomaker_warehouse_ShelfE_01/meshes/aws_robomaker_warehouse_ShelfE_01_collision.DAE
+[1.384s] -- Symlinking: /home/remon/ros2_ws/install/my_bot/share/my_bot/models/aws_robomaker_warehouse_ShelfE_01/meshes/aws_robomaker_warehouse_ShelfE_01_visual.DAE
+[1.391s] -- Symlinking: /home/remon/ros2_ws/install/my_bot/share/my_bot/models/aws_robomaker_warehouse_ShelfE_01/model.config
+[1.398s] -- Symlinking: /home/remon/ros2_ws/install/my_bot/share/my_bot/models/aws_robomaker_warehouse_ShelfE_01/model.sdf
+[1.405s] -- Symlinking: /home/remon/ros2_ws/install/my_bot/share/my_bot/models/aws_robomaker_warehouse_ShelfF_01/materials/textures/aws_robomaker_warehouse_ShelfF_01.png
+[1.411s] -- Symlinking: /home/remon/ros2_ws/install/my_bot/share/my_bot/models/aws_robomaker_warehouse_ShelfF_01/materials/textures/aws_robomaker_warehouse_ShelfF_02.png
+[1.419s] -- Symlinking: /home/remon/ros2_ws/install/my_bot/share/my_bot/models/aws_robomaker_warehouse_ShelfF_01/materials/textures/aws_robomaker_warehouse_ShelfF_03.png
+[1.425s] -- Symlinking: /home/remon/ros2_ws/install/my_bot/share/my_bot/models/aws_robomaker_warehouse_ShelfF_01/meshes/aws_robomaker_warehouse_ShelfF_01_collision.DAE
+[1.434s] -- Symlinking: /home/remon/ros2_ws/install/my_bot/share/my_bot/models/aws_robomaker_warehouse_ShelfF_01/meshes/aws_robomaker_warehouse_ShelfF_01_visual.DAE
+[1.441s] -- Symlinking: /home/remon/ros2_ws/install/my_bot/share/my_bot/models/aws_robomaker_warehouse_ShelfF_01/model.config
+[1.448s] -- Symlinking: /home/remon/ros2_ws/install/my_bot/share/my_bot/models/aws_robomaker_warehouse_ShelfF_01/model.sdf
+[1.456s] -- Symlinking: /home/remon/ros2_ws/install/my_bot/share/my_bot/models/aws_robomaker_warehouse_TrashCanC_01/materials/textures/aws_robomaker_warehouse_TrashCanC_01.png
+[1.464s] -- Symlinking: /home/remon/ros2_ws/install/my_bot/share/my_bot/models/aws_robomaker_warehouse_TrashCanC_01/meshes/aws_robomaker_warehouse_TrashCanC_01_collision.DAE
+[1.470s] -- Symlinking: /home/remon/ros2_ws/install/my_bot/share/my_bot/models/aws_robomaker_warehouse_TrashCanC_01/meshes/aws_robomaker_warehouse_TrashCanC_01_visual.DAE
+[1.477s] -- Symlinking: /home/remon/ros2_ws/install/my_bot/share/my_bot/models/aws_robomaker_warehouse_TrashCanC_01/model.config
+[1.484s] -- Symlinking: /home/remon/ros2_ws/install/my_bot/share/my_bot/models/aws_robomaker_warehouse_TrashCanC_01/model.sdf
+[1.491s] -- Symlinking: /home/remon/ros2_ws/install/my_bot/share/my_bot/models/aws_robomaker_warehouse_WallB_01/materials/textures/aws_robomaker_warehouse_WallB_01.png
+[1.498s] -- Symlinking: /home/remon/ros2_ws/install/my_bot/share/my_bot/models/aws_robomaker_warehouse_WallB_01/meshes/aws_robomaker_warehouse_WallB_01_collision.DAE
+[1.505s] -- Symlinking: /home/remon/ros2_ws/install/my_bot/share/my_bot/models/aws_robomaker_warehouse_WallB_01/meshes/aws_robomaker_warehouse_WallB_01_visual.DAE
+[1.511s] -- Symlinking: /home/remon/ros2_ws/install/my_bot/share/my_bot/models/aws_robomaker_warehouse_WallB_01/model.config
+[1.518s] -- Symlinking: /home/remon/ros2_ws/install/my_bot/share/my_bot/models/aws_robomaker_warehouse_WallB_01/model.sdf
+[1.525s] -- Up-to-date symlink: /home/remon/ros2_ws/install/my_bot/share/ament_index/resource_index/package_run_dependencies/my_bot
+[1.622s] -- Up-to-date symlink: /home/remon/ros2_ws/install/my_bot/share/ament_index/resource_index/parent_prefix_path/my_bot
+[1.623s] -- Up-to-date symlink: /home/remon/ros2_ws/install/my_bot/share/my_bot/environment/ament_prefix_path.sh
+[1.623s] -- Up-to-date symlink: /home/remon/ros2_ws/install/my_bot/share/my_bot/environment/ament_prefix_path.dsv
+[1.623s] -- Up-to-date symlink: /home/remon/ros2_ws/install/my_bot/share/my_bot/environment/path.sh
+[1.623s] -- Up-to-date symlink: /home/remon/ros2_ws/install/my_bot/share/my_bot/environment/path.dsv
+[1.624s] -- Up-to-date symlink: /home/remon/ros2_ws/install/my_bot/share/my_bot/local_setup.bash
+[1.624s] -- Up-to-date symlink: /home/remon/ros2_ws/install/my_bot/share/my_bot/local_setup.sh
+[1.624s] -- Up-to-date symlink: /home/remon/ros2_ws/install/my_bot/share/my_bot/local_setup.zsh
+[1.624s] -- Up-to-date symlink: /home/remon/ros2_ws/install/my_bot/share/my_bot/local_setup.dsv
+[1.625s] -- Symlinking: /home/remon/ros2_ws/install/my_bot/share/my_bot/package.dsv
+[1.642s] -- Up-to-date symlink: /home/remon/ros2_ws/install/my_bot/share/ament_index/resource_index/packages/my_bot
+[1.642s] -- Up-to-date symlink: /home/remon/ros2_ws/install/my_bot/share/my_bot/cmake/my_botConfig.cmake
+[1.642s] -- Up-to-date symlink: /home/remon/ros2_ws/install/my_bot/share/my_bot/cmake/my_botConfig-version.cmake
+[1.642s] -- Up-to-date symlink: /home/remon/ros2_ws/install/my_bot/share/my_bot/package.xml
+[1.645s] Invoked command in '/home/remon/ros2_ws/build/my_bot' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/remon/ros2_ws/install/my_py_pkg:/home/remon/ros2_ws/install/autonomous_exploration:/opt/ros/humble /usr/bin/cmake --install /home/remon/ros2_ws/build/my_bot

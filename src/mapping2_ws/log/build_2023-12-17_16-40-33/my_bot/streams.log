@@ -1,0 +1,15 @@
+[0.087s] Invoking command in '/home/remon/ros2_ws/build/my_bot': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/remon/ros2_ws/install/my_py_pkg:/opt/ros/humble /usr/bin/cmake --build /home/remon/ros2_ws/build/my_bot -- -j8 -l8
+[0.979s] Invoked command in '/home/remon/ros2_ws/build/my_bot' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/remon/ros2_ws/install/my_py_pkg:/opt/ros/humble /usr/bin/cmake --build /home/remon/ros2_ws/build/my_bot -- -j8 -l8
+[1.026s] Invoking command in '/home/remon/ros2_ws/build/my_bot': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/remon/ros2_ws/install/my_py_pkg:/opt/ros/humble /usr/bin/cmake --install /home/remon/ros2_ws/build/my_bot
+[1.056s] -- Install configuration: ""
+[1.057s] -- Execute custom install script
+[1.058s] -- Up-to-date symlink: /home/remon/ros2_ws/install/my_bot/share/my_bot/config/empty.yaml
+[1.058s] [31mCMake Error at ament_cmake_symlink_install/ament_cmake_symlink_install.cmake:100 (message):
+[1.058s]   ament_cmake_symlink_install_directory() can't find
+[1.059s]   '/home/remon/ros2_ws/src/my_bot/description'
+[1.059s] Call Stack (most recent call first):
+[1.059s]   ament_cmake_symlink_install/ament_cmake_symlink_install.cmake:314 (ament_cmake_symlink_install_directory)
+[1.059s]   cmake_install.cmake:46 (include)
+[1.059s] 
+[1.059s] [0m
+[1.061s] Invoked command in '/home/remon/ros2_ws/build/my_bot' returned '1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/remon/ros2_ws/install/my_py_pkg:/opt/ros/humble /usr/bin/cmake --install /home/remon/ros2_ws/build/my_bot

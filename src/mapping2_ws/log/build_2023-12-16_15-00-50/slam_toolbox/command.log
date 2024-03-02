@@ -1,0 +1,2 @@
+Invoking command in '/home/remon/ros2_ws/build/slam_toolbox': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/remon/ros2_ws/install/my_py_pkg:/opt/ros/humble /usr/bin/cmake /home/remon/ros2_ws/src/slam_toolbox -DCMAKE_INSTALL_PREFIX=/home/remon/ros2_ws/install/slam_toolbox
+Invoked command in '/home/remon/ros2_ws/build/slam_toolbox' returned '1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/remon/ros2_ws/install/my_py_pkg:/opt/ros/humble /usr/bin/cmake /home/remon/ros2_ws/src/slam_toolbox -DCMAKE_INSTALL_PREFIX=/home/remon/ros2_ws/install/slam_toolbox

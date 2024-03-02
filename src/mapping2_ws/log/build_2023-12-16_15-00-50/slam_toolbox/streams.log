@@ -1,0 +1,53 @@
+[0.050s] Invoking command in '/home/remon/ros2_ws/build/slam_toolbox': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/remon/ros2_ws/install/my_py_pkg:/opt/ros/humble /usr/bin/cmake /home/remon/ros2_ws/src/slam_toolbox -DCMAKE_INSTALL_PREFIX=/home/remon/ros2_ws/install/slam_toolbox
+[0.060s] -- Found ament_cmake: 1.3.5 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.181s] -- Found message_filters: 4.3.3 (/opt/ros/humble/share/message_filters/cmake)
+[0.204s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.206s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.210s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.219s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.232s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.279s] -- Found rmw_implementation_cmake: 6.1.1 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.280s] -- Found rmw_fastrtps_cpp: 6.2.4 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.374s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.502s] -- Found nav_msgs: 4.2.3 (/opt/ros/humble/share/nav_msgs/cmake)
+[0.598s] -- Found sensor_msgs: 4.2.3 (/opt/ros/humble/share/sensor_msgs/cmake)
+[0.664s] -- Found tf2: 0.25.4 (/opt/ros/humble/share/tf2/cmake)
+[0.670s] -- Found tf2_ros: 0.25.4 (/opt/ros/humble/share/tf2_ros/cmake)
+[0.925s] -- Found visualization_msgs: 4.2.3 (/opt/ros/humble/share/visualization_msgs/cmake)
+[1.016s] -- Found pluginlib: 5.1.0 (/opt/ros/humble/share/pluginlib/cmake)
+[1.027s] -- Found tf2_geometry_msgs: 0.25.4 (/opt/ros/humble/share/tf2_geometry_msgs/cmake)
+[1.030s] -- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)
+[1.031s] -- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+[1.038s] -- Found tf2_sensor_msgs: 0.25.4 (/opt/ros/humble/share/tf2_sensor_msgs/cmake)
+[1.054s] -- Found std_srvs: 4.2.3 (/opt/ros/humble/share/std_srvs/cmake)
+[1.066s] -- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)
+[1.072s] -- Found rviz_common: 11.2.8 (/opt/ros/humble/share/rviz_common/cmake)
+[1.081s] -- Setting OGRE_DIR to: '/opt/ros/humble/share/rviz_ogre_vendor/cmake/../../../opt/rviz_ogre_vendor/lib/OGRE/cmake'
+[1.082s] -- Found OGRE
+[1.082s] --   static     : OFF
+[1.082s] --   components : HLMS;MeshLodGenerator;Overlay;Paging;Property;RTShaderSystem;Terrain;Volume
+[1.082s] --   plugins    : Plugin_BSPSceneManager;Plugin_OctreeSceneManager;Plugin_PCZSceneManager;Plugin_ParticleFX;RenderSystem_GL;RenderSystem_GL3Plus;Codec_STBI
+[1.082s] --   media      : /opt/ros/humble/opt/rviz_ogre_vendor/share/OGRE/Media
+[1.082s] -- OGRE_LIBRARIES: OgreHLMS;OgreMeshLodGenerator;OgreOverlay;OgrePaging;OgreProperty;OgreRTShaderSystem;OgreTerrain;OgreVolume;OgreMain
+[1.082s] -- OGRE_LIBRARY_DIRS: /opt/ros/humble/opt/rviz_ogre_vendor/lib
+[1.082s] -- OGRE_PLUGINS: Plugin_BSPSceneManager;Plugin_OctreeSceneManager;Plugin_PCZSceneManager;Plugin_ParticleFX;RenderSystem_GL;RenderSystem_GL3Plus;Codec_STBI
+[1.082s] -- OGRE_PLUGIN_DIR: /opt/ros/humble/opt/rviz_ogre_vendor/lib/OGRE
+[1.082s] -- rviz_ogre_vendor::OgreOverlay for IMPORTED_LOCATION_RELEASE: /opt/ros/humble/opt/rviz_ogre_vendor/lib/libOgreOverlay.so
+[1.083s] -- rviz_ogre_vendor::OgreOverlay for IMPORTED_LOCATION_DEBUG: /opt/ros/humble/opt/rviz_ogre_vendor/lib/libOgreOverlay.so
+[1.083s] -- rviz_ogre_vendor::OgreMain for IMPORTED_LOCATION_RELEASE: /opt/ros/humble/opt/rviz_ogre_vendor/lib/libOgreMain.so
+[1.083s] -- rviz_ogre_vendor::OgreMain for IMPORTED_LOCATION_DEBUG: /opt/ros/humble/opt/rviz_ogre_vendor/lib/libOgreMain.so
+[1.113s] -- rviz_ogre_vendor::RenderSystem_GL for IMPORTED_LOCATION_RELEASE: _render_system_gl_static_library_abs-NOTFOUND
+[1.113s] -- rviz_ogre_vendor::RenderSystem_GL for IMPORTED_LOCATION_DEBUG: _render_system_gl_static_library_abs-NOTFOUND
+[1.133s] -- library: /usr/lib/x86_64-linux-gnu/libcurl.so
+[1.180s] -- Found rviz_default_plugins: 11.2.8 (/opt/ros/humble/share/rviz_default_plugins/cmake)
+[1.442s] [31mCMake Error at /usr/share/cmake-3.22/Modules/FindPackageHandleStandardArgs.cmake:230 (message):
+[1.442s]   Could NOT find CHOLMOD (missing: CHOLMOD_INCLUDE_DIR CHOLMOD_LIBRARIES)
+[1.442s] Call Stack (most recent call first):
+[1.442s]   /usr/share/cmake-3.22/Modules/FindPackageHandleStandardArgs.cmake:594 (_FPHSA_FAILURE_MESSAGE)
+[1.442s]   CMake/FindCHOLMOD.cmake:86 (find_package_handle_standard_args)
+[1.442s]   CMakeLists.txt:78 (find_package)
+[1.442s] 
+[1.442s] [0m
+[1.442s] -- Configuring incomplete, errors occurred!
+[1.442s] See also "/home/remon/ros2_ws/build/slam_toolbox/CMakeFiles/CMakeOutput.log".
+[1.451s] Invoked command in '/home/remon/ros2_ws/build/slam_toolbox' returned '1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/remon/ros2_ws/install/my_py_pkg:/opt/ros/humble /usr/bin/cmake /home/remon/ros2_ws/src/slam_toolbox -DCMAKE_INSTALL_PREFIX=/home/remon/ros2_ws/install/slam_toolbox

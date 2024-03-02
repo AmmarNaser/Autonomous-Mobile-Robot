@@ -1,0 +1,17 @@
+[0.613s] Invoking command in '/home/remon/ros2_ws/build/autonomous_exploration': PYTHONPATH=/home/remon/ros2_ws/build/autonomous_exploration/prefix_override:/home/remon/ros2_ws/install/autonomous_exploration/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/remon/ros2_ws/build/autonomous_exploration/build --no-deps install_data
+[0.823s] running develop
+[0.953s] running egg_info
+[0.953s] writing autonomous_exploration.egg-info/PKG-INFO
+[0.953s] writing dependency_links to autonomous_exploration.egg-info/dependency_links.txt
+[0.953s] writing entry points to autonomous_exploration.egg-info/entry_points.txt
+[0.953s] writing requirements to autonomous_exploration.egg-info/requires.txt
+[0.953s] writing top-level names to autonomous_exploration.egg-info/top_level.txt
+[0.955s] reading manifest file 'autonomous_exploration.egg-info/SOURCES.txt'
+[0.955s] writing manifest file 'autonomous_exploration.egg-info/SOURCES.txt'
+[0.956s] running build_ext
+[0.957s] Creating /home/remon/ros2_ws/install/autonomous_exploration/lib/python3.10/site-packages/autonomous-exploration.egg-link (link to .)
+[0.957s] Installing control script to /home/remon/ros2_ws/install/autonomous_exploration/lib/autonomous_exploration
+[0.957s] 
+[0.958s] Installed /home/remon/ros2_ws/build/autonomous_exploration
+[0.958s] running install_data
+[0.981s] Invoked command in '/home/remon/ros2_ws/build/autonomous_exploration' returned '0': PYTHONPATH=/home/remon/ros2_ws/build/autonomous_exploration/prefix_override:/home/remon/ros2_ws/install/autonomous_exploration/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/remon/ros2_ws/build/autonomous_exploration/build --no-deps install_data

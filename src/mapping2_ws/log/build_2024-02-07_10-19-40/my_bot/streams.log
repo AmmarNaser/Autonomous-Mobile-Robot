@@ -1,0 +1,48 @@
+[0.159s] Invoking command in '/home/remon/ros2_ws/build/my_bot': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/remon/ros2_ws/install/my_py_pkg:/opt/ros/humble /usr/bin/cmake --build /home/remon/ros2_ws/build/my_bot -- -j8 -l8
+[1.331s] -- Found ament_cmake: 1.3.7 (/opt/ros/humble/share/ament_cmake/cmake)
+[2.037s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[2.154s] -- Found ament_lint_auto: 0.12.10 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[2.338s] -- Added test 'copyright' to check source files copyright and LICENSE
+[2.348s] -- Added test 'flake8' to check Python code syntax and style conventions
+[2.348s] -- Added test 'lint_cmake' to check CMake code style
+[2.349s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[2.352s] -- Added test 'xmllint' to check XML markup files
+[2.353s] -- Configuring done
+[2.376s] -- Generating done
+[2.378s] -- Build files have been written to: /home/remon/ros2_ws/build/my_bot
+[2.408s] Invoked command in '/home/remon/ros2_ws/build/my_bot' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/remon/ros2_ws/install/my_py_pkg:/opt/ros/humble /usr/bin/cmake --build /home/remon/ros2_ws/build/my_bot -- -j8 -l8
+[2.445s] Invoking command in '/home/remon/ros2_ws/build/my_bot': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/remon/ros2_ws/install/my_py_pkg:/opt/ros/humble /usr/bin/cmake --install /home/remon/ros2_ws/build/my_bot
+[2.451s] -- Install configuration: ""
+[2.452s] -- Execute custom install script
+[2.452s] -- Up-to-date symlink: /home/remon/ros2_ws/install/my_bot/share/my_bot/config/drive_bot.rviz
+[2.452s] -- Up-to-date symlink: /home/remon/ros2_ws/install/my_bot/share/my_bot/config/empty.yaml
+[2.483s] -- Up-to-date symlink: /home/remon/ros2_ws/install/my_bot/share/my_bot/config/mapper_params_online_async.yaml
+[2.483s] -- Up-to-date symlink: /home/remon/ros2_ws/install/my_bot/share/my_bot/config/view_bot.rviz
+[2.484s] -- Symlinking: /home/remon/ros2_ws/install/my_bot/share/my_bot/description/camera.xacro
+[2.499s] -- Up-to-date symlink: /home/remon/ros2_ws/install/my_bot/share/my_bot/description/gazebo_control.xacro
+[2.508s] -- Up-to-date symlink: /home/remon/ros2_ws/install/my_bot/share/my_bot/description/inertial_macros.xacro
+[2.508s] -- Up-to-date symlink: /home/remon/ros2_ws/install/my_bot/share/my_bot/description/lidar.xacro
+[2.508s] -- Up-to-date symlink: /home/remon/ros2_ws/install/my_bot/share/my_bot/description/robot.urdf.xacro
+[2.509s] -- Up-to-date symlink: /home/remon/ros2_ws/install/my_bot/share/my_bot/description/robot_core.xacro
+[2.509s] -- Up-to-date symlink: /home/remon/ros2_ws/install/my_bot/share/my_bot/launch/launch_sim.launch.py
+[2.509s] -- Up-to-date symlink: /home/remon/ros2_ws/install/my_bot/share/my_bot/launch/rsp.launch.py
+[2.510s] -- Up-to-date symlink: /home/remon/ros2_ws/install/my_bot/share/my_bot/worlds/cone.world
+[2.511s] -- Up-to-date symlink: /home/remon/ros2_ws/install/my_bot/share/my_bot/worlds/empty.world
+[2.511s] -- Up-to-date symlink: /home/remon/ros2_ws/install/my_bot/share/my_bot/worlds/model.sdf
+[2.511s] -- Up-to-date symlink: /home/remon/ros2_ws/install/my_bot/share/my_bot/worlds/my_world.world
+[2.511s] -- Up-to-date symlink: /home/remon/ros2_ws/install/my_bot/share/ament_index/resource_index/package_run_dependencies/my_bot
+[2.545s] -- Up-to-date symlink: /home/remon/ros2_ws/install/my_bot/share/ament_index/resource_index/parent_prefix_path/my_bot
+[2.546s] -- Up-to-date symlink: /home/remon/ros2_ws/install/my_bot/share/my_bot/environment/ament_prefix_path.sh
+[2.546s] -- Up-to-date symlink: /home/remon/ros2_ws/install/my_bot/share/my_bot/environment/ament_prefix_path.dsv
+[2.547s] -- Up-to-date symlink: /home/remon/ros2_ws/install/my_bot/share/my_bot/environment/path.sh
+[2.547s] -- Up-to-date symlink: /home/remon/ros2_ws/install/my_bot/share/my_bot/environment/path.dsv
+[2.547s] -- Up-to-date symlink: /home/remon/ros2_ws/install/my_bot/share/my_bot/local_setup.bash
+[2.548s] -- Up-to-date symlink: /home/remon/ros2_ws/install/my_bot/share/my_bot/local_setup.sh
+[2.549s] -- Up-to-date symlink: /home/remon/ros2_ws/install/my_bot/share/my_bot/local_setup.zsh
+[2.549s] -- Up-to-date symlink: /home/remon/ros2_ws/install/my_bot/share/my_bot/local_setup.dsv
+[2.550s] -- Symlinking: /home/remon/ros2_ws/install/my_bot/share/my_bot/package.dsv
+[2.599s] -- Up-to-date symlink: /home/remon/ros2_ws/install/my_bot/share/ament_index/resource_index/packages/my_bot
+[2.599s] -- Up-to-date symlink: /home/remon/ros2_ws/install/my_bot/share/my_bot/cmake/my_botConfig.cmake
+[2.600s] -- Up-to-date symlink: /home/remon/ros2_ws/install/my_bot/share/my_bot/cmake/my_botConfig-version.cmake
+[2.600s] -- Up-to-date symlink: /home/remon/ros2_ws/install/my_bot/share/my_bot/package.xml
+[2.605s] Invoked command in '/home/remon/ros2_ws/build/my_bot' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/remon/ros2_ws/install/my_py_pkg:/opt/ros/humble /usr/bin/cmake --install /home/remon/ros2_ws/build/my_bot

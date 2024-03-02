@@ -1,0 +1,454 @@
+[0.000000] (-) TimerEvent: {}
+[0.000253] (-) JobUnselected: {'identifier': 'hector_compressed_map_transport'}
+[0.000433] (-) JobUnselected: {'identifier': 'hector_geotiff'}
+[0.000450] (-) JobUnselected: {'identifier': 'hector_geotiff_launch'}
+[0.000464] (-) JobUnselected: {'identifier': 'hector_geotiff_plugins'}
+[0.000476] (-) JobUnselected: {'identifier': 'hector_imu_attitude_to_tf'}
+[0.000488] (-) JobUnselected: {'identifier': 'hector_imu_tools'}
+[0.000500] (-) JobUnselected: {'identifier': 'hector_map_server'}
+[0.000512] (-) JobUnselected: {'identifier': 'hector_map_tools'}
+[0.000523] (-) JobUnselected: {'identifier': 'hector_mapping'}
+[0.000722] (-) JobUnselected: {'identifier': 'hector_marker_drawing'}
+[0.000916] (-) JobUnselected: {'identifier': 'hector_nav_msgs'}
+[0.000957] (-) JobUnselected: {'identifier': 'hector_slam'}
+[0.000974] (-) JobUnselected: {'identifier': 'hector_slam_launch'}
+[0.000988] (-) JobUnselected: {'identifier': 'hector_trajectory_server'}
+[0.001000] (-) JobUnselected: {'identifier': 'my_bot'}
+[0.001011] (-) JobUnselected: {'identifier': 'my_package'}
+[0.001023] (-) JobUnselected: {'identifier': 'rplidar_ros'}
+[0.001037] (slam_toolbox) JobQueued: {'identifier': 'slam_toolbox', 'dependencies': OrderedDict()}
+[0.001053] (slam_toolbox) JobStarted: {'identifier': 'slam_toolbox'}
+[0.053888] (slam_toolbox) JobProgress: {'identifier': 'slam_toolbox', 'progress': 'cmake'}
+[0.055352] (slam_toolbox) JobProgress: {'identifier': 'slam_toolbox', 'progress': 'build'}
+[0.055422] (slam_toolbox) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/remon/ros2_ws/build/slam_toolbox', '--', '-j8', '-l8'], 'cwd': '/home/remon/ros2_ws/build/slam_toolbox', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_AU:en'), ('USER', 'remon'), ('LC_TIME', 'ar_EG.UTF-8'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/remon/ros2_ws/install/rplidar_ros/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/remon'), ('OLDPWD', '/home/remon/ros2_ws/src'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/terminator.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'ar_EG.UTF-8'), ('MANAGERPID', '997'), ('SYSTEMD_EXEC_PID', '1627'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator21a9d5db22c73a993ff0b42f64b396873'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '61576'), ('COLCON_PREFIX_PATH', '/home/remon/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'remon'), ('JOURNAL_STREAM', '8:28246'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'remon'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/remon-Inspiron-3593:@/tmp/.ICE-unix/1602,unix/remon-Inspiron-3593:/tmp/.ICE-unix/1602'), ('INVOCATION_ID', 'fb8b7c92ca5d4c6e842f9a55582173f9'), ('PAPERSIZE', 'a4'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'ar_EG.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_AU.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('LC_TELEPHONE', 'ar_EG.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/remon/ros2_ws/install/sllidar_ros2:/home/remon/ros2_ws/install/rplidar_ros:/home/remon/ros2_ws/install/my_py_pkg:/home/remon/ros2_ws/install/my_cpp_pkg:/home/remon/ros2_ws/install/my_bot:/home/remon/ros2_ws/install/cpp_pkg2:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'ar_EG.UTF-8'), ('TERMINATOR_UUID', 'urn:uuid:194b50d6-608d-4c4a-8952-724c0b99209f'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'ar_EG.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'ar_EG.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/remon/ros2_ws/build/slam_toolbox'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/remon/ros2_ws/build/my_py_pkg:/home/remon/ros2_ws/install/my_py_pkg/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'ar_EG.UTF-8'), ('LC_PAPER', 'ar_EG.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/remon/ros2_ws/install/sllidar_ros2:/home/remon/ros2_ws/install/rplidar_ros:/home/remon/ros2_ws/install/my_cpp_pkg:/home/remon/ros2_ws/install/my_bot:/home/remon/ros2_ws/install/cpp_pkg2:/home/remon/ros2_ws/install/my_py_pkg:/opt/ros/humble')]), 'shell': False}
+[0.099809] (-) TimerEvent: {}
+[0.103461] (slam_toolbox) StdoutLine: {'line': b'[  1%] Built target slam_toolbox__cpp\n'}
+[0.105557] (slam_toolbox) StdoutLine: {'line': b'[ 10%] Built target slam_toolbox__rosidl_generator_c\n'}
+[0.115310] (slam_toolbox) StdoutLine: {'line': b'[ 10%] Built target ament_cmake_python_copy_slam_toolbox\n'}
+[0.125938] (slam_toolbox) StdoutLine: {'line': b'[ 12%] Built target kartoSlamToolbox\n'}
+[0.138981] (slam_toolbox) StdoutLine: {'line': b'[ 30%] Built target slam_toolbox__rosidl_typesupport_introspection_cpp\n'}
+[0.139358] (slam_toolbox) StdoutLine: {'line': b'[ 30%] Built target slam_toolbox__rosidl_typesupport_introspection_c\n'}
+[0.140654] (slam_toolbox) StdoutLine: {'line': b'[ 36%] Built target slam_toolbox__rosidl_typesupport_c\n'}
+[0.141211] (slam_toolbox) StdoutLine: {'line': b'[ 45%] Built target slam_toolbox__rosidl_typesupport_fastrtps_cpp\n'}
+[0.142727] (slam_toolbox) StdoutLine: {'line': b'[ 54%] Built target slam_toolbox__rosidl_typesupport_cpp\n'}
+[0.143526] (slam_toolbox) StdoutLine: {'line': b'[ 62%] Built target slam_toolbox__rosidl_typesupport_fastrtps_c\n'}
+[0.173322] (slam_toolbox) StdoutLine: {'line': b'[ 64%] Built target SlamToolboxPlugin\n'}
+[0.180224] (slam_toolbox) StdoutLine: {'line': b'[ 66%] Built target ceres_solver_plugin\n'}
+[0.191731] (slam_toolbox) StdoutLine: {'line': b'[ 67%] Built target slam_toolbox\n'}
+[0.191931] (slam_toolbox) StdoutLine: {'line': b'[ 71%] Built target toolbox_common\n'}
+[0.199988] (-) TimerEvent: {}
+[0.215837] (slam_toolbox) StdoutLine: {'line': b'[ 71%] Built target slam_toolbox__py\n'}
+[0.243172] (slam_toolbox) StdoutLine: {'line': b'[ 74%] Built target merge_maps_kinematic\n'}
+[0.243416] (slam_toolbox) StdoutLine: {'line': b'[ 74%] Built target localization_slam_toolbox\n'}
+[0.243851] (slam_toolbox) StdoutLine: {'line': b'[ 77%] Built target sync_slam_toolbox\n'}
+[0.244813] (slam_toolbox) StdoutLine: {'line': b'[ 77%] Built target lifelong_slam_toolbox\n'}
+[0.250377] (slam_toolbox) StdoutLine: {'line': b'[ 79%] Built target async_slam_toolbox\n'}
+[0.255949] (slam_toolbox) StdoutLine: {'line': b'[ 87%] Built target slam_toolbox__rosidl_generator_py\n'}
+[0.287242] (slam_toolbox) StdoutLine: {'line': b'[ 88%] Built target slam_toolbox__rosidl_typesupport_fastrtps_c__pyext\n'}
+[0.294549] (slam_toolbox) StdoutLine: {'line': b'[ 90%] Built target slam_toolbox__rosidl_typesupport_introspection_c__pyext\n'}
+[0.300222] (-) TimerEvent: {}
+[0.302506] (slam_toolbox) StdoutLine: {'line': b'[ 92%] Built target localization_slam_toolbox_node\n'}
+[0.304712] (slam_toolbox) StdoutLine: {'line': b'[ 95%] Built target map_and_localization_slam_toolbox\n'}
+[0.305861] (slam_toolbox) StdoutLine: {'line': b'[ 95%] Built target lifelong_slam_toolbox_node\n'}
+[0.306649] (slam_toolbox) StdoutLine: {'line': b'[ 96%] Built target sync_slam_toolbox_node\n'}
+[0.317178] (slam_toolbox) StdoutLine: {'line': b'[ 97%] Built target async_slam_toolbox_node\n'}
+[0.328559] (slam_toolbox) StdoutLine: {'line': b'[ 99%] Built target slam_toolbox__rosidl_typesupport_c__pyext\n'}
+[0.351144] (slam_toolbox) StdoutLine: {'line': b'[100%] Built target map_and_localization_slam_toolbox_node\n'}
+[0.400328] (-) TimerEvent: {}
+[0.416435] (slam_toolbox) StdoutLine: {'line': b'running egg_info\n'}
+[0.417014] (slam_toolbox) StdoutLine: {'line': b'writing slam_toolbox.egg-info/PKG-INFO\n'}
+[0.417275] (slam_toolbox) StdoutLine: {'line': b'writing dependency_links to slam_toolbox.egg-info/dependency_links.txt\n'}
+[0.417450] (slam_toolbox) StdoutLine: {'line': b'writing top-level names to slam_toolbox.egg-info/top_level.txt\n'}
+[0.419339] (slam_toolbox) StdoutLine: {'line': b"reading manifest file 'slam_toolbox.egg-info/SOURCES.txt'\n"}
+[0.419882] (slam_toolbox) StdoutLine: {'line': b"writing manifest file 'slam_toolbox.egg-info/SOURCES.txt'\n"}
+[0.447364] (slam_toolbox) StdoutLine: {'line': b'[100%] Built target ament_cmake_python_build_slam_toolbox_egg\n'}
+[0.457515] (slam_toolbox) CommandEnded: {'returncode': 0}
+[0.500475] (-) TimerEvent: {}
+[0.600743] (-) TimerEvent: {}
+[0.680379] (slam_toolbox) JobProgress: {'identifier': 'slam_toolbox', 'progress': 'install'}
+[0.691304] (slam_toolbox) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/remon/ros2_ws/build/slam_toolbox'], 'cwd': '/home/remon/ros2_ws/build/slam_toolbox', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_AU:en'), ('USER', 'remon'), ('LC_TIME', 'ar_EG.UTF-8'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/remon/ros2_ws/install/rplidar_ros/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/remon'), ('OLDPWD', '/home/remon/ros2_ws/src'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/terminator.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'ar_EG.UTF-8'), ('MANAGERPID', '997'), ('SYSTEMD_EXEC_PID', '1627'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator21a9d5db22c73a993ff0b42f64b396873'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '61576'), ('COLCON_PREFIX_PATH', '/home/remon/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'remon'), ('JOURNAL_STREAM', '8:28246'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'remon'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/remon-Inspiron-3593:@/tmp/.ICE-unix/1602,unix/remon-Inspiron-3593:/tmp/.ICE-unix/1602'), ('INVOCATION_ID', 'fb8b7c92ca5d4c6e842f9a55582173f9'), ('PAPERSIZE', 'a4'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'ar_EG.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_AU.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('LC_TELEPHONE', 'ar_EG.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/remon/ros2_ws/install/sllidar_ros2:/home/remon/ros2_ws/install/rplidar_ros:/home/remon/ros2_ws/install/my_py_pkg:/home/remon/ros2_ws/install/my_cpp_pkg:/home/remon/ros2_ws/install/my_bot:/home/remon/ros2_ws/install/cpp_pkg2:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'ar_EG.UTF-8'), ('TERMINATOR_UUID', 'urn:uuid:194b50d6-608d-4c4a-8952-724c0b99209f'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'ar_EG.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'ar_EG.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/remon/ros2_ws/build/slam_toolbox'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/remon/ros2_ws/build/my_py_pkg:/home/remon/ros2_ws/install/my_py_pkg/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'ar_EG.UTF-8'), ('LC_PAPER', 'ar_EG.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/remon/ros2_ws/install/sllidar_ros2:/home/remon/ros2_ws/install/rplidar_ros:/home/remon/ros2_ws/install/my_cpp_pkg:/home/remon/ros2_ws/install/my_bot:/home/remon/ros2_ws/install/cpp_pkg2:/home/remon/ros2_ws/install/my_py_pkg:/opt/ros/humble')]), 'shell': False}
+[0.700006] (slam_toolbox) StdoutLine: {'line': b'-- Install configuration: "Release"\n'}
+[0.700259] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/remon/ros2_ws/install/slam_toolbox/share/ament_index/resource_index/rosidl_interfaces/slam_toolbox\n'}
+[0.700356] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/remon/ros2_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox\n'}
+[0.700483] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/remon/ros2_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv\n'}
+[0.700749] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/remon/ros2_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/merge_maps.h\n'}
+[0.700859] (-) TimerEvent: {}
+[0.701073] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/remon/ros2_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/toggle_interactive.h\n'}
+[0.701223] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/remon/ros2_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail\n'}
+[0.701332] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/remon/ros2_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/pause__struct.h\n'}
+[0.701402] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/remon/ros2_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/clear__struct.h\n'}
+[0.701471] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/remon/ros2_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/save_map__struct.h\n'}
+[0.701538] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/remon/ros2_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/toggle_interactive__type_support.h\n'}
+[0.701635] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/remon/ros2_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/deserialize_pose_graph__struct.h\n'}
+[0.701710] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/remon/ros2_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/clear__functions.h\n'}
+[0.701778] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/remon/ros2_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/loop_closure__type_support.h\n'}
+[0.701847] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/remon/ros2_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/toggle_interactive__struct.h\n'}
+[0.701915] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/remon/ros2_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/toggle_interactive__functions.h\n'}
+[0.701983] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/remon/ros2_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/serialize_pose_graph__functions.c\n'}
+[0.702052] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/remon/ros2_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/loop_closure__functions.h\n'}
+[0.702120] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/remon/ros2_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/save_map__type_support.h\n'}
+[0.702189] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/remon/ros2_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/loop_closure__functions.c\n'}
+[0.702458] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/remon/ros2_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/deserialize_pose_graph__functions.c\n'}
+[0.702529] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/remon/ros2_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/loop_closure__struct.h\n'}
+[0.702598] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/remon/ros2_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/deserialize_pose_graph__type_support.h\n'}
+[0.702697] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/remon/ros2_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/serialize_pose_graph__struct.h\n'}
+[0.702768] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/remon/ros2_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/add_submap__functions.c\n'}
+[0.702834] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/remon/ros2_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/clear__type_support.h\n'}
+[0.702903] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/remon/ros2_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/toggle_interactive__functions.c\n'}
+[0.702972] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/remon/ros2_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/add_submap__functions.h\n'}
+[0.703038] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/remon/ros2_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/deserialize_pose_graph__functions.h\n'}
+[0.703106] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/remon/ros2_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/merge_maps__struct.h\n'}
+[0.703175] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/remon/ros2_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/clear_queue__functions.c\n'}
+[0.703244] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/remon/ros2_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/save_map__functions.h\n'}
+[0.703336] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/remon/ros2_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/clear_queue__functions.h\n'}
+[0.703427] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/remon/ros2_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/clear__functions.c\n'}
+[0.703519] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/remon/ros2_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/clear_queue__type_support.h\n'}
+[0.703667] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/remon/ros2_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/clear_queue__struct.h\n'}
+[0.703752] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/remon/ros2_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/pause__type_support.h\n'}
+[0.703836] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/remon/ros2_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/pause__functions.c\n'}
+[0.703919] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/remon/ros2_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/serialize_pose_graph__functions.h\n'}
+[0.704000] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/remon/ros2_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/serialize_pose_graph__type_support.h\n'}
+[0.704095] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/remon/ros2_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/add_submap__struct.h\n'}
+[0.704326] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/remon/ros2_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/pause__functions.h\n'}
+[0.704405] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/remon/ros2_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/add_submap__type_support.h\n'}
+[0.704499] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/remon/ros2_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/merge_maps__functions.c\n'}
+[0.704579] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/remon/ros2_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/save_map__functions.c\n'}
+[0.704808] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/remon/ros2_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/merge_maps__functions.h\n'}
+[0.704930] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/remon/ros2_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/merge_maps__type_support.h\n'}
+[0.704989] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/remon/ros2_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/save_map.h\n'}
+[0.705042] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/remon/ros2_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/clear_queue.h\n'}
+[0.705095] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/remon/ros2_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/pause.h\n'}
+[0.705143] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/remon/ros2_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/add_submap.h\n'}
+[0.705192] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/remon/ros2_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/loop_closure.h\n'}
+[0.705242] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/remon/ros2_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/serialize_pose_graph.h\n'}
+[0.705387] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/remon/ros2_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/clear.h\n'}
+[0.705452] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/remon/ros2_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/deserialize_pose_graph.h\n'}
+[0.705514] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/remon/ros2_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/msg\n'}
+[0.705576] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/remon/ros2_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/msg/rosidl_generator_c__visibility_control.h\n'}
+[0.705637] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/remon/ros2_ws/install/slam_toolbox/share/slam_toolbox/environment/library_path.sh\n'}
+[0.705686] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/remon/ros2_ws/install/slam_toolbox/share/slam_toolbox/environment/library_path.dsv\n'}
+[0.705737] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/remon/ros2_ws/install/slam_toolbox/lib/libslam_toolbox__rosidl_generator_c.so\n'}
+[0.705787] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/remon/ros2_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox\n'}
+[0.705835] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/remon/ros2_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv\n'}
+[0.705883] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/remon/ros2_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail\n'}
+[0.705936] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/remon/ros2_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/toggle_interactive__rosidl_typesupport_fastrtps_c.h\n'}
+[0.705985] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/remon/ros2_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/add_submap__rosidl_typesupport_fastrtps_c.h\n'}
+[0.706038] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/remon/ros2_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/merge_maps__rosidl_typesupport_fastrtps_c.h\n'}
+[0.706092] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/remon/ros2_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/clear_queue__rosidl_typesupport_fastrtps_c.h\n'}
+[0.706150] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/remon/ros2_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/serialize_pose_graph__rosidl_typesupport_fastrtps_c.h\n'}
+[0.706206] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/remon/ros2_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/clear__rosidl_typesupport_fastrtps_c.h\n'}
+[0.706255] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/remon/ros2_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/pause__rosidl_typesupport_fastrtps_c.h\n'}
+[0.706337] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/remon/ros2_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/deserialize_pose_graph__rosidl_typesupport_fastrtps_c.h\n'}
+[0.706389] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/remon/ros2_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/loop_closure__rosidl_typesupport_fastrtps_c.h\n'}
+[0.706558] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/remon/ros2_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/save_map__rosidl_typesupport_fastrtps_c.h\n'}
+[0.706621] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/remon/ros2_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/msg\n'}
+[0.706677] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/remon/ros2_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[0.706735] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/remon/ros2_ws/install/slam_toolbox/lib/libslam_toolbox__rosidl_typesupport_fastrtps_c.so\n'}
+[0.706795] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/remon/ros2_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox\n'}
+[0.706853] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/remon/ros2_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv\n'}
+[0.706911] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/remon/ros2_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/add_submap.hpp\n'}
+[0.706970] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/remon/ros2_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/clear.hpp\n'}
+[0.707028] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/remon/ros2_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/loop_closure.hpp\n'}
+[0.707079] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/remon/ros2_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/pause.hpp\n'}
+[0.707126] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/remon/ros2_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/merge_maps.hpp\n'}
+[0.707173] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/remon/ros2_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail\n'}
+[0.707220] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/remon/ros2_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/loop_closure__builder.hpp\n'}
+[0.707267] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/remon/ros2_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/toggle_interactive__traits.hpp\n'}
+[0.707314] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/remon/ros2_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/clear_queue__traits.hpp\n'}
+[0.707391] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/remon/ros2_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/add_submap__struct.hpp\n'}
+[0.707441] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/remon/ros2_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/add_submap__builder.hpp\n'}
+[0.707502] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/remon/ros2_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/clear__traits.hpp\n'}
+[0.707550] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/remon/ros2_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/pause__builder.hpp\n'}
+[0.707597] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/remon/ros2_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/toggle_interactive__struct.hpp\n'}
+[0.708014] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/remon/ros2_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/deserialize_pose_graph__builder.hpp\n'}
+[0.708066] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/remon/ros2_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/merge_maps__traits.hpp\n'}
+[0.708118] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/remon/ros2_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/pause__traits.hpp\n'}
+[0.708162] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/remon/ros2_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/toggle_interactive__builder.hpp\n'}
+[0.708205] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/remon/ros2_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/loop_closure__struct.hpp\n'}
+[0.708249] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/remon/ros2_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/save_map__struct.hpp\n'}
+[0.708296] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/remon/ros2_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/clear__builder.hpp\n'}
+[0.708339] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/remon/ros2_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/deserialize_pose_graph__traits.hpp\n'}
+[0.708381] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/remon/ros2_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/clear_queue__struct.hpp\n'}
+[0.708423] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/remon/ros2_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/serialize_pose_graph__traits.hpp\n'}
+[0.708466] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/remon/ros2_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/serialize_pose_graph__builder.hpp\n'}
+[0.708508] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/remon/ros2_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/deserialize_pose_graph__struct.hpp\n'}
+[0.708555] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/remon/ros2_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/add_submap__traits.hpp\n'}
+[0.708735] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/remon/ros2_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/pause__struct.hpp\n'}
+[0.708790] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/remon/ros2_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/clear_queue__builder.hpp\n'}
+[0.708837] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/remon/ros2_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/merge_maps__struct.hpp\n'}
+[0.708880] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/remon/ros2_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/merge_maps__builder.hpp\n'}
+[0.708927] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/remon/ros2_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/save_map__traits.hpp\n'}
+[0.708970] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/remon/ros2_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/loop_closure__traits.hpp\n'}
+[0.709014] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/remon/ros2_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/serialize_pose_graph__struct.hpp\n'}
+[0.709067] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/remon/ros2_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/save_map__builder.hpp\n'}
+[0.709112] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/remon/ros2_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/clear__struct.hpp\n'}
+[0.709155] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/remon/ros2_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/clear_queue.hpp\n'}
+[0.709199] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/remon/ros2_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/save_map.hpp\n'}
+[0.709249] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/remon/ros2_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/serialize_pose_graph.hpp\n'}
+[0.709292] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/remon/ros2_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/deserialize_pose_graph.hpp\n'}
+[0.709334] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/remon/ros2_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/toggle_interactive.hpp\n'}
+[0.709377] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/remon/ros2_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox\n'}
+[0.709426] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/remon/ros2_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv\n'}
+[0.709470] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/remon/ros2_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail\n'}
+[0.709512] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/remon/ros2_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/dds_fastrtps\n'}
+[0.709555] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/remon/ros2_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/serialize_pose_graph__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[0.709599] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/remon/ros2_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/add_submap__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[0.709642] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/remon/ros2_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/deserialize_pose_graph__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[0.709685] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/remon/ros2_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/save_map__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[0.709729] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/remon/ros2_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/merge_maps__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[0.709772] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/remon/ros2_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/pause__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[0.709814] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/remon/ros2_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/clear_queue__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[0.709856] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/remon/ros2_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/loop_closure__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[0.709899] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/remon/ros2_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/toggle_interactive__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[0.709942] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/remon/ros2_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/clear__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[0.709989] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/remon/ros2_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/msg\n'}
+[0.710041] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/remon/ros2_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[0.710084] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/remon/ros2_ws/install/slam_toolbox/lib/libslam_toolbox__rosidl_typesupport_fastrtps_cpp.so\n'}
+[0.710126] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/remon/ros2_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox\n'}
+[0.710169] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/remon/ros2_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv\n'}
+[0.710211] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/remon/ros2_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail\n'}
+[0.710257] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/remon/ros2_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/add_submap__type_support.c\n'}
+[0.710300] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/remon/ros2_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/clear__type_support.c\n'}
+[0.710343] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/remon/ros2_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/toggle_interactive__rosidl_typesupport_introspection_c.h\n'}
+[0.710386] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/remon/ros2_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/pause__type_support.c\n'}
+[0.710428] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/remon/ros2_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/toggle_interactive__type_support.c\n'}
+[0.710470] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/remon/ros2_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/loop_closure__type_support.c\n'}
+[0.710513] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/remon/ros2_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/deserialize_pose_graph__rosidl_typesupport_introspection_c.h\n'}
+[0.710555] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/remon/ros2_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/clear_queue__rosidl_typesupport_introspection_c.h\n'}
+[0.710598] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/remon/ros2_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/clear_queue__type_support.c\n'}
+[0.710638] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/remon/ros2_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/serialize_pose_graph__rosidl_typesupport_introspection_c.h\n'}
+[0.710679] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/remon/ros2_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/merge_maps__rosidl_typesupport_introspection_c.h\n'}
+[0.710721] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/remon/ros2_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/add_submap__rosidl_typesupport_introspection_c.h\n'}
+[0.710769] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/remon/ros2_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/deserialize_pose_graph__type_support.c\n'}
+[0.710812] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/remon/ros2_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/loop_closure__rosidl_typesupport_introspection_c.h\n'}
+[0.710855] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/remon/ros2_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/merge_maps__type_support.c\n'}
+[0.710897] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/remon/ros2_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/save_map__rosidl_typesupport_introspection_c.h\n'}
+[0.710940] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/remon/ros2_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/save_map__type_support.c\n'}
+[0.710982] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/remon/ros2_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/clear__rosidl_typesupport_introspection_c.h\n'}
+[0.711024] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/remon/ros2_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/serialize_pose_graph__type_support.c\n'}
+[0.711065] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/remon/ros2_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/pause__rosidl_typesupport_introspection_c.h\n'}
+[0.711108] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/remon/ros2_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/msg\n'}
+[0.711153] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/remon/ros2_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[0.711203] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/remon/ros2_ws/install/slam_toolbox/lib/libslam_toolbox__rosidl_typesupport_introspection_c.so\n'}
+[0.711247] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/remon/ros2_ws/install/slam_toolbox/lib/libslam_toolbox__rosidl_typesupport_c.so\n'}
+[0.711293] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/remon/ros2_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox\n'}
+[0.711337] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/remon/ros2_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv\n'}
+[0.711380] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/remon/ros2_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail\n'}
+[0.711423] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/remon/ros2_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/merge_maps__type_support.cpp\n'}
+[0.711467] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/remon/ros2_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/loop_closure__type_support.cpp\n'}
+[0.711510] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/remon/ros2_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/serialize_pose_graph__type_support.cpp\n'}
+[0.711555] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/remon/ros2_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/toggle_interactive__rosidl_typesupport_introspection_cpp.hpp\n'}
+[0.711599] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/remon/ros2_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/toggle_interactive__type_support.cpp\n'}
+[0.711644] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/remon/ros2_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/deserialize_pose_graph__rosidl_typesupport_introspection_cpp.hpp\n'}
+[0.711687] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/remon/ros2_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/pause__rosidl_typesupport_introspection_cpp.hpp\n'}
+[0.711730] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/remon/ros2_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/clear_queue__rosidl_typesupport_introspection_cpp.hpp\n'}
+[0.711808] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/remon/ros2_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/serialize_pose_graph__rosidl_typesupport_introspection_cpp.hpp\n'}
+[0.711864] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/remon/ros2_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/deserialize_pose_graph__type_support.cpp\n'}
+[0.711910] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/remon/ros2_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/add_submap__type_support.cpp\n'}
+[0.711969] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/remon/ros2_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/clear_queue__type_support.cpp\n'}
+[0.712016] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/remon/ros2_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/loop_closure__rosidl_typesupport_introspection_cpp.hpp\n'}
+[0.712079] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/remon/ros2_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/save_map__rosidl_typesupport_introspection_cpp.hpp\n'}
+[0.712129] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/remon/ros2_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/clear__type_support.cpp\n'}
+[0.712201] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/remon/ros2_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/pause__type_support.cpp\n'}
+[0.712250] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/remon/ros2_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/merge_maps__rosidl_typesupport_introspection_cpp.hpp\n'}
+[0.712301] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/remon/ros2_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/clear__rosidl_typesupport_introspection_cpp.hpp\n'}
+[0.712379] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/remon/ros2_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/add_submap__rosidl_typesupport_introspection_cpp.hpp\n'}
+[0.712433] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/remon/ros2_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox/srv/detail/save_map__type_support.cpp\n'}
+[0.712477] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/remon/ros2_ws/install/slam_toolbox/lib/libslam_toolbox__rosidl_typesupport_introspection_cpp.so\n'}
+[0.712534] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/remon/ros2_ws/install/slam_toolbox/lib/libslam_toolbox__rosidl_typesupport_cpp.so\n'}
+[0.712608] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/remon/ros2_ws/install/slam_toolbox/share/slam_toolbox/environment/pythonpath.sh\n'}
+[0.712659] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/remon/ros2_ws/install/slam_toolbox/share/slam_toolbox/environment/pythonpath.dsv\n'}
+[0.712703] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/remon/ros2_ws/install/slam_toolbox/local/lib/python3.10/dist-packages/slam_toolbox-2.7.0-py3.10.egg-info\n'}
+[0.712746] (slam_toolbox) StdoutLine: {'line': b'-- Installing: /home/remon/ros2_ws/install/slam_toolbox/local/lib/python3.10/dist-packages/slam_toolbox-2.7.0-py3.10.egg-info/top_level.txt\n'}
+[0.712794] (slam_toolbox) StdoutLine: {'line': b'-- Installing: /home/remon/ros2_ws/install/slam_toolbox/local/lib/python3.10/dist-packages/slam_toolbox-2.7.0-py3.10.egg-info/PKG-INFO\n'}
+[0.712838] (slam_toolbox) StdoutLine: {'line': b'-- Installing: /home/remon/ros2_ws/install/slam_toolbox/local/lib/python3.10/dist-packages/slam_toolbox-2.7.0-py3.10.egg-info/dependency_links.txt\n'}
+[0.712881] (slam_toolbox) StdoutLine: {'line': b'-- Installing: /home/remon/ros2_ws/install/slam_toolbox/local/lib/python3.10/dist-packages/slam_toolbox-2.7.0-py3.10.egg-info/SOURCES.txt\n'}
+[0.712937] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/remon/ros2_ws/install/slam_toolbox/local/lib/python3.10/dist-packages/slam_toolbox\n'}
+[0.712999] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/remon/ros2_ws/install/slam_toolbox/local/lib/python3.10/dist-packages/slam_toolbox/slam_toolbox_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[0.713042] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/remon/ros2_ws/install/slam_toolbox/local/lib/python3.10/dist-packages/slam_toolbox/__init__.py\n'}
+[0.713085] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/remon/ros2_ws/install/slam_toolbox/local/lib/python3.10/dist-packages/slam_toolbox/_slam_toolbox_s.ep.rosidl_typesupport_introspection_c.c\n'}
+[0.713127] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/remon/ros2_ws/install/slam_toolbox/local/lib/python3.10/dist-packages/slam_toolbox/srv\n'}
+[0.713169] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/remon/ros2_ws/install/slam_toolbox/local/lib/python3.10/dist-packages/slam_toolbox/srv/_toggle_interactive.py\n'}
+[0.713211] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/remon/ros2_ws/install/slam_toolbox/local/lib/python3.10/dist-packages/slam_toolbox/srv/__init__.py\n'}
+[0.713254] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/remon/ros2_ws/install/slam_toolbox/local/lib/python3.10/dist-packages/slam_toolbox/srv/_loop_closure.py\n'}
+[0.713296] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/remon/ros2_ws/install/slam_toolbox/local/lib/python3.10/dist-packages/slam_toolbox/srv/_clear_s.c\n'}
+[0.713339] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/remon/ros2_ws/install/slam_toolbox/local/lib/python3.10/dist-packages/slam_toolbox/srv/_save_map_s.c\n'}
+[0.713385] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/remon/ros2_ws/install/slam_toolbox/local/lib/python3.10/dist-packages/slam_toolbox/srv/_clear_queue.py\n'}
+[0.713428] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/remon/ros2_ws/install/slam_toolbox/local/lib/python3.10/dist-packages/slam_toolbox/srv/_add_submap.py\n'}
+[0.713470] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/remon/ros2_ws/install/slam_toolbox/local/lib/python3.10/dist-packages/slam_toolbox/srv/_merge_maps.py\n'}
+[0.713513] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/remon/ros2_ws/install/slam_toolbox/local/lib/python3.10/dist-packages/slam_toolbox/srv/_loop_closure_s.c\n'}
+[0.713556] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/remon/ros2_ws/install/slam_toolbox/local/lib/python3.10/dist-packages/slam_toolbox/srv/_add_submap_s.c\n'}
+[0.713598] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/remon/ros2_ws/install/slam_toolbox/local/lib/python3.10/dist-packages/slam_toolbox/srv/_toggle_interactive_s.c\n'}
+[0.713641] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/remon/ros2_ws/install/slam_toolbox/local/lib/python3.10/dist-packages/slam_toolbox/srv/_clear_queue_s.c\n'}
+[0.713683] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/remon/ros2_ws/install/slam_toolbox/local/lib/python3.10/dist-packages/slam_toolbox/srv/_serialize_pose_graph.py\n'}
+[0.713734] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/remon/ros2_ws/install/slam_toolbox/local/lib/python3.10/dist-packages/slam_toolbox/srv/_save_map.py\n'}
+[0.713777] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/remon/ros2_ws/install/slam_toolbox/local/lib/python3.10/dist-packages/slam_toolbox/srv/_deserialize_pose_graph.py\n'}
+[0.713820] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/remon/ros2_ws/install/slam_toolbox/local/lib/python3.10/dist-packages/slam_toolbox/srv/_pause.py\n'}
+[0.713864] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/remon/ros2_ws/install/slam_toolbox/local/lib/python3.10/dist-packages/slam_toolbox/srv/_deserialize_pose_graph_s.c\n'}
+[0.713906] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/remon/ros2_ws/install/slam_toolbox/local/lib/python3.10/dist-packages/slam_toolbox/srv/_merge_maps_s.c\n'}
+[0.713948] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/remon/ros2_ws/install/slam_toolbox/local/lib/python3.10/dist-packages/slam_toolbox/srv/_serialize_pose_graph_s.c\n'}
+[0.713990] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/remon/ros2_ws/install/slam_toolbox/local/lib/python3.10/dist-packages/slam_toolbox/srv/_pause_s.c\n'}
+[0.714038] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/remon/ros2_ws/install/slam_toolbox/local/lib/python3.10/dist-packages/slam_toolbox/srv/_clear.py\n'}
+[0.714083] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/remon/ros2_ws/install/slam_toolbox/local/lib/python3.10/dist-packages/slam_toolbox/_slam_toolbox_s.ep.rosidl_typesupport_fastrtps_c.c\n'}
+[0.714130] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/remon/ros2_ws/install/slam_toolbox/local/lib/python3.10/dist-packages/slam_toolbox/slam_toolbox_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[0.714176] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/remon/ros2_ws/install/slam_toolbox/local/lib/python3.10/dist-packages/slam_toolbox/_slam_toolbox_s.ep.rosidl_typesupport_c.c\n'}
+[0.714219] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/remon/ros2_ws/install/slam_toolbox/local/lib/python3.10/dist-packages/slam_toolbox/slam_toolbox_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[0.714263] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/remon/ros2_ws/install/slam_toolbox/local/lib/python3.10/dist-packages/slam_toolbox/libslam_toolbox__rosidl_generator_py.so\n'}
+[0.734674] (slam_toolbox) StdoutLine: {'line': b"Listing '/home/remon/ros2_ws/install/slam_toolbox/local/lib/python3.10/dist-packages/slam_toolbox'...\n"}
+[0.734851] (slam_toolbox) StdoutLine: {'line': b"Listing '/home/remon/ros2_ws/install/slam_toolbox/local/lib/python3.10/dist-packages/slam_toolbox/srv'...\n"}
+[0.738657] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/remon/ros2_ws/install/slam_toolbox/local/lib/python3.10/dist-packages/slam_toolbox/slam_toolbox_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[0.738851] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/remon/ros2_ws/install/slam_toolbox/local/lib/python3.10/dist-packages/slam_toolbox/slam_toolbox_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[0.738974] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/remon/ros2_ws/install/slam_toolbox/local/lib/python3.10/dist-packages/slam_toolbox/slam_toolbox_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[0.739155] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/remon/ros2_ws/install/slam_toolbox/lib/libslam_toolbox__rosidl_generator_py.so\n'}
+[0.739294] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/remon/ros2_ws/install/slam_toolbox/share/slam_toolbox/srv/Pause.idl\n'}
+[0.739360] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/remon/ros2_ws/install/slam_toolbox/share/slam_toolbox/srv/ClearQueue.idl\n'}
+[0.739433] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/remon/ros2_ws/install/slam_toolbox/share/slam_toolbox/srv/ToggleInteractive.idl\n'}
+[0.739522] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/remon/ros2_ws/install/slam_toolbox/share/slam_toolbox/srv/Clear.idl\n'}
+[0.739573] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/remon/ros2_ws/install/slam_toolbox/share/slam_toolbox/srv/SaveMap.idl\n'}
+[0.739621] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/remon/ros2_ws/install/slam_toolbox/share/slam_toolbox/srv/LoopClosure.idl\n'}
+[0.739668] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/remon/ros2_ws/install/slam_toolbox/share/slam_toolbox/srv/MergeMaps.idl\n'}
+[0.739738] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/remon/ros2_ws/install/slam_toolbox/share/slam_toolbox/srv/AddSubmap.idl\n'}
+[0.739841] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/remon/ros2_ws/install/slam_toolbox/share/slam_toolbox/srv/DeserializePoseGraph.idl\n'}
+[0.739893] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/remon/ros2_ws/install/slam_toolbox/share/slam_toolbox/srv/SerializePoseGraph.idl\n'}
+[0.739940] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/remon/ros2_ws/install/slam_toolbox/share/slam_toolbox/srvs/Pause.srv\n'}
+[0.739987] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/remon/ros2_ws/install/slam_toolbox/share/slam_toolbox/srvs/Pause_Request.msg\n'}
+[0.740034] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/remon/ros2_ws/install/slam_toolbox/share/slam_toolbox/srvs/Pause_Response.msg\n'}
+[0.740080] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/remon/ros2_ws/install/slam_toolbox/share/slam_toolbox/srvs/ClearQueue.srv\n'}
+[0.740126] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/remon/ros2_ws/install/slam_toolbox/share/slam_toolbox/srvs/ClearQueue_Request.msg\n'}
+[0.740250] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/remon/ros2_ws/install/slam_toolbox/share/slam_toolbox/srvs/ClearQueue_Response.msg\n'}
+[0.740301] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/remon/ros2_ws/install/slam_toolbox/share/slam_toolbox/srvs/ToggleInteractive.srv\n'}
+[0.740348] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/remon/ros2_ws/install/slam_toolbox/share/slam_toolbox/srvs/ToggleInteractive_Request.msg\n'}
+[0.740394] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/remon/ros2_ws/install/slam_toolbox/share/slam_toolbox/srvs/ToggleInteractive_Response.msg\n'}
+[0.740440] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/remon/ros2_ws/install/slam_toolbox/share/slam_toolbox/srvs/Clear.srv\n'}
+[0.740533] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/remon/ros2_ws/install/slam_toolbox/share/slam_toolbox/srvs/Clear_Request.msg\n'}
+[0.740643] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/remon/ros2_ws/install/slam_toolbox/share/slam_toolbox/srvs/Clear_Response.msg\n'}
+[0.740721] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/remon/ros2_ws/install/slam_toolbox/share/slam_toolbox/srvs/SaveMap.srv\n'}
+[0.740772] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/remon/ros2_ws/install/slam_toolbox/share/slam_toolbox/srvs/SaveMap_Request.msg\n'}
+[0.740819] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/remon/ros2_ws/install/slam_toolbox/share/slam_toolbox/srvs/SaveMap_Response.msg\n'}
+[0.740865] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/remon/ros2_ws/install/slam_toolbox/share/slam_toolbox/srvs/LoopClosure.srv\n'}
+[0.740912] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/remon/ros2_ws/install/slam_toolbox/share/slam_toolbox/srvs/LoopClosure_Request.msg\n'}
+[0.740958] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/remon/ros2_ws/install/slam_toolbox/share/slam_toolbox/srvs/LoopClosure_Response.msg\n'}
+[0.741003] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/remon/ros2_ws/install/slam_toolbox/share/slam_toolbox/srvs/MergeMaps.srv\n'}
+[0.741050] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/remon/ros2_ws/install/slam_toolbox/share/slam_toolbox/srvs/MergeMaps_Request.msg\n'}
+[0.741099] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/remon/ros2_ws/install/slam_toolbox/share/slam_toolbox/srvs/MergeMaps_Response.msg\n'}
+[0.741145] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/remon/ros2_ws/install/slam_toolbox/share/slam_toolbox/srvs/AddSubmap.srv\n'}
+[0.741191] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/remon/ros2_ws/install/slam_toolbox/share/slam_toolbox/srvs/AddSubmap_Request.msg\n'}
+[0.741238] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/remon/ros2_ws/install/slam_toolbox/share/slam_toolbox/srvs/AddSubmap_Response.msg\n'}
+[0.741285] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/remon/ros2_ws/install/slam_toolbox/share/slam_toolbox/srvs/DeserializePoseGraph.srv\n'}
+[0.741332] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/remon/ros2_ws/install/slam_toolbox/share/slam_toolbox/srvs/DeserializePoseGraph_Request.msg\n'}
+[0.741458] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/remon/ros2_ws/install/slam_toolbox/share/slam_toolbox/srvs/DeserializePoseGraph_Response.msg\n'}
+[0.741510] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/remon/ros2_ws/install/slam_toolbox/share/slam_toolbox/srvs/SerializePoseGraph.srv\n'}
+[0.741557] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/remon/ros2_ws/install/slam_toolbox/share/slam_toolbox/srvs/SerializePoseGraph_Request.msg\n'}
+[0.741604] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/remon/ros2_ws/install/slam_toolbox/share/slam_toolbox/srvs/SerializePoseGraph_Response.msg\n'}
+[0.741648] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/remon/ros2_ws/install/slam_toolbox/share/slam_toolbox/rviz_plugins.xml\n'}
+[0.741694] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/remon/ros2_ws/install/slam_toolbox/share/slam_toolbox/solver_plugins.xml\n'}
+[0.741740] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/remon/ros2_ws/install/slam_toolbox/lib/slam_toolbox/async_slam_toolbox_node\n'}
+[0.741787] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/remon/ros2_ws/install/slam_toolbox/lib/slam_toolbox/sync_slam_toolbox_node\n'}
+[0.741870] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/remon/ros2_ws/install/slam_toolbox/lib/slam_toolbox/localization_slam_toolbox_node\n'}
+[0.741919] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/remon/ros2_ws/install/slam_toolbox/lib/slam_toolbox/map_and_localization_slam_toolbox_node\n'}
+[0.741990] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/remon/ros2_ws/install/slam_toolbox/lib/slam_toolbox/merge_maps_kinematic\n'}
+[0.742160] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/remon/ros2_ws/install/slam_toolbox/lib/libtoolbox_common.so\n'}
+[0.742365] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/remon/ros2_ws/install/slam_toolbox/lib/libSlamToolboxPlugin.so\n'}
+[0.742567] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/remon/ros2_ws/install/slam_toolbox/lib/libceres_solver_plugin.so\n'}
+[0.742769] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/remon/ros2_ws/install/slam_toolbox/lib/libasync_slam_toolbox.so\n'}
+[0.742981] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/remon/ros2_ws/install/slam_toolbox/lib/libsync_slam_toolbox.so\n'}
+[0.743167] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/remon/ros2_ws/install/slam_toolbox/lib/liblocalization_slam_toolbox.so\n'}
+[0.743411] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/remon/ros2_ws/install/slam_toolbox/lib/liblifelong_slam_toolbox.so\n'}
+[0.743634] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/remon/ros2_ws/install/slam_toolbox/lib/libmap_and_localization_slam_toolbox.so\n'}
+[0.743892] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/remon/ros2_ws/install/slam_toolbox/lib/libkartoSlamToolbox.so\n'}
+[0.744223] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/remon/ros2_ws/install/slam_toolbox/lib/libSlamToolboxPlugin.so\n'}
+[0.744402] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/remon/ros2_ws/install/slam_toolbox/include\n'}
+[0.744501] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/remon/ros2_ws/install/slam_toolbox/include/slam_toolbox\n'}
+[0.744621] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/remon/ros2_ws/install/slam_toolbox/include/slam_toolbox/laser_utils.hpp\n'}
+[0.744844] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/remon/ros2_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox_common.hpp\n'}
+[0.744933] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/remon/ros2_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox_async.hpp\n'}
+[0.745032] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/remon/ros2_ws/install/slam_toolbox/include/slam_toolbox/snap_utils.hpp\n'}
+[0.745094] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/remon/ros2_ws/install/slam_toolbox/include/slam_toolbox/toolbox_msgs.hpp\n'}
+[0.745144] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/remon/ros2_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox_localization.hpp\n'}
+[0.745202] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/remon/ros2_ws/install/slam_toolbox/include/slam_toolbox/toolbox_types.hpp\n'}
+[0.745256] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/remon/ros2_ws/install/slam_toolbox/include/slam_toolbox/loop_closure_assistant.hpp\n'}
+[0.745308] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/remon/ros2_ws/install/slam_toolbox/include/slam_toolbox/merge_maps_kinematic.hpp\n'}
+[0.745362] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/remon/ros2_ws/install/slam_toolbox/include/slam_toolbox/slam_toolbox_sync.hpp\n'}
+[0.745417] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/remon/ros2_ws/install/slam_toolbox/include/slam_toolbox/get_pose_helper.hpp\n'}
+[0.745493] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/remon/ros2_ws/install/slam_toolbox/include/slam_toolbox/experimental\n'}
+[0.745576] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/remon/ros2_ws/install/slam_toolbox/include/slam_toolbox/experimental/slam_toolbox_map_and_localization.hpp\n'}
+[0.745626] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/remon/ros2_ws/install/slam_toolbox/include/slam_toolbox/experimental/slam_toolbox_lifelong.hpp\n'}
+[0.745674] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/remon/ros2_ws/install/slam_toolbox/include/slam_toolbox/slam_mapper.hpp\n'}
+[0.745722] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/remon/ros2_ws/install/slam_toolbox/include/slam_toolbox/visualization_utils.hpp\n'}
+[0.745860] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/remon/ros2_ws/install/slam_toolbox/include/slam_toolbox/serialization.hpp\n'}
+[0.745908] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/remon/ros2_ws/install/slam_toolbox/include/slam_toolbox/map_saver.hpp\n'}
+[0.745955] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/remon/ros2_ws/install/slam_toolbox/share/slam_toolbox/launch\n'}
+[0.746001] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/remon/ros2_ws/install/slam_toolbox/share/slam_toolbox/launch/offline_launch.py\n'}
+[0.746045] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/remon/ros2_ws/install/slam_toolbox/share/slam_toolbox/launch/online_async_launch.py\n'}
+[0.746092] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/remon/ros2_ws/install/slam_toolbox/share/slam_toolbox/launch/merge_maps_kinematic_launch.py\n'}
+[0.746139] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/remon/ros2_ws/install/slam_toolbox/share/slam_toolbox/launch/online_sync_launch.py\n'}
+[0.746185] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/remon/ros2_ws/install/slam_toolbox/share/slam_toolbox/launch/localization_launch.py\n'}
+[0.746230] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/remon/ros2_ws/install/slam_toolbox/share/slam_toolbox/config\n'}
+[0.746275] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/remon/ros2_ws/install/slam_toolbox/share/slam_toolbox/config/slam_toolbox_default.rviz\n'}
+[0.746320] (slam_toolbox) StdoutLine: {'line': b'-- Installing: /home/remon/ros2_ws/install/slam_toolbox/share/slam_toolbox/config/mapper_params_online_async.yaml\n'}
+[0.746365] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/remon/ros2_ws/install/slam_toolbox/share/slam_toolbox/config/mapper_params_localization.yaml\n'}
+[0.746410] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/remon/ros2_ws/install/slam_toolbox/share/slam_toolbox/config/mapper_params_online_sync.yaml\n'}
+[0.746456] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/remon/ros2_ws/install/slam_toolbox/share/slam_toolbox/config/mapper_params_lifelong.yaml\n'}
+[0.746501] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/remon/ros2_ws/install/slam_toolbox/share/slam_toolbox/config/mapper_params_offline.yaml\n'}
+[0.746548] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/remon/ros2_ws/install/slam_toolbox/share/solver_plugins.xml\n'}
+[0.746594] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/remon/ros2_ws/install/slam_toolbox/share/rviz_plugins.xml\n'}
+[0.746640] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/remon/ros2_ws/install/slam_toolbox/share/ament_index/resource_index/package_run_dependencies/slam_toolbox\n'}
+[0.746687] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/remon/ros2_ws/install/slam_toolbox/share/ament_index/resource_index/parent_prefix_path/slam_toolbox\n'}
+[0.746733] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/remon/ros2_ws/install/slam_toolbox/share/slam_toolbox/environment/ament_prefix_path.sh\n'}
+[0.746778] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/remon/ros2_ws/install/slam_toolbox/share/slam_toolbox/environment/ament_prefix_path.dsv\n'}
+[0.746825] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/remon/ros2_ws/install/slam_toolbox/share/slam_toolbox/environment/path.sh\n'}
+[0.746974] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/remon/ros2_ws/install/slam_toolbox/share/slam_toolbox/environment/path.dsv\n'}
+[0.747038] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/remon/ros2_ws/install/slam_toolbox/share/slam_toolbox/local_setup.bash\n'}
+[0.747088] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/remon/ros2_ws/install/slam_toolbox/share/slam_toolbox/local_setup.sh\n'}
+[0.747136] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/remon/ros2_ws/install/slam_toolbox/share/slam_toolbox/local_setup.zsh\n'}
+[0.747215] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/remon/ros2_ws/install/slam_toolbox/share/slam_toolbox/local_setup.dsv\n'}
+[0.747260] (slam_toolbox) StdoutLine: {'line': b'-- Installing: /home/remon/ros2_ws/install/slam_toolbox/share/slam_toolbox/package.dsv\n'}
+[0.747307] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/remon/ros2_ws/install/slam_toolbox/share/ament_index/resource_index/packages/slam_toolbox\n'}
+[0.747355] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/remon/ros2_ws/install/slam_toolbox/share/ament_index/resource_index/rviz_common__pluginlib__plugin/slam_toolbox\n'}
+[0.747403] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/remon/ros2_ws/install/slam_toolbox/share/ament_index/resource_index/slam_toolbox__pluginlib__plugin/slam_toolbox\n'}
+[0.747449] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/remon/ros2_ws/install/slam_toolbox/share/slam_toolbox/cmake/export_slam_toolbox__rosidl_generator_cExport.cmake\n'}
+[0.747496] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/remon/ros2_ws/install/slam_toolbox/share/slam_toolbox/cmake/export_slam_toolbox__rosidl_generator_cExport-release.cmake\n'}
+[0.747543] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/remon/ros2_ws/install/slam_toolbox/share/slam_toolbox/cmake/export_slam_toolbox__rosidl_typesupport_fastrtps_cExport.cmake\n'}
+[0.747591] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/remon/ros2_ws/install/slam_toolbox/share/slam_toolbox/cmake/export_slam_toolbox__rosidl_typesupport_fastrtps_cExport-release.cmake\n'}
+[0.747639] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/remon/ros2_ws/install/slam_toolbox/share/slam_toolbox/cmake/export_slam_toolbox__rosidl_generator_cppExport.cmake\n'}
+[0.747689] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/remon/ros2_ws/install/slam_toolbox/share/slam_toolbox/cmake/export_slam_toolbox__rosidl_typesupport_fastrtps_cppExport.cmake\n'}
+[0.747735] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/remon/ros2_ws/install/slam_toolbox/share/slam_toolbox/cmake/export_slam_toolbox__rosidl_typesupport_fastrtps_cppExport-release.cmake\n'}
+[0.747782] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/remon/ros2_ws/install/slam_toolbox/share/slam_toolbox/cmake/slam_toolbox__rosidl_typesupport_introspection_cExport.cmake\n'}
+[0.747829] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/remon/ros2_ws/install/slam_toolbox/share/slam_toolbox/cmake/slam_toolbox__rosidl_typesupport_introspection_cExport-release.cmake\n'}
+[0.747876] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/remon/ros2_ws/install/slam_toolbox/share/slam_toolbox/cmake/slam_toolbox__rosidl_typesupport_cExport.cmake\n'}
+[0.747922] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/remon/ros2_ws/install/slam_toolbox/share/slam_toolbox/cmake/slam_toolbox__rosidl_typesupport_cExport-release.cmake\n'}
+[0.747968] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/remon/ros2_ws/install/slam_toolbox/share/slam_toolbox/cmake/slam_toolbox__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[0.748019] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/remon/ros2_ws/install/slam_toolbox/share/slam_toolbox/cmake/slam_toolbox__rosidl_typesupport_introspection_cppExport-release.cmake\n'}
+[0.748076] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/remon/ros2_ws/install/slam_toolbox/share/slam_toolbox/cmake/slam_toolbox__rosidl_typesupport_cppExport.cmake\n'}
+[0.748123] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/remon/ros2_ws/install/slam_toolbox/share/slam_toolbox/cmake/slam_toolbox__rosidl_typesupport_cppExport-release.cmake\n'}
+[0.748171] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/remon/ros2_ws/install/slam_toolbox/share/slam_toolbox/cmake/export_slam_toolbox__rosidl_generator_pyExport.cmake\n'}
+[0.748219] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/remon/ros2_ws/install/slam_toolbox/share/slam_toolbox/cmake/export_slam_toolbox__rosidl_generator_pyExport-release.cmake\n'}
+[0.748321] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/remon/ros2_ws/install/slam_toolbox/share/slam_toolbox/cmake/SlamToolboxPluginExport.cmake\n'}
+[0.748372] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/remon/ros2_ws/install/slam_toolbox/share/slam_toolbox/cmake/SlamToolboxPluginExport-release.cmake\n'}
+[0.748417] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/remon/ros2_ws/install/slam_toolbox/share/ament_index/resource_index/rclcpp_components/slam_toolbox\n'}
+[0.748462] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/remon/ros2_ws/install/slam_toolbox/share/slam_toolbox/cmake/rosidl_cmake-extras.cmake\n'}
+[0.748506] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/remon/ros2_ws/install/slam_toolbox/share/slam_toolbox/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[0.748555] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/remon/ros2_ws/install/slam_toolbox/share/slam_toolbox/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[0.748623] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/remon/ros2_ws/install/slam_toolbox/share/slam_toolbox/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[0.748676] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/remon/ros2_ws/install/slam_toolbox/share/slam_toolbox/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[0.748722] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/remon/ros2_ws/install/slam_toolbox/share/slam_toolbox/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[0.748769] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/remon/ros2_ws/install/slam_toolbox/share/slam_toolbox/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[0.748815] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/remon/ros2_ws/install/slam_toolbox/share/slam_toolbox/cmake/slam_toolboxConfig.cmake\n'}
+[0.748861] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/remon/ros2_ws/install/slam_toolbox/share/slam_toolbox/cmake/slam_toolboxConfig-version.cmake\n'}
+[0.748907] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/remon/ros2_ws/install/slam_toolbox/share/slam_toolbox/package.xml\n'}
+[0.748953] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/remon/ros2_ws/install/slam_toolbox/include/\n'}
+[0.748998] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/remon/ros2_ws/install/slam_toolbox/include//karto_sdk\n'}
+[0.749044] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/remon/ros2_ws/install/slam_toolbox/include//karto_sdk/Karto.h\n'}
+[0.749090] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/remon/ros2_ws/install/slam_toolbox/include//karto_sdk/Types.h\n'}
+[0.749138] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/remon/ros2_ws/install/slam_toolbox/include//karto_sdk/Macros.h\n'}
+[0.749184] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/remon/ros2_ws/install/slam_toolbox/include//karto_sdk/nanoflann.hpp\n'}
+[0.749231] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/remon/ros2_ws/install/slam_toolbox/include//karto_sdk/nanoflann_adaptors.h\n'}
+[0.749278] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/remon/ros2_ws/install/slam_toolbox/include//karto_sdk/Math.h\n'}
+[0.749324] (slam_toolbox) StdoutLine: {'line': b'-- Up-to-date: /home/remon/ros2_ws/install/slam_toolbox/include//karto_sdk/Mapper.h\n'}
+[0.750174] (slam_toolbox) CommandEnded: {'returncode': 0}
+[0.802647] (-) TimerEvent: {}
+[0.902890] (-) TimerEvent: {}
+[1.003165] (-) TimerEvent: {}
+[1.103471] (-) TimerEvent: {}
+[1.132866] (slam_toolbox) JobEnded: {'identifier': 'slam_toolbox', 'rc': 0}
+[1.133651] (-) EventReactorShutdown: {}

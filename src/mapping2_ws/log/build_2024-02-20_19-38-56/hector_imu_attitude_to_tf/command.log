@@ -1,0 +1,2 @@
+Invoking command in '/home/remon/ros2_ws/build/hector_imu_attitude_to_tf': /usr/bin/cmake /home/remon/ros2_ws/src/hector_slam/hector_imu_attitude_to_tf -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCMAKE_INSTALL_PREFIX=/home/remon/ros2_ws/install/hector_imu_attitude_to_tf
+Invoked command in '/home/remon/ros2_ws/build/hector_imu_attitude_to_tf' returned '1': /usr/bin/cmake /home/remon/ros2_ws/src/hector_slam/hector_imu_attitude_to_tf -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCMAKE_INSTALL_PREFIX=/home/remon/ros2_ws/install/hector_imu_attitude_to_tf

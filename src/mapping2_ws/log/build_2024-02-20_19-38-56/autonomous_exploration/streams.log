@@ -1,0 +1,29 @@
+[5.334s] Invoking command in '/home/remon/ros2_ws/build/autonomous_exploration': PYTHONPATH=/home/remon/ros2_ws/build/autonomous_exploration/prefix_override:/home/remon/ros2_ws/install/autonomous_exploration/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --uninstall --editable --build-directory /home/remon/ros2_ws/build/autonomous_exploration/build
+[8.235s] running develop
+[8.235s] Removing /home/remon/ros2_ws/install/autonomous_exploration/lib/python3.10/site-packages/autonomous-exploration.egg-link (link to .)
+[8.235s] Invoked command in '/home/remon/ros2_ws/build/autonomous_exploration' returned '0': PYTHONPATH=/home/remon/ros2_ws/build/autonomous_exploration/prefix_override:/home/remon/ros2_ws/install/autonomous_exploration/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --uninstall --editable --build-directory /home/remon/ros2_ws/build/autonomous_exploration/build
+[8.236s] Invoking command in '/home/remon/ros2_ws/src/autonomous_exploration': PYTHONPATH=/home/remon/ros2_ws/build/autonomous_exploration/prefix_override:/home/remon/ros2_ws/install/autonomous_exploration/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/autonomous_exploration build --build-base /home/remon/ros2_ws/build/autonomous_exploration/build install --record /home/remon/ros2_ws/build/autonomous_exploration/install.log --single-version-externally-managed
+[8.440s] running egg_info
+[8.440s] writing ../../build/autonomous_exploration/autonomous_exploration.egg-info/PKG-INFO
+[8.441s] writing dependency_links to ../../build/autonomous_exploration/autonomous_exploration.egg-info/dependency_links.txt
+[8.441s] writing entry points to ../../build/autonomous_exploration/autonomous_exploration.egg-info/entry_points.txt
+[8.442s] writing requirements to ../../build/autonomous_exploration/autonomous_exploration.egg-info/requires.txt
+[8.442s] writing top-level names to ../../build/autonomous_exploration/autonomous_exploration.egg-info/top_level.txt
+[8.443s] reading manifest file '../../build/autonomous_exploration/autonomous_exploration.egg-info/SOURCES.txt'
+[8.443s] writing manifest file '../../build/autonomous_exploration/autonomous_exploration.egg-info/SOURCES.txt'
+[8.444s] running build
+[8.444s] running build_py
+[8.444s] copying autonomous_exploration/control.py -> /home/remon/ros2_ws/build/autonomous_exploration/build/lib/autonomous_exploration
+[8.444s] running install
+[8.445s] running install_lib
+[8.445s] creating /home/remon/ros2_ws/install/autonomous_exploration/lib/python3.10/site-packages/autonomous_exploration
+[8.445s] copying /home/remon/ros2_ws/build/autonomous_exploration/build/lib/autonomous_exploration/__init__.py -> /home/remon/ros2_ws/install/autonomous_exploration/lib/python3.10/site-packages/autonomous_exploration
+[8.445s] copying /home/remon/ros2_ws/build/autonomous_exploration/build/lib/autonomous_exploration/control.py -> /home/remon/ros2_ws/install/autonomous_exploration/lib/python3.10/site-packages/autonomous_exploration
+[8.446s] byte-compiling /home/remon/ros2_ws/install/autonomous_exploration/lib/python3.10/site-packages/autonomous_exploration/__init__.py to __init__.cpython-310.pyc
+[8.446s] byte-compiling /home/remon/ros2_ws/install/autonomous_exploration/lib/python3.10/site-packages/autonomous_exploration/control.py to control.cpython-310.pyc
+[8.449s] running install_data
+[8.449s] running install_egg_info
+[8.450s] Copying ../../build/autonomous_exploration/autonomous_exploration.egg-info to /home/remon/ros2_ws/install/autonomous_exploration/lib/python3.10/site-packages/autonomous_exploration-0.0.0-py3.10.egg-info
+[8.477s] running install_scripts
+[8.497s] Installing control script to /home/remon/ros2_ws/install/autonomous_exploration/lib/autonomous_exploration
+[8.497s] writing list of installed files to '/home/remon/ros2_ws/build/autonomous_exploration/install.log'

@@ -1,0 +1,563 @@
+[0.789s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[0.789s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=8, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0x7f448f9f5cf0>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7f448f9f4850>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7f448f9f4850>>)
+[0.826s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.826s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.826s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.826s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.826s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.826s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.826s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/remon/ros2_ws'
+[0.826s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.826s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.826s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.826s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.826s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.826s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.826s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.827s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.827s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.835s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.835s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.835s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.835s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.835s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.835s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.836s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.836s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.836s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.836s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.836s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.836s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.836s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.836s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.836s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.837s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.837s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.837s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.837s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.837s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.837s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.837s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.837s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.837s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.837s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.837s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.837s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.837s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.837s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomous_exploration) by extensions ['ignore', 'ignore_ament_install']
+[0.837s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomous_exploration) by extension 'ignore'
+[0.837s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomous_exploration) by extension 'ignore_ament_install'
+[0.837s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomous_exploration) by extensions ['colcon_pkg']
+[0.837s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomous_exploration) by extension 'colcon_pkg'
+[0.837s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomous_exploration) by extensions ['colcon_meta']
+[0.837s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomous_exploration) by extension 'colcon_meta'
+[0.837s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomous_exploration) by extensions ['ros']
+[0.837s] Level 1:colcon.colcon_core.package_identification:_identify(src/autonomous_exploration) by extension 'ros'
+[0.839s] DEBUG:colcon.colcon_core.package_identification:Package 'src/autonomous_exploration' with type 'ros.ament_python' and name 'autonomous_exploration'
+[0.839s] Level 1:colcon.colcon_core.package_identification:_identify(src/fw_robot) by extensions ['ignore', 'ignore_ament_install']
+[0.839s] Level 1:colcon.colcon_core.package_identification:_identify(src/fw_robot) by extension 'ignore'
+[0.840s] Level 1:colcon.colcon_core.package_identification:_identify(src/fw_robot) by extension 'ignore_ament_install'
+[0.840s] Level 1:colcon.colcon_core.package_identification:_identify(src/fw_robot) by extensions ['colcon_pkg']
+[0.840s] Level 1:colcon.colcon_core.package_identification:_identify(src/fw_robot) by extension 'colcon_pkg'
+[0.840s] Level 1:colcon.colcon_core.package_identification:_identify(src/fw_robot) by extensions ['colcon_meta']
+[0.840s] Level 1:colcon.colcon_core.package_identification:_identify(src/fw_robot) by extension 'colcon_meta'
+[0.840s] Level 1:colcon.colcon_core.package_identification:_identify(src/fw_robot) by extensions ['ros']
+[0.840s] Level 1:colcon.colcon_core.package_identification:_identify(src/fw_robot) by extension 'ros'
+[0.840s] DEBUG:colcon.colcon_core.package_identification:Package 'src/fw_robot' with type 'ros.ament_cmake' and name 'fw_robot'
+[0.841s] Level 1:colcon.colcon_core.package_identification:_identify(src/hector_slam) by extensions ['ignore', 'ignore_ament_install']
+[0.841s] Level 1:colcon.colcon_core.package_identification:_identify(src/hector_slam) by extension 'ignore'
+[0.841s] Level 1:colcon.colcon_core.package_identification:_identify(src/hector_slam) by extension 'ignore_ament_install'
+[0.841s] Level 1:colcon.colcon_core.package_identification:_identify(src/hector_slam) by extensions ['colcon_pkg']
+[0.841s] Level 1:colcon.colcon_core.package_identification:_identify(src/hector_slam) by extension 'colcon_pkg'
+[0.841s] Level 1:colcon.colcon_core.package_identification:_identify(src/hector_slam) by extensions ['colcon_meta']
+[0.841s] Level 1:colcon.colcon_core.package_identification:_identify(src/hector_slam) by extension 'colcon_meta'
+[0.841s] Level 1:colcon.colcon_core.package_identification:_identify(src/hector_slam) by extensions ['ros']
+[0.841s] Level 1:colcon.colcon_core.package_identification:_identify(src/hector_slam) by extension 'ros'
+[0.841s] Level 1:colcon.colcon_core.package_identification:_identify(src/hector_slam) by extensions ['cmake', 'python']
+[0.841s] Level 1:colcon.colcon_core.package_identification:_identify(src/hector_slam) by extension 'cmake'
+[0.841s] Level 1:colcon.colcon_core.package_identification:_identify(src/hector_slam) by extension 'python'
+[0.841s] Level 1:colcon.colcon_core.package_identification:_identify(src/hector_slam) by extensions ['python_setup_py']
+[0.841s] Level 1:colcon.colcon_core.package_identification:_identify(src/hector_slam) by extension 'python_setup_py'
+[0.841s] Level 1:colcon.colcon_core.package_identification:_identify(src/hector_slam/hector_compressed_map_transport) by extensions ['ignore', 'ignore_ament_install']
+[0.841s] Level 1:colcon.colcon_core.package_identification:_identify(src/hector_slam/hector_compressed_map_transport) by extension 'ignore'
+[0.841s] Level 1:colcon.colcon_core.package_identification:_identify(src/hector_slam/hector_compressed_map_transport) by extension 'ignore_ament_install'
+[0.841s] Level 1:colcon.colcon_core.package_identification:_identify(src/hector_slam/hector_compressed_map_transport) by extensions ['colcon_pkg']
+[0.841s] Level 1:colcon.colcon_core.package_identification:_identify(src/hector_slam/hector_compressed_map_transport) by extension 'colcon_pkg'
+[0.841s] Level 1:colcon.colcon_core.package_identification:_identify(src/hector_slam/hector_compressed_map_transport) by extensions ['colcon_meta']
+[0.841s] Level 1:colcon.colcon_core.package_identification:_identify(src/hector_slam/hector_compressed_map_transport) by extension 'colcon_meta'
+[0.841s] Level 1:colcon.colcon_core.package_identification:_identify(src/hector_slam/hector_compressed_map_transport) by extensions ['ros']
+[0.841s] Level 1:colcon.colcon_core.package_identification:_identify(src/hector_slam/hector_compressed_map_transport) by extension 'ros'
+[0.843s] DEBUG:colcon.colcon_core.package_identification:Package 'src/hector_slam/hector_compressed_map_transport' with type 'ros.catkin' and name 'hector_compressed_map_transport'
+[0.843s] Level 1:colcon.colcon_core.package_identification:_identify(src/hector_slam/hector_geotiff) by extensions ['ignore', 'ignore_ament_install']
+[0.843s] Level 1:colcon.colcon_core.package_identification:_identify(src/hector_slam/hector_geotiff) by extension 'ignore'
+[0.843s] Level 1:colcon.colcon_core.package_identification:_identify(src/hector_slam/hector_geotiff) by extension 'ignore_ament_install'
+[0.843s] Level 1:colcon.colcon_core.package_identification:_identify(src/hector_slam/hector_geotiff) by extensions ['colcon_pkg']
+[0.843s] Level 1:colcon.colcon_core.package_identification:_identify(src/hector_slam/hector_geotiff) by extension 'colcon_pkg'
+[0.843s] Level 1:colcon.colcon_core.package_identification:_identify(src/hector_slam/hector_geotiff) by extensions ['colcon_meta']
+[0.843s] Level 1:colcon.colcon_core.package_identification:_identify(src/hector_slam/hector_geotiff) by extension 'colcon_meta'
+[0.843s] Level 1:colcon.colcon_core.package_identification:_identify(src/hector_slam/hector_geotiff) by extensions ['ros']
+[0.843s] Level 1:colcon.colcon_core.package_identification:_identify(src/hector_slam/hector_geotiff) by extension 'ros'
+[0.844s] DEBUG:colcon.colcon_core.package_identification:Package 'src/hector_slam/hector_geotiff' with type 'ros.catkin' and name 'hector_geotiff'
+[0.844s] Level 1:colcon.colcon_core.package_identification:_identify(src/hector_slam/hector_geotiff_launch) by extensions ['ignore', 'ignore_ament_install']
+[0.844s] Level 1:colcon.colcon_core.package_identification:_identify(src/hector_slam/hector_geotiff_launch) by extension 'ignore'
+[0.844s] Level 1:colcon.colcon_core.package_identification:_identify(src/hector_slam/hector_geotiff_launch) by extension 'ignore_ament_install'
+[0.845s] Level 1:colcon.colcon_core.package_identification:_identify(src/hector_slam/hector_geotiff_launch) by extensions ['colcon_pkg']
+[0.845s] Level 1:colcon.colcon_core.package_identification:_identify(src/hector_slam/hector_geotiff_launch) by extension 'colcon_pkg'
+[0.845s] Level 1:colcon.colcon_core.package_identification:_identify(src/hector_slam/hector_geotiff_launch) by extensions ['colcon_meta']
+[0.845s] Level 1:colcon.colcon_core.package_identification:_identify(src/hector_slam/hector_geotiff_launch) by extension 'colcon_meta'
+[0.845s] Level 1:colcon.colcon_core.package_identification:_identify(src/hector_slam/hector_geotiff_launch) by extensions ['ros']
+[0.845s] Level 1:colcon.colcon_core.package_identification:_identify(src/hector_slam/hector_geotiff_launch) by extension 'ros'
+[0.845s] DEBUG:colcon.colcon_core.package_identification:Package 'src/hector_slam/hector_geotiff_launch' with type 'ros.catkin' and name 'hector_geotiff_launch'
+[0.845s] Level 1:colcon.colcon_core.package_identification:_identify(src/hector_slam/hector_geotiff_plugins) by extensions ['ignore', 'ignore_ament_install']
+[0.845s] Level 1:colcon.colcon_core.package_identification:_identify(src/hector_slam/hector_geotiff_plugins) by extension 'ignore'
+[0.845s] Level 1:colcon.colcon_core.package_identification:_identify(src/hector_slam/hector_geotiff_plugins) by extension 'ignore_ament_install'
+[0.845s] Level 1:colcon.colcon_core.package_identification:_identify(src/hector_slam/hector_geotiff_plugins) by extensions ['colcon_pkg']
+[0.845s] Level 1:colcon.colcon_core.package_identification:_identify(src/hector_slam/hector_geotiff_plugins) by extension 'colcon_pkg'
+[0.845s] Level 1:colcon.colcon_core.package_identification:_identify(src/hector_slam/hector_geotiff_plugins) by extensions ['colcon_meta']
+[0.845s] Level 1:colcon.colcon_core.package_identification:_identify(src/hector_slam/hector_geotiff_plugins) by extension 'colcon_meta'
+[0.845s] Level 1:colcon.colcon_core.package_identification:_identify(src/hector_slam/hector_geotiff_plugins) by extensions ['ros']
+[0.845s] Level 1:colcon.colcon_core.package_identification:_identify(src/hector_slam/hector_geotiff_plugins) by extension 'ros'
+[0.846s] DEBUG:colcon.colcon_core.package_identification:Package 'src/hector_slam/hector_geotiff_plugins' with type 'ros.catkin' and name 'hector_geotiff_plugins'
+[0.846s] Level 1:colcon.colcon_core.package_identification:_identify(src/hector_slam/hector_imu_attitude_to_tf) by extensions ['ignore', 'ignore_ament_install']
+[0.846s] Level 1:colcon.colcon_core.package_identification:_identify(src/hector_slam/hector_imu_attitude_to_tf) by extension 'ignore'
+[0.846s] Level 1:colcon.colcon_core.package_identification:_identify(src/hector_slam/hector_imu_attitude_to_tf) by extension 'ignore_ament_install'
+[0.846s] Level 1:colcon.colcon_core.package_identification:_identify(src/hector_slam/hector_imu_attitude_to_tf) by extensions ['colcon_pkg']
+[0.846s] Level 1:colcon.colcon_core.package_identification:_identify(src/hector_slam/hector_imu_attitude_to_tf) by extension 'colcon_pkg'
+[0.846s] Level 1:colcon.colcon_core.package_identification:_identify(src/hector_slam/hector_imu_attitude_to_tf) by extensions ['colcon_meta']
+[0.846s] Level 1:colcon.colcon_core.package_identification:_identify(src/hector_slam/hector_imu_attitude_to_tf) by extension 'colcon_meta'
+[0.847s] Level 1:colcon.colcon_core.package_identification:_identify(src/hector_slam/hector_imu_attitude_to_tf) by extensions ['ros']
+[0.847s] Level 1:colcon.colcon_core.package_identification:_identify(src/hector_slam/hector_imu_attitude_to_tf) by extension 'ros'
+[0.847s] DEBUG:colcon.colcon_core.package_identification:Package 'src/hector_slam/hector_imu_attitude_to_tf' with type 'ros.catkin' and name 'hector_imu_attitude_to_tf'
+[0.847s] Level 1:colcon.colcon_core.package_identification:_identify(src/hector_slam/hector_imu_tools) by extensions ['ignore', 'ignore_ament_install']
+[0.847s] Level 1:colcon.colcon_core.package_identification:_identify(src/hector_slam/hector_imu_tools) by extension 'ignore'
+[0.847s] Level 1:colcon.colcon_core.package_identification:_identify(src/hector_slam/hector_imu_tools) by extension 'ignore_ament_install'
+[0.847s] Level 1:colcon.colcon_core.package_identification:_identify(src/hector_slam/hector_imu_tools) by extensions ['colcon_pkg']
+[0.847s] Level 1:colcon.colcon_core.package_identification:_identify(src/hector_slam/hector_imu_tools) by extension 'colcon_pkg'
+[0.848s] Level 1:colcon.colcon_core.package_identification:_identify(src/hector_slam/hector_imu_tools) by extensions ['colcon_meta']
+[0.848s] Level 1:colcon.colcon_core.package_identification:_identify(src/hector_slam/hector_imu_tools) by extension 'colcon_meta'
+[0.848s] Level 1:colcon.colcon_core.package_identification:_identify(src/hector_slam/hector_imu_tools) by extensions ['ros']
+[0.848s] Level 1:colcon.colcon_core.package_identification:_identify(src/hector_slam/hector_imu_tools) by extension 'ros'
+[0.848s] DEBUG:colcon.colcon_core.package_identification:Package 'src/hector_slam/hector_imu_tools' with type 'ros.catkin' and name 'hector_imu_tools'
+[0.848s] Level 1:colcon.colcon_core.package_identification:_identify(src/hector_slam/hector_map_server) by extensions ['ignore', 'ignore_ament_install']
+[0.848s] Level 1:colcon.colcon_core.package_identification:_identify(src/hector_slam/hector_map_server) by extension 'ignore'
+[0.848s] Level 1:colcon.colcon_core.package_identification:_identify(src/hector_slam/hector_map_server) by extension 'ignore_ament_install'
+[0.848s] Level 1:colcon.colcon_core.package_identification:_identify(src/hector_slam/hector_map_server) by extensions ['colcon_pkg']
+[0.848s] Level 1:colcon.colcon_core.package_identification:_identify(src/hector_slam/hector_map_server) by extension 'colcon_pkg'
+[0.849s] Level 1:colcon.colcon_core.package_identification:_identify(src/hector_slam/hector_map_server) by extensions ['colcon_meta']
+[0.849s] Level 1:colcon.colcon_core.package_identification:_identify(src/hector_slam/hector_map_server) by extension 'colcon_meta'
+[0.849s] Level 1:colcon.colcon_core.package_identification:_identify(src/hector_slam/hector_map_server) by extensions ['ros']
+[0.849s] Level 1:colcon.colcon_core.package_identification:_identify(src/hector_slam/hector_map_server) by extension 'ros'
+[0.849s] DEBUG:colcon.colcon_core.package_identification:Package 'src/hector_slam/hector_map_server' with type 'ros.catkin' and name 'hector_map_server'
+[0.849s] Level 1:colcon.colcon_core.package_identification:_identify(src/hector_slam/hector_map_tools) by extensions ['ignore', 'ignore_ament_install']
+[0.849s] Level 1:colcon.colcon_core.package_identification:_identify(src/hector_slam/hector_map_tools) by extension 'ignore'
+[0.849s] Level 1:colcon.colcon_core.package_identification:_identify(src/hector_slam/hector_map_tools) by extension 'ignore_ament_install'
+[0.849s] Level 1:colcon.colcon_core.package_identification:_identify(src/hector_slam/hector_map_tools) by extensions ['colcon_pkg']
+[0.850s] Level 1:colcon.colcon_core.package_identification:_identify(src/hector_slam/hector_map_tools) by extension 'colcon_pkg'
+[0.850s] Level 1:colcon.colcon_core.package_identification:_identify(src/hector_slam/hector_map_tools) by extensions ['colcon_meta']
+[0.850s] Level 1:colcon.colcon_core.package_identification:_identify(src/hector_slam/hector_map_tools) by extension 'colcon_meta'
+[0.850s] Level 1:colcon.colcon_core.package_identification:_identify(src/hector_slam/hector_map_tools) by extensions ['ros']
+[0.850s] Level 1:colcon.colcon_core.package_identification:_identify(src/hector_slam/hector_map_tools) by extension 'ros'
+[0.850s] DEBUG:colcon.colcon_core.package_identification:Package 'src/hector_slam/hector_map_tools' with type 'ros.catkin' and name 'hector_map_tools'
+[0.850s] Level 1:colcon.colcon_core.package_identification:_identify(src/hector_slam/hector_mapping) by extensions ['ignore', 'ignore_ament_install']
+[0.850s] Level 1:colcon.colcon_core.package_identification:_identify(src/hector_slam/hector_mapping) by extension 'ignore'
+[0.850s] Level 1:colcon.colcon_core.package_identification:_identify(src/hector_slam/hector_mapping) by extension 'ignore_ament_install'
+[0.850s] Level 1:colcon.colcon_core.package_identification:_identify(src/hector_slam/hector_mapping) by extensions ['colcon_pkg']
+[0.851s] Level 1:colcon.colcon_core.package_identification:_identify(src/hector_slam/hector_mapping) by extension 'colcon_pkg'
+[0.851s] Level 1:colcon.colcon_core.package_identification:_identify(src/hector_slam/hector_mapping) by extensions ['colcon_meta']
+[0.851s] Level 1:colcon.colcon_core.package_identification:_identify(src/hector_slam/hector_mapping) by extension 'colcon_meta'
+[0.851s] Level 1:colcon.colcon_core.package_identification:_identify(src/hector_slam/hector_mapping) by extensions ['ros']
+[0.851s] Level 1:colcon.colcon_core.package_identification:_identify(src/hector_slam/hector_mapping) by extension 'ros'
+[0.852s] DEBUG:colcon.colcon_core.package_identification:Package 'src/hector_slam/hector_mapping' with type 'ros.catkin' and name 'hector_mapping'
+[0.852s] Level 1:colcon.colcon_core.package_identification:_identify(src/hector_slam/hector_marker_drawing) by extensions ['ignore', 'ignore_ament_install']
+[0.852s] Level 1:colcon.colcon_core.package_identification:_identify(src/hector_slam/hector_marker_drawing) by extension 'ignore'
+[0.852s] Level 1:colcon.colcon_core.package_identification:_identify(src/hector_slam/hector_marker_drawing) by extension 'ignore_ament_install'
+[0.852s] Level 1:colcon.colcon_core.package_identification:_identify(src/hector_slam/hector_marker_drawing) by extensions ['colcon_pkg']
+[0.852s] Level 1:colcon.colcon_core.package_identification:_identify(src/hector_slam/hector_marker_drawing) by extension 'colcon_pkg'
+[0.852s] Level 1:colcon.colcon_core.package_identification:_identify(src/hector_slam/hector_marker_drawing) by extensions ['colcon_meta']
+[0.852s] Level 1:colcon.colcon_core.package_identification:_identify(src/hector_slam/hector_marker_drawing) by extension 'colcon_meta'
+[0.852s] Level 1:colcon.colcon_core.package_identification:_identify(src/hector_slam/hector_marker_drawing) by extensions ['ros']
+[0.852s] Level 1:colcon.colcon_core.package_identification:_identify(src/hector_slam/hector_marker_drawing) by extension 'ros'
+[0.852s] DEBUG:colcon.colcon_core.package_identification:Package 'src/hector_slam/hector_marker_drawing' with type 'ros.catkin' and name 'hector_marker_drawing'
+[0.853s] Level 1:colcon.colcon_core.package_identification:_identify(src/hector_slam/hector_nav_msgs) by extensions ['ignore', 'ignore_ament_install']
+[0.853s] Level 1:colcon.colcon_core.package_identification:_identify(src/hector_slam/hector_nav_msgs) by extension 'ignore'
+[0.853s] Level 1:colcon.colcon_core.package_identification:_identify(src/hector_slam/hector_nav_msgs) by extension 'ignore_ament_install'
+[0.853s] Level 1:colcon.colcon_core.package_identification:_identify(src/hector_slam/hector_nav_msgs) by extensions ['colcon_pkg']
+[0.853s] Level 1:colcon.colcon_core.package_identification:_identify(src/hector_slam/hector_nav_msgs) by extension 'colcon_pkg'
+[0.853s] Level 1:colcon.colcon_core.package_identification:_identify(src/hector_slam/hector_nav_msgs) by extensions ['colcon_meta']
+[0.853s] Level 1:colcon.colcon_core.package_identification:_identify(src/hector_slam/hector_nav_msgs) by extension 'colcon_meta'
+[0.853s] Level 1:colcon.colcon_core.package_identification:_identify(src/hector_slam/hector_nav_msgs) by extensions ['ros']
+[0.853s] Level 1:colcon.colcon_core.package_identification:_identify(src/hector_slam/hector_nav_msgs) by extension 'ros'
+[0.853s] DEBUG:colcon.colcon_core.package_identification:Package 'src/hector_slam/hector_nav_msgs' with type 'ros.catkin' and name 'hector_nav_msgs'
+[0.853s] Level 1:colcon.colcon_core.package_identification:_identify(src/hector_slam/hector_slam) by extensions ['ignore', 'ignore_ament_install']
+[0.854s] Level 1:colcon.colcon_core.package_identification:_identify(src/hector_slam/hector_slam) by extension 'ignore'
+[0.854s] Level 1:colcon.colcon_core.package_identification:_identify(src/hector_slam/hector_slam) by extension 'ignore_ament_install'
+[0.854s] Level 1:colcon.colcon_core.package_identification:_identify(src/hector_slam/hector_slam) by extensions ['colcon_pkg']
+[0.854s] Level 1:colcon.colcon_core.package_identification:_identify(src/hector_slam/hector_slam) by extension 'colcon_pkg'
+[0.854s] Level 1:colcon.colcon_core.package_identification:_identify(src/hector_slam/hector_slam) by extensions ['colcon_meta']
+[0.854s] Level 1:colcon.colcon_core.package_identification:_identify(src/hector_slam/hector_slam) by extension 'colcon_meta'
+[0.854s] Level 1:colcon.colcon_core.package_identification:_identify(src/hector_slam/hector_slam) by extensions ['ros']
+[0.854s] Level 1:colcon.colcon_core.package_identification:_identify(src/hector_slam/hector_slam) by extension 'ros'
+[0.855s] DEBUG:colcon.colcon_core.package_identification:Package 'src/hector_slam/hector_slam' with type 'ros.catkin' and name 'hector_slam'
+[0.855s] Level 1:colcon.colcon_core.package_identification:_identify(src/hector_slam/hector_slam_launch) by extensions ['ignore', 'ignore_ament_install']
+[0.855s] Level 1:colcon.colcon_core.package_identification:_identify(src/hector_slam/hector_slam_launch) by extension 'ignore'
+[0.855s] Level 1:colcon.colcon_core.package_identification:_identify(src/hector_slam/hector_slam_launch) by extension 'ignore_ament_install'
+[0.855s] Level 1:colcon.colcon_core.package_identification:_identify(src/hector_slam/hector_slam_launch) by extensions ['colcon_pkg']
+[0.855s] Level 1:colcon.colcon_core.package_identification:_identify(src/hector_slam/hector_slam_launch) by extension 'colcon_pkg'
+[0.855s] Level 1:colcon.colcon_core.package_identification:_identify(src/hector_slam/hector_slam_launch) by extensions ['colcon_meta']
+[0.855s] Level 1:colcon.colcon_core.package_identification:_identify(src/hector_slam/hector_slam_launch) by extension 'colcon_meta'
+[0.855s] Level 1:colcon.colcon_core.package_identification:_identify(src/hector_slam/hector_slam_launch) by extensions ['ros']
+[0.855s] Level 1:colcon.colcon_core.package_identification:_identify(src/hector_slam/hector_slam_launch) by extension 'ros'
+[0.856s] DEBUG:colcon.colcon_core.package_identification:Package 'src/hector_slam/hector_slam_launch' with type 'ros.catkin' and name 'hector_slam_launch'
+[0.856s] Level 1:colcon.colcon_core.package_identification:_identify(src/hector_slam/hector_trajectory_server) by extensions ['ignore', 'ignore_ament_install']
+[0.856s] Level 1:colcon.colcon_core.package_identification:_identify(src/hector_slam/hector_trajectory_server) by extension 'ignore'
+[0.856s] Level 1:colcon.colcon_core.package_identification:_identify(src/hector_slam/hector_trajectory_server) by extension 'ignore_ament_install'
+[0.856s] Level 1:colcon.colcon_core.package_identification:_identify(src/hector_slam/hector_trajectory_server) by extensions ['colcon_pkg']
+[0.856s] Level 1:colcon.colcon_core.package_identification:_identify(src/hector_slam/hector_trajectory_server) by extension 'colcon_pkg'
+[0.856s] Level 1:colcon.colcon_core.package_identification:_identify(src/hector_slam/hector_trajectory_server) by extensions ['colcon_meta']
+[0.856s] Level 1:colcon.colcon_core.package_identification:_identify(src/hector_slam/hector_trajectory_server) by extension 'colcon_meta'
+[0.856s] Level 1:colcon.colcon_core.package_identification:_identify(src/hector_slam/hector_trajectory_server) by extensions ['ros']
+[0.856s] Level 1:colcon.colcon_core.package_identification:_identify(src/hector_slam/hector_trajectory_server) by extension 'ros'
+[0.857s] DEBUG:colcon.colcon_core.package_identification:Package 'src/hector_slam/hector_trajectory_server' with type 'ros.catkin' and name 'hector_trajectory_server'
+[0.857s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_bot) by extensions ['ignore', 'ignore_ament_install']
+[0.857s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_bot) by extension 'ignore'
+[0.857s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_bot) by extension 'ignore_ament_install'
+[0.857s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_bot) by extensions ['colcon_pkg']
+[0.857s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_bot) by extension 'colcon_pkg'
+[0.857s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_bot) by extensions ['colcon_meta']
+[0.857s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_bot) by extension 'colcon_meta'
+[0.857s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_bot) by extensions ['ros']
+[0.857s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_bot) by extension 'ros'
+[0.857s] DEBUG:colcon.colcon_core.package_identification:Package 'src/my_bot' with type 'ros.ament_cmake' and name 'my_bot'
+[0.858s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_package) by extensions ['ignore', 'ignore_ament_install']
+[0.858s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_package) by extension 'ignore'
+[0.858s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_package) by extension 'ignore_ament_install'
+[0.858s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_package) by extensions ['colcon_pkg']
+[0.858s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_package) by extension 'colcon_pkg'
+[0.858s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_package) by extensions ['colcon_meta']
+[0.858s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_package) by extension 'colcon_meta'
+[0.858s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_package) by extensions ['ros']
+[0.858s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_package) by extension 'ros'
+[0.859s] DEBUG:colcon.colcon_core.package_identification:Package 'src/my_package' with type 'ros.ament_python' and name 'my_package'
+[0.859s] Level 1:colcon.colcon_core.package_identification:_identify(src/rplidar_ros2) by extensions ['ignore', 'ignore_ament_install']
+[0.859s] Level 1:colcon.colcon_core.package_identification:_identify(src/rplidar_ros2) by extension 'ignore'
+[0.859s] Level 1:colcon.colcon_core.package_identification:_identify(src/rplidar_ros2) by extension 'ignore_ament_install'
+[0.859s] Level 1:colcon.colcon_core.package_identification:_identify(src/rplidar_ros2) by extensions ['colcon_pkg']
+[0.859s] Level 1:colcon.colcon_core.package_identification:_identify(src/rplidar_ros2) by extension 'colcon_pkg'
+[0.859s] Level 1:colcon.colcon_core.package_identification:_identify(src/rplidar_ros2) by extensions ['colcon_meta']
+[0.859s] Level 1:colcon.colcon_core.package_identification:_identify(src/rplidar_ros2) by extension 'colcon_meta'
+[0.859s] Level 1:colcon.colcon_core.package_identification:_identify(src/rplidar_ros2) by extensions ['ros']
+[0.859s] Level 1:colcon.colcon_core.package_identification:_identify(src/rplidar_ros2) by extension 'ros'
+[0.860s] DEBUG:colcon.colcon_core.package_identification:Package 'src/rplidar_ros2' with type 'ros.ament_cmake' and name 'rplidar_ros'
+[0.860s] Level 1:colcon.colcon_core.package_identification:_identify(src/tf2_py) by extensions ['ignore', 'ignore_ament_install']
+[0.860s] Level 1:colcon.colcon_core.package_identification:_identify(src/tf2_py) by extension 'ignore'
+[0.860s] Level 1:colcon.colcon_core.package_identification:_identify(src/tf2_py) by extension 'ignore_ament_install'
+[0.860s] Level 1:colcon.colcon_core.package_identification:_identify(src/tf2_py) by extensions ['colcon_pkg']
+[0.860s] Level 1:colcon.colcon_core.package_identification:_identify(src/tf2_py) by extension 'colcon_pkg'
+[0.860s] Level 1:colcon.colcon_core.package_identification:_identify(src/tf2_py) by extensions ['colcon_meta']
+[0.860s] Level 1:colcon.colcon_core.package_identification:_identify(src/tf2_py) by extension 'colcon_meta'
+[0.860s] Level 1:colcon.colcon_core.package_identification:_identify(src/tf2_py) by extensions ['ros']
+[0.860s] Level 1:colcon.colcon_core.package_identification:_identify(src/tf2_py) by extension 'ros'
+[0.861s] DEBUG:colcon.colcon_core.package_identification:Package 'src/tf2_py' with type 'ros.ament_python' and name 'tf2_py'
+[0.861s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.861s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.861s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.861s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.861s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.936s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.936s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.968s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 15 installed packages in /home/remon/ros2_ws/install
+[0.980s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 390 installed packages in /opt/ros/humble
+[0.982s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[1.054s] WARNING:colcon.colcon_core.package_selection:Some selected packages are already built in one or more underlay workspaces:
+	'tf2_py' is in: /opt/ros/humble
+If a package in a merged underlay workspace is overridden and it installs headers, then all packages in the overlay must sort their include directories by workspace order. Failure to do so may result in build failures or undefined behavior at run time.
+If the overridden package is used by another package in any underlay, then the overriding package in the overlay must be API and ABI compatible or undefined behavior at run time may occur.
+
+If you understand the risks and want to override a package anyways, add the following to the command line:
+	--allow-overriding tf2_py
+
+This may be promoted to an error in a future release of colcon-override-check.
+[1.067s] Level 5:colcon.colcon_core.verb:set package 'autonomous_exploration' build argument 'cmake_args' from command line to 'None'
+[1.067s] Level 5:colcon.colcon_core.verb:set package 'autonomous_exploration' build argument 'cmake_target' from command line to 'None'
+[1.067s] Level 5:colcon.colcon_core.verb:set package 'autonomous_exploration' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.067s] Level 5:colcon.colcon_core.verb:set package 'autonomous_exploration' build argument 'cmake_clean_cache' from command line to 'False'
+[1.067s] Level 5:colcon.colcon_core.verb:set package 'autonomous_exploration' build argument 'cmake_clean_first' from command line to 'False'
+[1.067s] Level 5:colcon.colcon_core.verb:set package 'autonomous_exploration' build argument 'cmake_force_configure' from command line to 'False'
+[1.067s] Level 5:colcon.colcon_core.verb:set package 'autonomous_exploration' build argument 'ament_cmake_args' from command line to 'None'
+[1.067s] Level 5:colcon.colcon_core.verb:set package 'autonomous_exploration' build argument 'catkin_cmake_args' from command line to 'None'
+[1.067s] Level 5:colcon.colcon_core.verb:set package 'autonomous_exploration' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.067s] DEBUG:colcon.colcon_core.verb:Building package 'autonomous_exploration' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/remon/ros2_ws/build/autonomous_exploration', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/remon/ros2_ws/install/autonomous_exploration', 'merge_install': False, 'path': '/home/remon/ros2_ws/src/autonomous_exploration', 'symlink_install': False, 'test_result_base': None}
+[1.079s] Level 5:colcon.colcon_core.verb:set package 'fw_robot' build argument 'cmake_args' from command line to 'None'
+[1.079s] Level 5:colcon.colcon_core.verb:set package 'fw_robot' build argument 'cmake_target' from command line to 'None'
+[1.079s] Level 5:colcon.colcon_core.verb:set package 'fw_robot' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.079s] Level 5:colcon.colcon_core.verb:set package 'fw_robot' build argument 'cmake_clean_cache' from command line to 'False'
+[1.079s] Level 5:colcon.colcon_core.verb:set package 'fw_robot' build argument 'cmake_clean_first' from command line to 'False'
+[1.079s] Level 5:colcon.colcon_core.verb:set package 'fw_robot' build argument 'cmake_force_configure' from command line to 'False'
+[1.079s] Level 5:colcon.colcon_core.verb:set package 'fw_robot' build argument 'ament_cmake_args' from command line to 'None'
+[1.079s] Level 5:colcon.colcon_core.verb:set package 'fw_robot' build argument 'catkin_cmake_args' from command line to 'None'
+[1.079s] Level 5:colcon.colcon_core.verb:set package 'fw_robot' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.079s] DEBUG:colcon.colcon_core.verb:Building package 'fw_robot' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/remon/ros2_ws/build/fw_robot', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/remon/ros2_ws/install/fw_robot', 'merge_install': False, 'path': '/home/remon/ros2_ws/src/fw_robot', 'symlink_install': False, 'test_result_base': None}
+[1.091s] Level 5:colcon.colcon_core.verb:set package 'hector_imu_attitude_to_tf' build argument 'cmake_args' from command line to 'None'
+[1.091s] Level 5:colcon.colcon_core.verb:set package 'hector_imu_attitude_to_tf' build argument 'cmake_target' from command line to 'None'
+[1.092s] Level 5:colcon.colcon_core.verb:set package 'hector_imu_attitude_to_tf' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.092s] Level 5:colcon.colcon_core.verb:set package 'hector_imu_attitude_to_tf' build argument 'cmake_clean_cache' from command line to 'False'
+[1.092s] Level 5:colcon.colcon_core.verb:set package 'hector_imu_attitude_to_tf' build argument 'cmake_clean_first' from command line to 'False'
+[1.092s] Level 5:colcon.colcon_core.verb:set package 'hector_imu_attitude_to_tf' build argument 'cmake_force_configure' from command line to 'False'
+[1.092s] Level 5:colcon.colcon_core.verb:set package 'hector_imu_attitude_to_tf' build argument 'ament_cmake_args' from command line to 'None'
+[1.092s] Level 5:colcon.colcon_core.verb:set package 'hector_imu_attitude_to_tf' build argument 'catkin_cmake_args' from command line to 'None'
+[1.092s] Level 5:colcon.colcon_core.verb:set package 'hector_imu_attitude_to_tf' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.092s] DEBUG:colcon.colcon_core.verb:Building package 'hector_imu_attitude_to_tf' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/remon/ros2_ws/build/hector_imu_attitude_to_tf', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/remon/ros2_ws/install/hector_imu_attitude_to_tf', 'merge_install': False, 'path': '/home/remon/ros2_ws/src/hector_slam/hector_imu_attitude_to_tf', 'symlink_install': False, 'test_result_base': None}
+[1.104s] Level 5:colcon.colcon_core.verb:set package 'hector_imu_tools' build argument 'cmake_args' from command line to 'None'
+[1.104s] Level 5:colcon.colcon_core.verb:set package 'hector_imu_tools' build argument 'cmake_target' from command line to 'None'
+[1.104s] Level 5:colcon.colcon_core.verb:set package 'hector_imu_tools' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.104s] Level 5:colcon.colcon_core.verb:set package 'hector_imu_tools' build argument 'cmake_clean_cache' from command line to 'False'
+[1.104s] Level 5:colcon.colcon_core.verb:set package 'hector_imu_tools' build argument 'cmake_clean_first' from command line to 'False'
+[1.104s] Level 5:colcon.colcon_core.verb:set package 'hector_imu_tools' build argument 'cmake_force_configure' from command line to 'False'
+[1.104s] Level 5:colcon.colcon_core.verb:set package 'hector_imu_tools' build argument 'ament_cmake_args' from command line to 'None'
+[1.104s] Level 5:colcon.colcon_core.verb:set package 'hector_imu_tools' build argument 'catkin_cmake_args' from command line to 'None'
+[1.104s] Level 5:colcon.colcon_core.verb:set package 'hector_imu_tools' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.104s] DEBUG:colcon.colcon_core.verb:Building package 'hector_imu_tools' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/remon/ros2_ws/build/hector_imu_tools', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/remon/ros2_ws/install/hector_imu_tools', 'merge_install': False, 'path': '/home/remon/ros2_ws/src/hector_slam/hector_imu_tools', 'symlink_install': False, 'test_result_base': None}
+[1.116s] Level 5:colcon.colcon_core.verb:set package 'hector_map_tools' build argument 'cmake_args' from command line to 'None'
+[1.116s] Level 5:colcon.colcon_core.verb:set package 'hector_map_tools' build argument 'cmake_target' from command line to 'None'
+[1.116s] Level 5:colcon.colcon_core.verb:set package 'hector_map_tools' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.116s] Level 5:colcon.colcon_core.verb:set package 'hector_map_tools' build argument 'cmake_clean_cache' from command line to 'False'
+[1.116s] Level 5:colcon.colcon_core.verb:set package 'hector_map_tools' build argument 'cmake_clean_first' from command line to 'False'
+[1.116s] Level 5:colcon.colcon_core.verb:set package 'hector_map_tools' build argument 'cmake_force_configure' from command line to 'False'
+[1.116s] Level 5:colcon.colcon_core.verb:set package 'hector_map_tools' build argument 'ament_cmake_args' from command line to 'None'
+[1.116s] Level 5:colcon.colcon_core.verb:set package 'hector_map_tools' build argument 'catkin_cmake_args' from command line to 'None'
+[1.116s] Level 5:colcon.colcon_core.verb:set package 'hector_map_tools' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.116s] DEBUG:colcon.colcon_core.verb:Building package 'hector_map_tools' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/remon/ros2_ws/build/hector_map_tools', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/remon/ros2_ws/install/hector_map_tools', 'merge_install': False, 'path': '/home/remon/ros2_ws/src/hector_slam/hector_map_tools', 'symlink_install': False, 'test_result_base': None}
+[1.128s] Level 5:colcon.colcon_core.verb:set package 'hector_mapping' build argument 'cmake_args' from command line to 'None'
+[1.128s] Level 5:colcon.colcon_core.verb:set package 'hector_mapping' build argument 'cmake_target' from command line to 'None'
+[1.128s] Level 5:colcon.colcon_core.verb:set package 'hector_mapping' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.128s] Level 5:colcon.colcon_core.verb:set package 'hector_mapping' build argument 'cmake_clean_cache' from command line to 'False'
+[1.128s] Level 5:colcon.colcon_core.verb:set package 'hector_mapping' build argument 'cmake_clean_first' from command line to 'False'
+[1.128s] Level 5:colcon.colcon_core.verb:set package 'hector_mapping' build argument 'cmake_force_configure' from command line to 'False'
+[1.128s] Level 5:colcon.colcon_core.verb:set package 'hector_mapping' build argument 'ament_cmake_args' from command line to 'None'
+[1.128s] Level 5:colcon.colcon_core.verb:set package 'hector_mapping' build argument 'catkin_cmake_args' from command line to 'None'
+[1.128s] Level 5:colcon.colcon_core.verb:set package 'hector_mapping' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.128s] DEBUG:colcon.colcon_core.verb:Building package 'hector_mapping' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/remon/ros2_ws/build/hector_mapping', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/remon/ros2_ws/install/hector_mapping', 'merge_install': False, 'path': '/home/remon/ros2_ws/src/hector_slam/hector_mapping', 'symlink_install': False, 'test_result_base': None}
+[1.140s] Level 5:colcon.colcon_core.verb:set package 'hector_marker_drawing' build argument 'cmake_args' from command line to 'None'
+[1.140s] Level 5:colcon.colcon_core.verb:set package 'hector_marker_drawing' build argument 'cmake_target' from command line to 'None'
+[1.140s] Level 5:colcon.colcon_core.verb:set package 'hector_marker_drawing' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.140s] Level 5:colcon.colcon_core.verb:set package 'hector_marker_drawing' build argument 'cmake_clean_cache' from command line to 'False'
+[1.140s] Level 5:colcon.colcon_core.verb:set package 'hector_marker_drawing' build argument 'cmake_clean_first' from command line to 'False'
+[1.140s] Level 5:colcon.colcon_core.verb:set package 'hector_marker_drawing' build argument 'cmake_force_configure' from command line to 'False'
+[1.140s] Level 5:colcon.colcon_core.verb:set package 'hector_marker_drawing' build argument 'ament_cmake_args' from command line to 'None'
+[1.140s] Level 5:colcon.colcon_core.verb:set package 'hector_marker_drawing' build argument 'catkin_cmake_args' from command line to 'None'
+[1.140s] Level 5:colcon.colcon_core.verb:set package 'hector_marker_drawing' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.140s] DEBUG:colcon.colcon_core.verb:Building package 'hector_marker_drawing' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/remon/ros2_ws/build/hector_marker_drawing', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/remon/ros2_ws/install/hector_marker_drawing', 'merge_install': False, 'path': '/home/remon/ros2_ws/src/hector_slam/hector_marker_drawing', 'symlink_install': False, 'test_result_base': None}
+[1.152s] Level 5:colcon.colcon_core.verb:set package 'hector_nav_msgs' build argument 'cmake_args' from command line to 'None'
+[1.152s] Level 5:colcon.colcon_core.verb:set package 'hector_nav_msgs' build argument 'cmake_target' from command line to 'None'
+[1.152s] Level 5:colcon.colcon_core.verb:set package 'hector_nav_msgs' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.152s] Level 5:colcon.colcon_core.verb:set package 'hector_nav_msgs' build argument 'cmake_clean_cache' from command line to 'False'
+[1.152s] Level 5:colcon.colcon_core.verb:set package 'hector_nav_msgs' build argument 'cmake_clean_first' from command line to 'False'
+[1.152s] Level 5:colcon.colcon_core.verb:set package 'hector_nav_msgs' build argument 'cmake_force_configure' from command line to 'False'
+[1.152s] Level 5:colcon.colcon_core.verb:set package 'hector_nav_msgs' build argument 'ament_cmake_args' from command line to 'None'
+[1.152s] Level 5:colcon.colcon_core.verb:set package 'hector_nav_msgs' build argument 'catkin_cmake_args' from command line to 'None'
+[1.152s] Level 5:colcon.colcon_core.verb:set package 'hector_nav_msgs' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.152s] DEBUG:colcon.colcon_core.verb:Building package 'hector_nav_msgs' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/remon/ros2_ws/build/hector_nav_msgs', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/remon/ros2_ws/install/hector_nav_msgs', 'merge_install': False, 'path': '/home/remon/ros2_ws/src/hector_slam/hector_nav_msgs', 'symlink_install': False, 'test_result_base': None}
+[1.165s] Level 5:colcon.colcon_core.verb:set package 'my_bot' build argument 'cmake_args' from command line to 'None'
+[1.165s] Level 5:colcon.colcon_core.verb:set package 'my_bot' build argument 'cmake_target' from command line to 'None'
+[1.165s] Level 5:colcon.colcon_core.verb:set package 'my_bot' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.165s] Level 5:colcon.colcon_core.verb:set package 'my_bot' build argument 'cmake_clean_cache' from command line to 'False'
+[1.165s] Level 5:colcon.colcon_core.verb:set package 'my_bot' build argument 'cmake_clean_first' from command line to 'False'
+[1.165s] Level 5:colcon.colcon_core.verb:set package 'my_bot' build argument 'cmake_force_configure' from command line to 'False'
+[1.165s] Level 5:colcon.colcon_core.verb:set package 'my_bot' build argument 'ament_cmake_args' from command line to 'None'
+[1.165s] Level 5:colcon.colcon_core.verb:set package 'my_bot' build argument 'catkin_cmake_args' from command line to 'None'
+[1.165s] Level 5:colcon.colcon_core.verb:set package 'my_bot' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.165s] DEBUG:colcon.colcon_core.verb:Building package 'my_bot' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/remon/ros2_ws/build/my_bot', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/remon/ros2_ws/install/my_bot', 'merge_install': False, 'path': '/home/remon/ros2_ws/src/my_bot', 'symlink_install': False, 'test_result_base': None}
+[1.176s] Level 5:colcon.colcon_core.verb:set package 'my_package' build argument 'cmake_args' from command line to 'None'
+[1.176s] Level 5:colcon.colcon_core.verb:set package 'my_package' build argument 'cmake_target' from command line to 'None'
+[1.176s] Level 5:colcon.colcon_core.verb:set package 'my_package' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.176s] Level 5:colcon.colcon_core.verb:set package 'my_package' build argument 'cmake_clean_cache' from command line to 'False'
+[1.176s] Level 5:colcon.colcon_core.verb:set package 'my_package' build argument 'cmake_clean_first' from command line to 'False'
+[1.177s] Level 5:colcon.colcon_core.verb:set package 'my_package' build argument 'cmake_force_configure' from command line to 'False'
+[1.177s] Level 5:colcon.colcon_core.verb:set package 'my_package' build argument 'ament_cmake_args' from command line to 'None'
+[1.177s] Level 5:colcon.colcon_core.verb:set package 'my_package' build argument 'catkin_cmake_args' from command line to 'None'
+[1.177s] Level 5:colcon.colcon_core.verb:set package 'my_package' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.177s] DEBUG:colcon.colcon_core.verb:Building package 'my_package' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/remon/ros2_ws/build/my_package', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/remon/ros2_ws/install/my_package', 'merge_install': False, 'path': '/home/remon/ros2_ws/src/my_package', 'symlink_install': False, 'test_result_base': None}
+[1.188s] Level 5:colcon.colcon_core.verb:set package 'rplidar_ros' build argument 'cmake_args' from command line to 'None'
+[1.188s] Level 5:colcon.colcon_core.verb:set package 'rplidar_ros' build argument 'cmake_target' from command line to 'None'
+[1.188s] Level 5:colcon.colcon_core.verb:set package 'rplidar_ros' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.188s] Level 5:colcon.colcon_core.verb:set package 'rplidar_ros' build argument 'cmake_clean_cache' from command line to 'False'
+[1.188s] Level 5:colcon.colcon_core.verb:set package 'rplidar_ros' build argument 'cmake_clean_first' from command line to 'False'
+[1.188s] Level 5:colcon.colcon_core.verb:set package 'rplidar_ros' build argument 'cmake_force_configure' from command line to 'False'
+[1.188s] Level 5:colcon.colcon_core.verb:set package 'rplidar_ros' build argument 'ament_cmake_args' from command line to 'None'
+[1.188s] Level 5:colcon.colcon_core.verb:set package 'rplidar_ros' build argument 'catkin_cmake_args' from command line to 'None'
+[1.188s] Level 5:colcon.colcon_core.verb:set package 'rplidar_ros' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.188s] DEBUG:colcon.colcon_core.verb:Building package 'rplidar_ros' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/remon/ros2_ws/build/rplidar_ros', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/remon/ros2_ws/install/rplidar_ros', 'merge_install': False, 'path': '/home/remon/ros2_ws/src/rplidar_ros2', 'symlink_install': False, 'test_result_base': None}
+[1.200s] Level 5:colcon.colcon_core.verb:set package 'tf2_py' build argument 'cmake_args' from command line to 'None'
+[1.200s] Level 5:colcon.colcon_core.verb:set package 'tf2_py' build argument 'cmake_target' from command line to 'None'
+[1.200s] Level 5:colcon.colcon_core.verb:set package 'tf2_py' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.200s] Level 5:colcon.colcon_core.verb:set package 'tf2_py' build argument 'cmake_clean_cache' from command line to 'False'
+[1.200s] Level 5:colcon.colcon_core.verb:set package 'tf2_py' build argument 'cmake_clean_first' from command line to 'False'
+[1.200s] Level 5:colcon.colcon_core.verb:set package 'tf2_py' build argument 'cmake_force_configure' from command line to 'False'
+[1.200s] Level 5:colcon.colcon_core.verb:set package 'tf2_py' build argument 'ament_cmake_args' from command line to 'None'
+[1.200s] Level 5:colcon.colcon_core.verb:set package 'tf2_py' build argument 'catkin_cmake_args' from command line to 'None'
+[1.200s] Level 5:colcon.colcon_core.verb:set package 'tf2_py' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.200s] DEBUG:colcon.colcon_core.verb:Building package 'tf2_py' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/remon/ros2_ws/build/tf2_py', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/remon/ros2_ws/install/tf2_py', 'merge_install': False, 'path': '/home/remon/ros2_ws/src/tf2_py', 'symlink_install': False, 'test_result_base': None}
+[1.212s] Level 5:colcon.colcon_core.verb:set package 'hector_compressed_map_transport' build argument 'cmake_args' from command line to 'None'
+[1.212s] Level 5:colcon.colcon_core.verb:set package 'hector_compressed_map_transport' build argument 'cmake_target' from command line to 'None'
+[1.212s] Level 5:colcon.colcon_core.verb:set package 'hector_compressed_map_transport' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.212s] Level 5:colcon.colcon_core.verb:set package 'hector_compressed_map_transport' build argument 'cmake_clean_cache' from command line to 'False'
+[1.212s] Level 5:colcon.colcon_core.verb:set package 'hector_compressed_map_transport' build argument 'cmake_clean_first' from command line to 'False'
+[1.212s] Level 5:colcon.colcon_core.verb:set package 'hector_compressed_map_transport' build argument 'cmake_force_configure' from command line to 'False'
+[1.212s] Level 5:colcon.colcon_core.verb:set package 'hector_compressed_map_transport' build argument 'ament_cmake_args' from command line to 'None'
+[1.212s] Level 5:colcon.colcon_core.verb:set package 'hector_compressed_map_transport' build argument 'catkin_cmake_args' from command line to 'None'
+[1.212s] Level 5:colcon.colcon_core.verb:set package 'hector_compressed_map_transport' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.212s] DEBUG:colcon.colcon_core.verb:Building package 'hector_compressed_map_transport' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/remon/ros2_ws/build/hector_compressed_map_transport', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/remon/ros2_ws/install/hector_compressed_map_transport', 'merge_install': False, 'path': '/home/remon/ros2_ws/src/hector_slam/hector_compressed_map_transport', 'symlink_install': False, 'test_result_base': None}
+[1.223s] Level 5:colcon.colcon_core.verb:set package 'hector_geotiff' build argument 'cmake_args' from command line to 'None'
+[1.223s] Level 5:colcon.colcon_core.verb:set package 'hector_geotiff' build argument 'cmake_target' from command line to 'None'
+[1.223s] Level 5:colcon.colcon_core.verb:set package 'hector_geotiff' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.224s] Level 5:colcon.colcon_core.verb:set package 'hector_geotiff' build argument 'cmake_clean_cache' from command line to 'False'
+[1.224s] Level 5:colcon.colcon_core.verb:set package 'hector_geotiff' build argument 'cmake_clean_first' from command line to 'False'
+[1.224s] Level 5:colcon.colcon_core.verb:set package 'hector_geotiff' build argument 'cmake_force_configure' from command line to 'False'
+[1.224s] Level 5:colcon.colcon_core.verb:set package 'hector_geotiff' build argument 'ament_cmake_args' from command line to 'None'
+[1.224s] Level 5:colcon.colcon_core.verb:set package 'hector_geotiff' build argument 'catkin_cmake_args' from command line to 'None'
+[1.224s] Level 5:colcon.colcon_core.verb:set package 'hector_geotiff' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.224s] DEBUG:colcon.colcon_core.verb:Building package 'hector_geotiff' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/remon/ros2_ws/build/hector_geotiff', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/remon/ros2_ws/install/hector_geotiff', 'merge_install': False, 'path': '/home/remon/ros2_ws/src/hector_slam/hector_geotiff', 'symlink_install': False, 'test_result_base': None}
+[1.235s] Level 5:colcon.colcon_core.verb:set package 'hector_map_server' build argument 'cmake_args' from command line to 'None'
+[1.235s] Level 5:colcon.colcon_core.verb:set package 'hector_map_server' build argument 'cmake_target' from command line to 'None'
+[1.235s] Level 5:colcon.colcon_core.verb:set package 'hector_map_server' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.235s] Level 5:colcon.colcon_core.verb:set package 'hector_map_server' build argument 'cmake_clean_cache' from command line to 'False'
+[1.235s] Level 5:colcon.colcon_core.verb:set package 'hector_map_server' build argument 'cmake_clean_first' from command line to 'False'
+[1.235s] Level 5:colcon.colcon_core.verb:set package 'hector_map_server' build argument 'cmake_force_configure' from command line to 'False'
+[1.235s] Level 5:colcon.colcon_core.verb:set package 'hector_map_server' build argument 'ament_cmake_args' from command line to 'None'
+[1.235s] Level 5:colcon.colcon_core.verb:set package 'hector_map_server' build argument 'catkin_cmake_args' from command line to 'None'
+[1.235s] Level 5:colcon.colcon_core.verb:set package 'hector_map_server' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.235s] DEBUG:colcon.colcon_core.verb:Building package 'hector_map_server' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/remon/ros2_ws/build/hector_map_server', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/remon/ros2_ws/install/hector_map_server', 'merge_install': False, 'path': '/home/remon/ros2_ws/src/hector_slam/hector_map_server', 'symlink_install': False, 'test_result_base': None}
+[1.247s] Level 5:colcon.colcon_core.verb:set package 'hector_trajectory_server' build argument 'cmake_args' from command line to 'None'
+[1.247s] Level 5:colcon.colcon_core.verb:set package 'hector_trajectory_server' build argument 'cmake_target' from command line to 'None'
+[1.247s] Level 5:colcon.colcon_core.verb:set package 'hector_trajectory_server' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.247s] Level 5:colcon.colcon_core.verb:set package 'hector_trajectory_server' build argument 'cmake_clean_cache' from command line to 'False'
+[1.247s] Level 5:colcon.colcon_core.verb:set package 'hector_trajectory_server' build argument 'cmake_clean_first' from command line to 'False'
+[1.247s] Level 5:colcon.colcon_core.verb:set package 'hector_trajectory_server' build argument 'cmake_force_configure' from command line to 'False'
+[1.247s] Level 5:colcon.colcon_core.verb:set package 'hector_trajectory_server' build argument 'ament_cmake_args' from command line to 'None'
+[1.247s] Level 5:colcon.colcon_core.verb:set package 'hector_trajectory_server' build argument 'catkin_cmake_args' from command line to 'None'
+[1.247s] Level 5:colcon.colcon_core.verb:set package 'hector_trajectory_server' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.247s] DEBUG:colcon.colcon_core.verb:Building package 'hector_trajectory_server' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/remon/ros2_ws/build/hector_trajectory_server', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/remon/ros2_ws/install/hector_trajectory_server', 'merge_install': False, 'path': '/home/remon/ros2_ws/src/hector_slam/hector_trajectory_server', 'symlink_install': False, 'test_result_base': None}
+[1.259s] Level 5:colcon.colcon_core.verb:set package 'hector_geotiff_plugins' build argument 'cmake_args' from command line to 'None'
+[1.259s] Level 5:colcon.colcon_core.verb:set package 'hector_geotiff_plugins' build argument 'cmake_target' from command line to 'None'
+[1.259s] Level 5:colcon.colcon_core.verb:set package 'hector_geotiff_plugins' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.259s] Level 5:colcon.colcon_core.verb:set package 'hector_geotiff_plugins' build argument 'cmake_clean_cache' from command line to 'False'
+[1.259s] Level 5:colcon.colcon_core.verb:set package 'hector_geotiff_plugins' build argument 'cmake_clean_first' from command line to 'False'
+[1.259s] Level 5:colcon.colcon_core.verb:set package 'hector_geotiff_plugins' build argument 'cmake_force_configure' from command line to 'False'
+[1.259s] Level 5:colcon.colcon_core.verb:set package 'hector_geotiff_plugins' build argument 'ament_cmake_args' from command line to 'None'
+[1.259s] Level 5:colcon.colcon_core.verb:set package 'hector_geotiff_plugins' build argument 'catkin_cmake_args' from command line to 'None'
+[1.259s] Level 5:colcon.colcon_core.verb:set package 'hector_geotiff_plugins' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.259s] DEBUG:colcon.colcon_core.verb:Building package 'hector_geotiff_plugins' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/remon/ros2_ws/build/hector_geotiff_plugins', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/remon/ros2_ws/install/hector_geotiff_plugins', 'merge_install': False, 'path': '/home/remon/ros2_ws/src/hector_slam/hector_geotiff_plugins', 'symlink_install': False, 'test_result_base': None}
+[1.270s] Level 5:colcon.colcon_core.verb:set package 'hector_geotiff_launch' build argument 'cmake_args' from command line to 'None'
+[1.271s] Level 5:colcon.colcon_core.verb:set package 'hector_geotiff_launch' build argument 'cmake_target' from command line to 'None'
+[1.271s] Level 5:colcon.colcon_core.verb:set package 'hector_geotiff_launch' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.271s] Level 5:colcon.colcon_core.verb:set package 'hector_geotiff_launch' build argument 'cmake_clean_cache' from command line to 'False'
+[1.271s] Level 5:colcon.colcon_core.verb:set package 'hector_geotiff_launch' build argument 'cmake_clean_first' from command line to 'False'
+[1.271s] Level 5:colcon.colcon_core.verb:set package 'hector_geotiff_launch' build argument 'cmake_force_configure' from command line to 'False'
+[1.271s] Level 5:colcon.colcon_core.verb:set package 'hector_geotiff_launch' build argument 'ament_cmake_args' from command line to 'None'
+[1.271s] Level 5:colcon.colcon_core.verb:set package 'hector_geotiff_launch' build argument 'catkin_cmake_args' from command line to 'None'
+[1.271s] Level 5:colcon.colcon_core.verb:set package 'hector_geotiff_launch' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.271s] DEBUG:colcon.colcon_core.verb:Building package 'hector_geotiff_launch' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/remon/ros2_ws/build/hector_geotiff_launch', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/remon/ros2_ws/install/hector_geotiff_launch', 'merge_install': False, 'path': '/home/remon/ros2_ws/src/hector_slam/hector_geotiff_launch', 'symlink_install': False, 'test_result_base': None}
+[1.282s] Level 5:colcon.colcon_core.verb:set package 'hector_slam_launch' build argument 'cmake_args' from command line to 'None'
+[1.282s] Level 5:colcon.colcon_core.verb:set package 'hector_slam_launch' build argument 'cmake_target' from command line to 'None'
+[1.282s] Level 5:colcon.colcon_core.verb:set package 'hector_slam_launch' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.282s] Level 5:colcon.colcon_core.verb:set package 'hector_slam_launch' build argument 'cmake_clean_cache' from command line to 'False'
+[1.282s] Level 5:colcon.colcon_core.verb:set package 'hector_slam_launch' build argument 'cmake_clean_first' from command line to 'False'
+[1.282s] Level 5:colcon.colcon_core.verb:set package 'hector_slam_launch' build argument 'cmake_force_configure' from command line to 'False'
+[1.282s] Level 5:colcon.colcon_core.verb:set package 'hector_slam_launch' build argument 'ament_cmake_args' from command line to 'None'
+[1.282s] Level 5:colcon.colcon_core.verb:set package 'hector_slam_launch' build argument 'catkin_cmake_args' from command line to 'None'
+[1.282s] Level 5:colcon.colcon_core.verb:set package 'hector_slam_launch' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.282s] DEBUG:colcon.colcon_core.verb:Building package 'hector_slam_launch' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/remon/ros2_ws/build/hector_slam_launch', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/remon/ros2_ws/install/hector_slam_launch', 'merge_install': False, 'path': '/home/remon/ros2_ws/src/hector_slam/hector_slam_launch', 'symlink_install': False, 'test_result_base': None}
+[1.294s] Level 5:colcon.colcon_core.verb:set package 'hector_slam' build argument 'cmake_args' from command line to 'None'
+[1.294s] Level 5:colcon.colcon_core.verb:set package 'hector_slam' build argument 'cmake_target' from command line to 'None'
+[1.294s] Level 5:colcon.colcon_core.verb:set package 'hector_slam' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.294s] Level 5:colcon.colcon_core.verb:set package 'hector_slam' build argument 'cmake_clean_cache' from command line to 'False'
+[1.294s] Level 5:colcon.colcon_core.verb:set package 'hector_slam' build argument 'cmake_clean_first' from command line to 'False'
+[1.294s] Level 5:colcon.colcon_core.verb:set package 'hector_slam' build argument 'cmake_force_configure' from command line to 'False'
+[1.294s] Level 5:colcon.colcon_core.verb:set package 'hector_slam' build argument 'ament_cmake_args' from command line to 'None'
+[1.294s] Level 5:colcon.colcon_core.verb:set package 'hector_slam' build argument 'catkin_cmake_args' from command line to 'None'
+[1.294s] Level 5:colcon.colcon_core.verb:set package 'hector_slam' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.294s] DEBUG:colcon.colcon_core.verb:Building package 'hector_slam' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/remon/ros2_ws/build/hector_slam', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/remon/ros2_ws/install/hector_slam', 'merge_install': False, 'path': '/home/remon/ros2_ws/src/hector_slam/hector_slam', 'symlink_install': False, 'test_result_base': None}
+[1.306s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[1.318s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[1.318s] INFO:colcon.colcon_ros.task.catkin.build:Building ROS package in '/home/remon/ros2_ws/src/hector_slam/hector_map_tools' with build type 'catkin'
+[1.318s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/remon/ros2_ws/src/hector_slam/hector_map_tools'
+[1.333s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[1.333s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.333s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.371s] INFO:colcon.colcon_ros.task.catkin.build:Building ROS package in '/home/remon/ros2_ws/src/hector_slam/hector_nav_msgs' with build type 'catkin'
+[1.372s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/remon/ros2_ws/src/hector_slam/hector_nav_msgs'
+[1.384s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.384s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.421s] INFO:colcon.colcon_ros.task.catkin.build:Building ROS package in '/home/remon/ros2_ws/src/hector_slam/hector_marker_drawing' with build type 'catkin'
+[1.421s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/remon/ros2_ws/src/hector_slam/hector_marker_drawing'
+[1.434s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.434s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.471s] INFO:colcon.colcon_ros.task.catkin.build:Building ROS package in '/home/remon/ros2_ws/src/hector_slam/hector_mapping' with build type 'catkin'
+[1.472s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/remon/ros2_ws/src/hector_slam/hector_mapping'
+[1.484s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.484s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.520s] INFO:colcon.colcon_ros.task.catkin.build:Building ROS package in '/home/remon/ros2_ws/src/hector_slam/hector_imu_attitude_to_tf' with build type 'catkin'
+[1.520s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/remon/ros2_ws/src/hector_slam/hector_imu_attitude_to_tf'
+[1.532s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.532s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.569s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/remon/ros2_ws/src/autonomous_exploration' with build type 'ament_python'
+[1.569s] Level 1:colcon.colcon_core.shell:create_environment_hook('autonomous_exploration', 'ament_prefix_path')
+[1.581s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/remon/ros2_ws/install/autonomous_exploration/share/autonomous_exploration/hook/ament_prefix_path.ps1'
+[1.581s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/remon/ros2_ws/install/autonomous_exploration/share/autonomous_exploration/hook/ament_prefix_path.dsv'
+[1.582s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/remon/ros2_ws/install/autonomous_exploration/share/autonomous_exploration/hook/ament_prefix_path.sh'
+[1.595s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.595s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.643s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/remon/ros2_ws/src/fw_robot' with build type 'ament_cmake'
+[1.643s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/remon/ros2_ws/src/fw_robot'
+[1.655s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.655s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.691s] INFO:colcon.colcon_ros.task.catkin.build:Building ROS package in '/home/remon/ros2_ws/src/hector_slam/hector_imu_tools' with build type 'catkin'
+[1.692s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/remon/ros2_ws/src/hector_slam/hector_imu_tools'
+[1.703s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.703s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.746s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/remon/ros2_ws/build/hector_map_tools': /usr/bin/cmake /home/remon/ros2_ws/src/hector_slam/hector_map_tools -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCMAKE_INSTALL_PREFIX=/home/remon/ros2_ws/install/hector_map_tools
+[1.748s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/remon/ros2_ws/build/hector_nav_msgs': /usr/bin/cmake /home/remon/ros2_ws/src/hector_slam/hector_nav_msgs -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCMAKE_INSTALL_PREFIX=/home/remon/ros2_ws/install/hector_nav_msgs
+[1.751s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/remon/ros2_ws/build/hector_marker_drawing': /usr/bin/cmake /home/remon/ros2_ws/src/hector_slam/hector_marker_drawing -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCMAKE_INSTALL_PREFIX=/home/remon/ros2_ws/install/hector_marker_drawing
+[1.755s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/remon/ros2_ws/build/hector_mapping': /usr/bin/cmake /home/remon/ros2_ws/src/hector_slam/hector_mapping -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCMAKE_INSTALL_PREFIX=/home/remon/ros2_ws/install/hector_mapping
+[1.758s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/remon/ros2_ws/build/hector_imu_attitude_to_tf': /usr/bin/cmake /home/remon/ros2_ws/src/hector_slam/hector_imu_attitude_to_tf -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCMAKE_INSTALL_PREFIX=/home/remon/ros2_ws/install/hector_imu_attitude_to_tf
+[1.977s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/remon/ros2_ws/src/autonomous_exploration'
+[1.988s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.988s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.028s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/remon/ros2_ws/build/fw_robot': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/remon/ros2_ws/install/my_py_pkg:/home/remon/ros2_ws/install/autonomous_exploration:/opt/ros/humble /usr/bin/cmake --build /home/remon/ros2_ws/build/fw_robot -- -j8 -l8
+[2.037s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/remon/ros2_ws/build/hector_imu_tools': /usr/bin/cmake /home/remon/ros2_ws/src/hector_slam/hector_imu_tools -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCMAKE_INSTALL_PREFIX=/home/remon/ros2_ws/install/hector_imu_tools
+[2.038s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/remon/ros2_ws/build/hector_nav_msgs' returned '1': /usr/bin/cmake /home/remon/ros2_ws/src/hector_slam/hector_nav_msgs -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCMAKE_INSTALL_PREFIX=/home/remon/ros2_ws/install/hector_nav_msgs
+[2.038s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/remon/ros2_ws/build/hector_map_tools' returned '1': /usr/bin/cmake /home/remon/ros2_ws/src/hector_slam/hector_map_tools -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCMAKE_INSTALL_PREFIX=/home/remon/ros2_ws/install/hector_map_tools
+[2.040s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/remon/ros2_ws/build/hector_mapping' returned '1': /usr/bin/cmake /home/remon/ros2_ws/src/hector_slam/hector_mapping -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCMAKE_INSTALL_PREFIX=/home/remon/ros2_ws/install/hector_mapping
+[2.041s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/remon/ros2_ws/build/hector_marker_drawing' returned '1': /usr/bin/cmake /home/remon/ros2_ws/src/hector_slam/hector_marker_drawing -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCMAKE_INSTALL_PREFIX=/home/remon/ros2_ws/install/hector_marker_drawing
+[2.044s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/remon/ros2_ws/build/hector_imu_attitude_to_tf' returned '1': /usr/bin/cmake /home/remon/ros2_ws/src/hector_slam/hector_imu_attitude_to_tf -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCMAKE_INSTALL_PREFIX=/home/remon/ros2_ws/install/hector_imu_attitude_to_tf
+[2.053s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(hector_nav_msgs)
+[2.071s] Level 1:colcon.colcon_core.environment:checking '/home/remon/ros2_ws/install/hector_nav_msgs' for CMake module files
+[2.072s] Level 1:colcon.colcon_core.environment:checking '/home/remon/ros2_ws/install/hector_nav_msgs' for CMake config files
+[2.072s] Level 1:colcon.colcon_core.environment:checking '/home/remon/ros2_ws/install/hector_nav_msgs/bin'
+[2.072s] Level 1:colcon.colcon_core.environment:checking '/home/remon/ros2_ws/install/hector_nav_msgs/lib/pkgconfig/hector_nav_msgs.pc'
+[2.072s] Level 1:colcon.colcon_core.environment:checking '/home/remon/ros2_ws/install/hector_nav_msgs/lib/python3.10/site-packages'
+[2.072s] Level 1:colcon.colcon_core.environment:checking '/home/remon/ros2_ws/install/hector_nav_msgs/bin'
+[2.084s] INFO:colcon.colcon_core.shell:Creating package script '/home/remon/ros2_ws/install/hector_nav_msgs/share/hector_nav_msgs/package.ps1'
+[2.085s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/remon/ros2_ws/install/hector_nav_msgs/share/hector_nav_msgs/package.dsv'
+[2.085s] INFO:colcon.colcon_core.shell:Creating package script '/home/remon/ros2_ws/install/hector_nav_msgs/share/hector_nav_msgs/package.sh'
+[2.085s] INFO:colcon.colcon_core.shell:Creating package script '/home/remon/ros2_ws/install/hector_nav_msgs/share/hector_nav_msgs/package.bash'
+[2.086s] INFO:colcon.colcon_core.shell:Creating package script '/home/remon/ros2_ws/install/hector_nav_msgs/share/hector_nav_msgs/package.zsh'
+[2.087s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/remon/ros2_ws/install/hector_nav_msgs/share/colcon-core/packages/hector_nav_msgs)
+[2.363s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[2.363s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[2.363s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '1'
+[2.363s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[2.381s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[2.381s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[2.381s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[2.391s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[2.404s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/remon/ros2_ws/install/local_setup.ps1'
+[2.405s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/remon/ros2_ws/install/_local_setup_util_ps1.py'
+[2.406s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/remon/ros2_ws/install/setup.ps1'
+[2.419s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/remon/ros2_ws/install/local_setup.sh'
+[2.420s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/remon/ros2_ws/install/_local_setup_util_sh.py'
+[2.420s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/remon/ros2_ws/install/setup.sh'
+[2.432s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/remon/ros2_ws/install/local_setup.bash'
+[2.433s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/remon/ros2_ws/install/setup.bash'
+[2.445s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/remon/ros2_ws/install/local_setup.zsh'
+[2.445s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/remon/ros2_ws/install/setup.zsh'

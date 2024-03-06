@@ -1,8 +1,0 @@
-[0.050s] Invoking command in '/home/remon/ros2_ws/build/cpp_pkg2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/remon/ros2_ws/install/my_py_pkg:/opt/ros/humble /usr/bin/cmake /home/remon/ros2_ws/src/cpp_pkg2 -DCMAKE_INSTALL_PREFIX=/home/remon/ros2_ws/install/cpp_pkg2
-[0.054s] [31mCMake Error at CMakeLists.txt:25:
-[0.055s]   Parse error.  Expected a command name, got unquoted argument with text
-[0.055s]   "//link".
-[0.055s] 
-[0.055s] [0m
-[0.055s] -- Configuring incomplete, errors occurred!
-[0.056s] Invoked command in '/home/remon/ros2_ws/build/cpp_pkg2' returned '1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/remon/ros2_ws/install/my_py_pkg:/opt/ros/humble /usr/bin/cmake /home/remon/ros2_ws/src/cpp_pkg2 -DCMAKE_INSTALL_PREFIX=/home/remon/ros2_ws/install/cpp_pkg2

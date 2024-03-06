@@ -1,1 +1,0 @@
-Invoking command in '/home/remon/ros2_ws/build/fw_robot': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/remon/ros2_ws/install/my_py_pkg:/home/remon/ros2_ws/install/autonomous_exploration:/opt/ros/humble /usr/bin/cmake --build /home/remon/ros2_ws/build/fw_robot -- -j8 -l8

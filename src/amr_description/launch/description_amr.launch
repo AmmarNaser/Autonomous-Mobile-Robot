@@ -1,0 +1,28 @@
+<!-- <launch>
+    <arg name="config" default="amr_with_SLAM_Pack" />
+
+    <param name="robot_description" 
+           command="$(find amr_description)/scripts/env_run
+                    $(find amr_description)/urdf/configs/$(arg config)
+                    $(find xacro)/xacro $(find amr_description)/urdf/amr.urdf.xacro" />
+
+    <node name="joint_state_publisher" pkg="joint_state_publisher" type="joint_state_publisher" />
+    <node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher" />
+</launch> -->
+
+<launch>
+    <arg name="model" />
+    <!-- Parsing xacro and setting robot_description parameter -->
+    <param name="robot_description" command="$(find xacro)/xacro $(find amr_description)/urdf/amr.urdf.xacro" />
+    <!-- Setting gui parameter to true for display joint slider -->
+    <param name="use_gui" value="true"/>
+    <!-- Starting Joint state publisher node which will publish the joint values -->
+    <node name="joint_state_publisher" pkg="joint_state_publisher" type="joint_state_publisher" />
+    <node name="joint_state_publisher_gui" pkg="joint_state_publisher_gui" type="joint_state_publisher_gui" />
+    <!-- Starting robot state publish which will publish tf -->
+    <node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher" />
+    <!-- Starting rviz with amr_description.rviz file -->
+    <node name="rviz" pkg="rviz" type="rviz" args="-d $(find amr_description)/rviz/amr_rviz_config.rviz" required="true"/>
+    <!-- Launch visualization in rviz -->
+    <!-- <node name="rviz" pkg="rviz" type="rviz" args="-d $(find amr_description)/rviz/amr_description.rviz" required="true" /> -->
+</launch>

@@ -1,0 +1,15 @@
+wheel_rear_left_controller:
+  type: velocity_controllers/JointVelocityController
+  joint: bl_wheel_shaft_to_chassis
+
+wheel_rear_right_controller:
+  type: velocity_controllers/JointVelocityController
+  joint: br_wheel_shaft_to_chassis
+
+wheel_front_left_controller:
+  type: velocity_controllers/JointVelocityController
+  joint: fl_wheel_shaft_to_chassis
+
+wheel_front_right_controller:
+  type: velocity_controllers/JointVelocityController
+  joint: fr_wheel_shaft_to_chassis

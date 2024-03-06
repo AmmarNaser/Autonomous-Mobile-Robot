@@ -1,0 +1,543 @@
+<?xml version="1.0" ?>
+<robot name="amr" xmlns:xacro="http://ros.org/wiki/xacro">
+
+    <!-- Robot Parameters -->
+    <xacro:property name="wheel_z_offset" value="0.028" />
+    <xacro:property name="wheel_x_offset" value="0.108" />
+    <xacro:property name="wheel_y_offset" value="0.19" />
+    <xacro:property name="rim_y_offset" value="0.022" />
+    <xacro:property name="payload_z_offset" value="0.2"/>
+    <xacro:property name="shaft_mass" value="0.06175" />
+
+
+    <xacro:include filename="$(find amr_description)/urdf/accessories/payload.urdf.xacro" />
+    <xacro:include filename="$(find amr_description)/urdf/accessories/top_plate.urdf.xacro" />
+    <xacro:include filename="$(find amr_description)/urdf/accessories/kinect.urdf.xacro" />
+    <xacro:include filename="$(find amr_description)/urdf/accessories/rplidar.urdf.xacro" />
+    <xacro:include filename="$(find amr_description)/urdf/accessories/imu.urdf.xacro" />
+
+    
+    
+    <link name="base_footprint"/>
+    <link name="chassis_link">
+      <visual>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <geometry>
+          <mesh filename="package://amr_description/meshes/Base_final.stl" scale="1 1 1"/>
+        </geometry>
+        <material name="gray">
+            <color rgba=".7 .7 .7 1" />
+        </material>
+      </visual>
+      <collision>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <geometry>
+            <mesh filename="package://amr_description/meshes/Base_final.stl" scale="1 1 1"/>
+        </geometry>
+        <mu>1</mu>
+        <mu2>1</mu2>
+        <kp>1e+13.0</kp>
+        <kd>1</kd>
+      </collision>
+
+      <inertial>
+        <origin xyz="0 0 0.1" rpy="0 0 0" />
+        <mass value="8.34" />
+        <inertia ixx="0.002386469" iyy="0.004827723" izz="0.003252219" ixy="0.0" ixz="0.0" iyz="0.0"/>
+      </inertial>
+    </link>
+  
+    <joint name="base_joint" type="fixed">
+      <parent link="base_footprint"/>
+      <child link="chassis_link"/>
+      <origin xyz="0 0 0.093" rpy="0 0 0"/>
+    </joint>
+
+    <gazebo reference="chassis_link">
+        <material>Gazebo/Grey</material>
+    </gazebo>
+
+    <!-- frontright wheel link -->
+    <link name="fr_wheel_shaft_link">
+        <visual>
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <geometry>
+                <mesh filename="file://$(find amr_description)/meshes/shaft_final.stl"/>
+            </geometry>
+        </visual>
+
+        <collision>
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <geometry>
+                <mesh filename="file://$(find amr_description)/meshes/shaft_final.stl"/>
+            </geometry>
+        </collision>
+
+        <inertial>
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <mass value="${shaft_mass}" />
+            <inertia ixx="0.000001112" iyy="0.000101416" izz="0.000101416" ixy="0.0" ixz="0.0" iyz="0.0"/>        
+        </inertial>
+    </link>
+
+    <gazebo reference="fr_wheel_shaft_link">
+        <mu1 value="2000.0"/>
+        <mu2 value="1000.0"/>
+        <kp value="1.0"/>
+        <kd value="1.0"/>s
+        <selfCollide value="true"/>
+    </gazebo>
+
+    <link name="fr_wheel_rim_link">
+        <visual>
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <geometry>
+                <mesh filename="file://$(find amr_description)/meshes/inner_final.stl"/>
+            </geometry>
+            <material name="shine_silver">
+                <color rgba="0.8 0.8 0.8 1" />
+            </material>
+        </visual>
+
+        <collision>
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <geometry>
+                <mesh filename="file://$(find amr_description)/meshes/inner_final.stl"/>
+            </geometry>
+        </collision>
+
+        <inertial>
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <mass value="0.94"/>
+            <inertia ixx="0.001752394" iyy="0.001233251" izz="0.001233251" ixy="0.0" ixz="0.0" iyz="0.0"/>       
+        </inertial>
+    </link>
+
+    <link name="fr_wheel_outer_link">
+        <visual>
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <geometry>
+                <mesh filename="file://$(find amr_description)/meshes/outer_final.stl"/>
+            </geometry>
+            <material name="black">
+                <color rgba="0 0 0 1" />
+            </material>
+        </visual>
+
+        <collision>
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <geometry>
+                <mesh filename="file://$(find amr_description)/meshes/outer_final.stl"/>
+            </geometry>
+        </collision>
+
+        <inertial>
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <mass value="0.11614"/>
+            <inertia ixx="0.00036673" iyy="0.00036673" izz="0.000435441" ixy="0.0" ixz="0.0" iyz="0.0"/>
+        </inertial>
+    </link>
+    
+    <joint name="fr_wheel_shaft_to_chassis" type="continuous">
+        <parent link="chassis_link"/>
+        <child link="fr_wheel_shaft_link"/>
+        <axis xyz="0 1 0"/>
+        <origin xyz="${wheel_x_offset} ${wheel_y_offset} ${-wheel_z_offset}" rpy="0.0 0.0 0.0"/>
+    </joint>
+
+    <joint name="fr_wheel_rim_to_shaft" type="fixed">
+        <parent link="fr_wheel_shaft_link"/>
+        <child link="fr_wheel_rim_link"/>
+        <origin xyz="0 ${rim_y_offset} 0" rpy="0 0 0"/>
+    </joint>
+
+    <joint name="fr_wheel_outer_to_rim" type="fixed">
+        <parent link="fr_wheel_rim_link"/>
+        <child link="fr_wheel_outer_link"/>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+    </joint>
+
+    <!-- frontleft wheel link -->
+
+    <link name="fl_wheel_shaft_link">
+        <visual>
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <geometry>
+                <mesh filename="file://$(find amr_description)/meshes/shaft_final.stl"/>
+            </geometry>
+        </visual>
+
+        <collision>
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <geometry>
+                <mesh filename="file://$(find amr_description)/meshes/shaft_final.stl"/>
+            </geometry>
+        </collision>
+
+        <inertial>
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <mass value="${shaft_mass}" />
+            <inertia ixx="0.000001112" iyy="0.000101416" izz="0.000101416" ixy="0.0" ixz="0.0" iyz="0.0"/>        
+        </inertial>
+    </link>
+
+    <gazebo reference="fl_wheel_shaft_link">
+        <mu1 value="2000.0"/>
+        <mu2 value="1000.0"/>
+        <kp value="1.0"/>
+        <kd value="1.0"/>s
+        <selfCollide value="true"/>
+    </gazebo>
+
+    <link name="fl_wheel_rim_link">
+        <visual>
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <geometry>
+                <mesh filename="file://$(find amr_description)/meshes/inner_final.stl"/>
+            </geometry>
+            <material name="shine_silver">
+                <color rgba="0.8 0.8 0.8 1" />
+            </material>
+        </visual>
+
+        <collision>
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <geometry>
+                <mesh filename="file://$(find amr_description)/meshes/inner_final.stl"/>
+            </geometry>
+        </collision>
+
+        <inertial>
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <mass value="0.94"/>
+            <inertia ixx="0.001752394" iyy="0.001233251" izz="0.001233251" ixy="0.0" ixz="0.0" iyz="0.0"/>       
+        </inertial>
+    </link>
+
+    <link name="fl_wheel_outer_link">
+        <visual>
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <geometry>
+                <mesh filename="file://$(find amr_description)/meshes/outer_final.stl"/>
+            </geometry>
+            <material name="black">
+                <color rgba="0 0 0 1" />
+            </material>
+        </visual>
+
+        <collision>
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <geometry>
+                <mesh filename="file://$(find amr_description)/meshes/outer_final.stl"/>
+            </geometry>
+        </collision>
+
+        <inertial>
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <mass value="0.11614"/>
+            <inertia ixx="0.00036673" iyy="0.00036673" izz="0.000435441" ixy="0.0" ixz="0.0" iyz="0.0"/>
+        </inertial>
+    </link>
+
+    <joint name="fl_wheel_shaft_to_chassis" type="continuous">
+        <parent link="chassis_link"/>
+        <child link="fl_wheel_shaft_link"/>
+        <axis xyz="0 -1 0"/>
+        <origin xyz="${wheel_x_offset} ${-wheel_y_offset} ${-wheel_z_offset}" rpy="3.14 0.0 0.0"/>
+    </joint>
+
+    <joint name="fl_wheel_rim_to_shaft" type="fixed">
+        <parent link="fl_wheel_shaft_link"/>
+        <child link="fl_wheel_rim_link"/>
+        <origin xyz="0 ${rim_y_offset} 0" rpy="0 0 0"/>
+    </joint>
+
+    <joint name="fl_wheel_outer_to_rim" type="fixed">
+        <parent link="fl_wheel_rim_link"/>
+        <child link="fl_wheel_outer_link"/>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+    </joint>
+
+    <!-- backright wheel link -->
+
+    <link name="br_wheel_shaft_link">
+        <visual>
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <geometry>
+                <mesh filename="file://$(find amr_description)/meshes/shaft_final.stl"/>
+            </geometry>
+        </visual>
+
+        <collision>
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <geometry>
+                <mesh filename="file://$(find amr_description)/meshes/shaft_final.stl"/>
+            </geometry>
+        </collision>
+
+        <inertial>
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <mass value="${shaft_mass}" />
+            <inertia ixx="0.000001112" iyy="0.000101416" izz="0.000101416" ixy="0.0" ixz="0.0" iyz="0.0"/>    
+        </inertial>
+    </link>
+
+    <gazebo reference="br_wheel_shaft_link">
+        <mu1 value="2000.0"/>
+        <mu2 value="1000.0"/>
+        <kp value="1.0"/>
+        <kd value="1.0"/>s
+        <selfCollide value="true"/>
+    </gazebo>
+
+    <link name="br_wheel_rim_link">
+        <visual>
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <geometry>
+                <mesh filename="file://$(find amr_description)/meshes/inner_final.stl"/>
+            </geometry>
+            <material name="shine_silver">
+                <color rgba="0.8 0.8 0.8 1" />
+            </material>
+        </visual>
+
+        <collision>
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <geometry>
+                <mesh filename="file://$(find amr_description)/meshes/inner_final.stl"/>
+            </geometry>
+        </collision>
+
+        <inertial>
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <mass value="0.94"/>
+            <inertia ixx="0.001752394" iyy="0.001233251" izz="0.001233251" ixy="0.0" ixz="0.0" iyz="0.0"/>       
+        </inertial>
+    </link>
+
+    <link name="br_wheel_outer_link">
+        <visual>
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <geometry>
+                <mesh filename="file://$(find amr_description)/meshes/outer_final.stl"/>
+            </geometry>
+            <material name="black">
+                <color rgba="0 0 0 1" />
+            </material>
+        </visual>
+
+        <collision>
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <geometry>
+                <mesh filename="file://$(find amr_description)/meshes/outer_final.stl"/>
+            </geometry>
+        </collision>
+
+        <inertial>
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <mass value="0.11614"/>
+            <inertia ixx="0.00036673" iyy="0.00036673" izz="0.000435441" ixy="0.0" ixz="0.0" iyz="0.0"/>
+        </inertial>
+    </link>
+
+    <joint name="br_wheel_shaft_to_chassis" type="continuous">
+        <parent link="chassis_link"/>
+        <child link="br_wheel_shaft_link"/>
+        <axis xyz="0 1 0"/>
+        <origin xyz="${-wheel_x_offset} ${wheel_y_offset} ${-wheel_z_offset}" rpy="0.0 0.0 0.0"/>
+    </joint>
+
+    <joint name="br_wheel_rim_to_shaft" type="fixed">
+        <parent link="br_wheel_shaft_link"/>
+        <child link="br_wheel_rim_link"/>
+        <origin xyz="0 ${rim_y_offset} 0" rpy="0 0 0"/>
+    </joint>
+
+    <joint name="br_wheel_outer_to_rim" type="fixed">
+        <parent link="br_wheel_rim_link"/>
+        <child link="br_wheel_outer_link"/>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+    </joint>
+
+    <!-- backleft wheel link -->
+
+    <link name="bl_wheel_shaft_link">
+        <visual>
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <geometry>
+                <mesh filename="file://$(find amr_description)/meshes/shaft_final.stl"/>
+            </geometry>
+        </visual>
+
+        <collision>
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <geometry>
+                <mesh filename="file://$(find amr_description)/meshes/shaft_final.stl"/>
+            </geometry>
+        </collision>
+
+        <inertial>
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <mass value="${shaft_mass}" />
+            <inertia ixx="0.000001112" iyy="0.000101416" izz="0.000101416" ixy="0.0" ixz="0.0" iyz="0.0"/>        
+        </inertial>
+    </link>
+
+    <gazebo reference="bl_wheel_shaft_link">
+        <mu1 value="2000.0"/>
+        <mu2 value="1000.0"/>
+        <kp value="1.0"/>
+        <kd value="1.0"/>s
+        <selfCollide value="true"/>
+    </gazebo>
+
+
+    <link name="bl_wheel_rim_link">
+        <visual>
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <geometry>
+                <mesh filename="file://$(find amr_description)/meshes/inner_final.stl"/>
+            </geometry>
+            <material name="shine_silver">
+                <color rgba="0.8 0.8 0.8 1" />
+            </material>
+        </visual>
+
+        <collision>
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <geometry>
+                <mesh filename="file://$(find amr_description)/meshes/inner_final.stl"/>
+            </geometry>
+        </collision>
+
+        <inertial>
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <mass value="0.94"/>
+            <inertia ixx="0.001752394" iyy="0.001233251" izz="0.001233251" ixy="0.0" ixz="0.0" iyz="0.0"/>       
+        </inertial>
+    </link>
+
+    <link name="bl_wheel_outer_link">
+        <visual>
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <geometry>
+                <mesh filename="file://$(find amr_description)/meshes/outer_final.stl"/>
+            </geometry>
+            <material name="black">
+                <color rgba="0 0 0 1" />
+            </material>
+        </visual>
+
+        <collision>
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <geometry>
+                <mesh filename="file://$(find amr_description)/meshes/outer_final.stl"/>
+            </geometry>
+        </collision>
+
+        <inertial>
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <mass value="0.11614"/>
+            <inertia ixx="0.00036673" iyy="0.00036673" izz="0.000435441" ixy="0.0" ixz="0.0" iyz="0.0"/>
+        </inertial>
+    </link>
+
+    <joint name="bl_wheel_shaft_to_chassis" type="continuous">
+        <parent link="chassis_link"/>
+        <child link="bl_wheel_shaft_link"/>
+        <axis xyz="0 -1 0"/>
+        <origin xyz="${-wheel_x_offset} ${-wheel_y_offset} ${-wheel_z_offset}" rpy="3.14 0.0 0.0"/>
+    </joint>
+
+    <joint name="bl_wheel_rim_to_shaft" type="fixed">
+        <parent link="bl_wheel_shaft_link"/>
+        <child link="bl_wheel_rim_link"/>
+        <origin xyz="0 ${rim_y_offset} 0" rpy="0 0 0"/>
+    </joint>
+
+    <joint name="bl_wheel_outer_to_rim" type="fixed">
+        <parent link="bl_wheel_rim_link"/>
+        <child link="bl_wheel_outer_link"/>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+    </joint>
+
+
+      <!-- ROS Control -->
+      <gazebo>
+        <plugin name="gazebo_ros_control" filename="libgazebo_ros_control.so">
+          <robotName>/amr</robotName>
+          <robotSimType>gazebo_ros_control/DefaultRobotHWSim</robotSimType>
+        </plugin>
+      </gazebo>
+    
+        <transmission name="wheel_rear_right_transmission">
+            <type>transmission_interface/SimpleTransmission</type>
+            <joint name="br_wheel_shaft_to_chassis" >
+              <hardwareInterface>hardware_interface/VelocityJointInterface</hardwareInterface>
+            </joint>
+            <actuator name="wheel_raer_right_motor" >
+              <hardwareInterface>hardware_interface/VelocityJointInterface</hardwareInterface>
+              <mechanicalReduction>1.0</mechanicalReduction>
+            </actuator>
+          </transmission>
+          
+          <transmission name="wheel_rear_left_transmission">
+            <type>transmission_interface/SimpleTransmission</type>
+            <joint name="bl_wheel_shaft_to_chassis" >
+              <hardwareInterface>hardware_interface/VelocityJointInterface</hardwareInterface>
+            </joint>
+            <actuator name="wheel_raer_left_motor" >
+              <hardwareInterface>hardware_interface/VelocityJointInterface</hardwareInterface>
+              <mechanicalReduction>1.0</mechanicalReduction>
+            </actuator>
+          </transmission>
+    
+          <transmission name="wheel_front_right_transmission">
+            <type>transmission_interface/SimpleTransmission</type>
+            <joint name="fr_wheel_shaft_to_chassis" >
+              <hardwareInterface>hardware_interface/VelocityJointInterface</hardwareInterface>
+            </joint>
+            <actuator name="wheel_front_right_motor" >
+              <hardwareInterface>hardware_interface/VelocityJointInterface</hardwareInterface>
+              <mechanicalReduction>1.0</mechanicalReduction>
+            </actuator>
+          </transmission>
+          
+          <transmission name="wheel_front_left_transmission">
+            <type>transmission_interface/SimpleTransmission</type>
+            <joint name="fl_wheel_shaft_to_chassis" >
+              <hardwareInterface>hardware_interface/VelocityJointInterface</hardwareInterface>
+            </joint>
+            <actuator name="wheel_front_left_motor" >
+              <hardwareInterface>hardware_interface/VelocityJointInterface</hardwareInterface>
+              <mechanicalReduction>1.0</mechanicalReduction>
+            </actuator>
+          </transmission>
+
+
+        <gazebo reference="bl_wheel_rim_link">
+        <material>Gazebo/White</material>
+        </gazebo>
+        <gazebo reference="br_wheel_rim_link">
+        <material>Gazebo/White</material>
+        </gazebo>
+        <gazebo reference="fl_wheel_rim_link">
+        <material>Gazebo/White</material>
+        </gazebo>
+        <gazebo reference="fr_wheel_rim_link">
+        <material>Gazebo/White</material>
+        </gazebo>
+        <gazebo reference="bl_wheel_outer_link">
+        <material>Gazebo/Black</material>
+        </gazebo>
+        <gazebo reference="br_wheel_outer_link">
+        <material>Gazebo/Black</material>
+        </gazebo>
+        <gazebo reference="fl_wheel_outer_link">
+        <material>Gazebo/Black</material>
+        </gazebo>
+        <gazebo reference="fr_wheel_outer_link">
+        <material>Gazebo/Black</material>
+        </gazebo>
+
+</robot>

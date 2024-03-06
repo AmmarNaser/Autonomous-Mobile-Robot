@@ -1,0 +1,51 @@
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="amr_lifter">
+    
+    <link name="lifter_link">
+        <visual>
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <geometry>
+                <mesh filename="file://$(find amr_description)/meshes/top_plate_final.stl"/>
+            </geometry>
+            <material name="shine_silver">
+                <color rgba="0.8 0.8 0.8 1" />
+            </material>
+        </visual>
+
+        <collision>
+            <origin xyz="0 0 0" rpy="0 0 0"/>
+            <geometry>
+                <mesh filename="file://$(find amr_description)/meshes/top_plate_final.stl"/>
+            </geometry>
+        </collision>
+
+        <inertial>
+            <origin xyz="0 0 0" rpy="0 0 0"/>
+            <mass value="2.54605"/>
+            <inertia ixx="0.000065178" iyy="0.000128019" izz="0.000065178" ixy="0.0" ixz="0.0" iyz="0.0"/>
+        </inertial>
+    </link>
+
+    <joint name="lifter_to_top" type="prismatic">
+        <parent link="payload_link"/>
+        <child link="lifter_link"/>
+        <origin xyz="0.0 0.0 0.07" rpy="0.0 0.0 0.0"/>
+        <limit lower="0.00" upper="0.07" effort="100.0" velocity="1.0"/>
+        <axis xyz="0.0 0.0 1"/>
+    </joint>
+
+    <gazebo>
+        <plugin name="gazebo_joint_publisher" filename="libgazebo_ros_joint_state_publisher.so">
+          <robotNamespace>/</robotNamespace>
+          <jointName>
+            lifter_to_top
+          </jointName>
+          <alwaysOn>true</alwaysOn>
+          <updateRate>30.0</updateRate>
+        </plugin>
+      </gazebo>
+
+      <gazebo reference="lifter_link">
+        <material>Gazebo/Grey</material>
+    </gazebo>
+
+</robot>

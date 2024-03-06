@@ -1,0 +1,19 @@
+/gazebo_ros_control:
+  pid_gains:
+    br_wheel_shaft_to_chassis:
+    p: 100.0
+    i: 0.01
+    d: 10.0
+    bl_wheel_shaft_to_chassis:
+    p: 100.0
+    i: 0.01
+    d: 10.0
+    fr_wheel_shaft_to_chassis:
+    p: 100.0
+    i: 0.01
+    d: 10.0
+    fl_wheel_shaft_to_chassis:
+    p: 100.0
+    i: 0.01
+    d: 10.0
+

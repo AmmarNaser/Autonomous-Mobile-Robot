@@ -1,0 +1,80 @@
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="amr_kinect">
+    
+    <link name="kinect_link">
+        <visual>
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <geometry>
+                <mesh filename="file://$(find amr_description)/meshes/kinect.stl"/>
+            </geometry>
+            <material name="black">
+                <color rgba="0.0 0.0 0.0 1" />
+            </material>
+        </visual>
+
+        <collision>
+            <origin xyz="0 0 0" rpy="0 0 0"/>
+            <geometry>
+                <mesh filename="file://$(find amr_description)/meshes/kinect.stl"/>
+            </geometry>
+        </collision>
+
+        <inertial>
+            <origin xyz="0 0 0" rpy="0 0 0"/>
+            <mass value="0.350"/>
+            <inertia ixx="0.003042698" iyy="0.000488640" izz="0.002953811" ixy="0.0" ixz="0.0" iyz="0.0"/>
+        </inertial>
+    </link>
+
+    <joint name="kinect_to_top" type="fixed">
+        <parent link="payload_link"/>
+        <child link="kinect_link"/>
+        <origin xyz="0.19 0.0 0.07" rpy="0.0 0.0 0"/>
+    </joint>
+
+    <gazebo reference="kinect_link">
+        <sensor name="kinect_link_camera" type="depth">
+            <update_rate>20</update_rate>
+            <camera>
+                <horizontal_fov>1.047198</horizontal_fov>
+                <image>
+                    <width>640</width>
+                    <height>480</height>
+                    <format>R8G8B8</format>
+                </image>
+                <clip>
+                    <near>0.05</near>
+                    <far>3</far>
+                </clip>
+            </camera>
+            <plugin name="kinect_link_controller" filename="libgazebo_ros_openni_kinect.so">
+                <baseline>0.2</baseline>
+                <alwaysOn>true</alwaysOn>
+                <updateRate>1.0</updateRate>
+                <cameraName>kinect_ir</cameraName>
+                <imageTopicName>/kinect/color/image_raw</imageTopicName>
+                <cameraInfoTopicName>/kinect/color/camera_info</cameraInfoTopicName>
+                <depthImageTopicName>/kinect/depth/image_raw</depthImageTopicName>
+                <depthImageInfoTopicName>/kinect/depth/camera_info</depthImageInfoTopicName>
+                <pointCloudTopicName>/kinect/depth/points</pointCloudTopicName>
+                <frameName>kinect_link</frameName>
+                <pointCloudCutoff>0.5</pointCloudCutoff>
+                <pointCloudCutoffMax>3.0</pointCloudCutoffMax>
+                <distortionK1>0.00000001</distortionK1>
+                <distortionK2>0.00000001</distortionK2>
+                <distortionK3>0.00000001</distortionK3>
+                <distortionT1>0.00000001</distortionT1>
+                <distortionT2>0.00000001</distortionT2>
+                <CxPrime>0</CxPrime>
+                <Cx>0</Cx>
+                <Cy>0</Cy>
+                <focalLength>0</focalLength>
+                <hackBaseline>0</hackBaseline>
+            </plugin>
+        </sensor>
+    </gazebo>
+
+    <gazebo reference="kinect_link">
+        <material>Gazebo/Black</material>
+    </gazebo>
+    
+</robot>

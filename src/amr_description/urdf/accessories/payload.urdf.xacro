@@ -1,0 +1,36 @@
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="amr_payload">
+    
+    <link name="payload_link">
+        <visual>
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <geometry>
+                <mesh filename="file://$(find amr_description)/meshes/top_final.dae"/>
+            </geometry>
+        </visual>
+
+        <collision>
+            <origin xyz="0 0 0" rpy="0 0 0"/>
+            <geometry>
+                <mesh filename="file://$(find amr_description)/meshes/top_final.dae"/>
+            </geometry>
+        </collision>
+
+        <inertial>
+            <origin xyz="0 0 0" rpy="0 0 0"/>
+            <mass value="8.47" />
+            <inertia ixx="0.002307898" iyy="0.004479378" izz="0.002685416" ixy="0.0" ixz="0.0" iyz="0.0"/>
+        </inertial>
+    </link>
+
+    <joint name="payload_to_chassis" type="fixed">
+        <parent link="chassis_link"/>
+        <child link="payload_link"/>
+        <origin xyz="0 0 ${payload_z_offset}"/>
+    </joint>
+
+    <gazebo reference="payload_link">
+        <material>Gazebo/Grey</material>
+    </gazebo>
+
+
+</robot>

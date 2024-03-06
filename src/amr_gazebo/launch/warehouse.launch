@@ -1,0 +1,26 @@
+<launch>
+
+    <arg name="model" command="$(find xacro)/xacro '$(find amr_description)/urdf/amr.urdf.xacro'"/>
+  
+  
+    <param name="robot_description" command="cat $(arg model)" />
+  
+   <!-- load joint control launch file for gazebodog -->
+   <include file="$(find amr_gazebo)/launch/warehouse.launch">
+   </include>
+  
+    <!-- Show in Rviz   -->
+    <!--<node name="rviz" pkg="rviz" type="rviz" args="-d $(find my_mira_description)/rviz_config/urdf.rviz"/>-->
+    <!-- <node name="rviz" pkg="rviz" type="rviz" args=""/> -->
+  
+  <!-- launch gazebo world -->
+    <include file="$(find gazebo_ros)/launch/empty_world.launch">
+        <arg name="world_name" value="$(find amr_gazebo)/worlds/no_roof_small_warehouse.world"/>
+      <!-- more default parameters can be changed here -->
+    </include>
+  
+    <!-- Spawn a robot into Gazebo -->
+  <node name="spawn_urdf" pkg="gazebo_ros" type="spawn_model" output="screen" args="-file $(find amr_description)/urdf/amr.urdf.xacro -urdf -z .3 -model amr" />
+  
+
+  </launch>
